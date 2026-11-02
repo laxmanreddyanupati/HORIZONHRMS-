@@ -37,3 +37,10 @@ backend/**/obj/
 *.sw?
 
 !*.slnx
+
+# Python
+backend-python/.venv/
+backend-python/__pycache__/
+backend-python/*.db
+backend-python/horizon.db
+*.pyc
