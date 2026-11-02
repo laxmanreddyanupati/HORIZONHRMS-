@@ -1,0 +1,66 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: horizon-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "HorizonDev!2026"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'HorizonDev!2026' -C -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: horizon-backend
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=HorizonHRMS;User Id=sa;Password=HorizonDev!2026;TrustServerCertificate=True;MultipleActiveResultSets=True"
+      Auth__SigningKey: "docker-dev-signing-key-at-least-32-chars-long!!"
+      Database__ApplyMigrations: "true"
+      Seed__Enabled: "true"
+      Seed__UserPasswords__vikram.rao@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__priya.menon@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__sneha.reddy@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__rohan.iyer@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__meera.joshi@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__arjun.nair@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__aditya.verma@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__kavita.rao@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__dev.patel@horizontech.example: "HorizonDev!2026"
+      Seed__UserPasswords__farah.khan@horizontech.example: "HorizonDev!2026"
+      Cors__AllowedOrigins__0: "http://localhost:5173"
+      Cors__AllowedOrigins__1: "http://localhost:80"
+      Demo__SnapshotDate: "2026-10-30"
+    ports:
+      - "5095:8080"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        VITE_API_BASE_URL: "http://localhost:5095/api"
+    container_name: horizon-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:

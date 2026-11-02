@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+.git
+.env
+.env.local
+*.log
+backend/**/bin
+backend/**/obj
+backend/HorizonHRMS.Api/.seed-credentials.dev.txt
+.vscode
+.idea
