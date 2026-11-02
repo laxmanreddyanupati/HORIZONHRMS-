@@ -1,0 +1,110 @@
+[
+  {
+    "id": "HOL-01",
+    "name": "New Year's Day",
+    "date": "2026-01-01",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-02",
+    "name": "Makar Sankranti",
+    "date": "2026-01-15",
+    "type": "Optional"
+  },
+  {
+    "id": "HOL-03",
+    "name": "Republic Day",
+    "date": "2026-01-26",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-04",
+    "name": "Holi",
+    "date": "2026-03-04",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-05",
+    "name": "Eid-ul-Fitr",
+    "date": "2026-03-21",
+    "type": "Optional"
+  },
+  {
+    "id": "HOL-06",
+    "name": "Good Friday",
+    "date": "2026-04-03",
+    "type": "Optional"
+  },
+  {
+    "id": "HOL-07",
+    "name": "Tamil New Year",
+    "date": "2026-04-14",
+    "type": "Optional"
+  },
+  {
+    "id": "HOL-08",
+    "name": "May Day",
+    "date": "2026-05-01",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-09",
+    "name": "Horizon Foundation Day",
+    "date": "2026-06-19",
+    "type": "Company"
+  },
+  {
+    "id": "HOL-10",
+    "name": "Independence Day",
+    "date": "2026-08-15",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-11",
+    "name": "Gandhi Jayanti",
+    "date": "2026-10-02",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-12",
+    "name": "Dussehra",
+    "date": "2026-10-20",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-13",
+    "name": "Diwali",
+    "date": "2026-11-08",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-14",
+    "name": "Christmas Day",
+    "date": "2026-12-25",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-15",
+    "name": "Year-end Shutdown",
+    "date": "2026-12-31",
+    "type": "Company"
+  },
+  {
+    "id": "HOL-16",
+    "name": "New Year's Day",
+    "date": "2027-01-01",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-17",
+    "name": "Republic Day",
+    "date": "2027-01-26",
+    "type": "Public"
+  },
+  {
+    "id": "HOL-18",
+    "name": "Holi",
+    "date": "2027-03-22",
+    "type": "Public"
+  }
+]

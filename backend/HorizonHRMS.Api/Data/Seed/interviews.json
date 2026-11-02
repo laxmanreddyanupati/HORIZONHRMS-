@@ -1,0 +1,69 @@
+[
+  {
+    "id": "INT-3001",
+    "candidateId": "CND-2001",
+    "jobId": "JOB-1001",
+    "round": "Technical Round 2",
+    "date": "2026-10-31",
+    "time": "10:00 AM",
+    "mode": "Video",
+    "interviewer": "Rohan Iyer",
+    "status": "Scheduled"
+  },
+  {
+    "id": "INT-3002",
+    "candidateId": "CND-2006",
+    "jobId": "JOB-1002",
+    "round": "Hiring Manager Round",
+    "date": "2026-11-01",
+    "time": "11:30 AM",
+    "mode": "In person",
+    "interviewer": "Priya Menon",
+    "status": "Scheduled"
+  },
+  {
+    "id": "INT-3003",
+    "candidateId": "CND-2009",
+    "jobId": "JOB-1003",
+    "round": "Culture & Values Round",
+    "date": "2026-11-02",
+    "time": "02:00 PM",
+    "mode": "Video",
+    "interviewer": "Rohan Iyer",
+    "status": "Scheduled"
+  },
+  {
+    "id": "INT-3004",
+    "candidateId": "CND-2014",
+    "jobId": "JOB-1005",
+    "round": "Technical Round 2",
+    "date": "2026-11-03",
+    "time": "03:30 PM",
+    "mode": "In person",
+    "interviewer": "Priya Menon",
+    "status": "Scheduled"
+  },
+  {
+    "id": "INT-3005",
+    "candidateId": "CND-2020",
+    "jobId": "JOB-1006",
+    "round": "Hiring Manager Round",
+    "date": "2026-11-04",
+    "time": "04:00 PM",
+    "mode": "Video",
+    "interviewer": "Rohan Iyer",
+    "status": "Scheduled"
+  },
+  {
+    "id": "INT-3006",
+    "candidateId": "CND-2023",
+    "jobId": "JOB-1007",
+    "round": "Culture & Values Round",
+    "date": "2026-10-31",
+    "time": "10:00 AM",
+    "mode": "In person",
+    "interviewer": "Priya Menon",
+    "status": "Completed",
+    "feedback": "Solid communication and strong domain depth. Recommended for the next round."
+  }
+]

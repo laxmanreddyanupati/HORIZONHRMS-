@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+*.user
+.seed-credentials.dev.txt
+App_Data/receipts/
+appsettings.Local.json

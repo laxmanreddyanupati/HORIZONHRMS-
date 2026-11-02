@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ACR-1001",
+    "employeeId": "HZT-0018",
+    "date": "2026-10-27",
+    "currentStatus": "Absent",
+    "requestedStatus": "Present",
+    "reason": "Biometric device at the Bengaluru office was offline. I was present and completed a full day.",
+    "requestedOn": "2026-10-28",
+    "status": "Pending"
+  },
+  {
+    "id": "ACR-1002",
+    "employeeId": "HZT-0042",
+    "date": "2026-10-23",
+    "currentStatus": "Late",
+    "requestedStatus": "Present",
+    "reason": "Cab delay due to a road closure. Check-in was recorded at 09:52.",
+    "requestedOn": "2026-10-24",
+    "status": "Pending"
+  },
+  {
+    "id": "ACR-1003",
+    "employeeId": "HZT-0067",
+    "date": "2026-10-21",
+    "currentStatus": "Half Day",
+    "requestedStatus": "Present",
+    "reason": "Approved half day was cancelled. I returned to work after lunch.",
+    "requestedOn": "2026-10-22",
+    "status": "Approved"
+  },
+  {
+    "id": "ACR-1004",
+    "employeeId": "HZT-0094",
+    "date": "2026-10-15",
+    "currentStatus": "Absent",
+    "requestedStatus": "On Leave",
+    "reason": "Approved sick leave was not reflected in attendance.",
+    "requestedOn": "2026-10-16",
+    "status": "Approved"
+  },
+  {
+    "id": "ACR-1005",
+    "employeeId": "HZT-0112",
+    "date": "2026-10-09",
+    "currentStatus": "Late",
+    "requestedStatus": "Present",
+    "reason": "Client call ran late the previous night; shift timings were adjusted by the manager.",
+    "requestedOn": "2026-10-10",
+    "status": "Rejected"
+  },
+  {
+    "id": "ACR-1006",
+    "employeeId": "HZT-0037",
+    "date": "2026-10-28",
+    "currentStatus": "Absent",
+    "requestedStatus": "Present",
+    "reason": "Forgot to tap out; access logs confirm presence.",
+    "requestedOn": "2026-10-29",
+    "status": "Pending"
+  }
+]

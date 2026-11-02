@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HorizonHRMS.Api.Tests/HorizonHRMS.Api.Tests.csproj" />
+  <Project Path="HorizonHRMS.Api/HorizonHRMS.Api.csproj" />
+</Solution>

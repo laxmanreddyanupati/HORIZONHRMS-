@@ -1,0 +1,29 @@
+[
+  {
+    "id": "shift-general",
+    "name": "General Shift",
+    "startTime": "09:00",
+    "endTime": "18:00",
+    "graceMinutes": 15,
+    "assignedCount": 108,
+    "days": "Monday – Friday"
+  },
+  {
+    "id": "shift-flexible",
+    "name": "Flexible Shift",
+    "startTime": "10:00",
+    "endTime": "19:00",
+    "graceMinutes": 30,
+    "assignedCount": 12,
+    "days": "Monday – Friday"
+  },
+  {
+    "id": "shift-early",
+    "name": "Early Support",
+    "startTime": "07:30",
+    "endTime": "16:30",
+    "graceMinutes": 15,
+    "assignedCount": 8,
+    "days": "Monday – Saturday"
+  }
+]

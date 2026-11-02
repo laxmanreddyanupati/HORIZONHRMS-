@@ -1,0 +1,14 @@
+{
+  "payDay": 28,
+  "inputCutoffDay": 22,
+  "approvalRequired": true,
+  "payslipRelease": "On payroll processing",
+  "bankFileFormat": "Demo CSV",
+  "statutoryProfile": "Demo statutory profile FY 2026–27",
+  "effectiveFrom": "2026-04-01",
+  "pfRate": 12,
+  "esiRate": 0.75,
+  "professionalTax": 200,
+  "tdsMethod": "Illustrative flat-rate demo",
+  "disclaimer": "Payroll values in this demonstration are fictional. Statutory rates are illustrative and are not current legal rates. No salary is disbursed."
+}

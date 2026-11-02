@@ -1,0 +1,5378 @@
+[
+  {
+    "employeeId": "HZT-0001",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0001",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0001",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0001",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0001",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0001",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0002",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0002",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0002",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0002",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0002",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0002",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0003",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0003",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0003",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0003",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0003",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0003",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0004",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0004",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0004",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0004",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0004",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0004",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0005",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0005",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0005",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0005",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0005",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0005",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0006",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0006",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0006",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0006",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0006",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0006",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0007",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0007",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0007",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0007",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0007",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0007",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0008",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0008",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0008",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0008",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0008",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0008",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0009",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0009",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0009",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0009",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0009",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0009",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0010",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0010",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0010",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0010",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0010",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0010",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0011",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0011",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0011",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0011",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0011",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0011",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0012",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0012",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0012",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0012",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0012",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0012",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0013",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0013",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0013",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0013",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0013",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0013",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0014",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0014",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0014",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0014",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0014",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0014",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0015",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0015",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0015",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0015",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0015",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0015",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0016",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0016",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0016",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0016",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0016",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0016",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0017",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0017",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0017",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0017",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0017",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0017",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0018",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0018",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0018",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0018",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0018",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0018",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0019",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0019",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0019",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0019",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0019",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0019",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0020",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0020",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0020",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0020",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0020",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0020",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 2
+  },
+  {
+    "employeeId": "HZT-0021",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0021",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0021",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0021",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0021",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0021",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0022",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0022",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0022",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0022",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0022",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0022",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0023",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0023",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0023",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0023",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0023",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0023",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0024",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0024",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0024",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0024",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0024",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0024",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0025",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 1
+  },
+  {
+    "employeeId": "HZT-0025",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0025",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0025",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0025",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0025",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0026",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0026",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0026",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0026",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0026",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0026",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0027",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0027",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0027",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0027",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0027",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0027",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0028",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0028",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0028",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0028",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0028",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0028",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0029",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0029",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0029",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0029",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0029",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0029",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0030",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0030",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0030",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0030",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0030",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0030",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0031",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0031",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0031",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0031",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0031",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0031",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0032",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0032",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0032",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0032",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 1
+  },
+  {
+    "employeeId": "HZT-0032",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0032",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0033",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0033",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0033",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0033",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0033",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0033",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0034",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0034",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0034",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0034",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0034",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0034",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0035",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0035",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0035",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0035",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0035",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0035",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0036",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0036",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0036",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0036",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0036",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0036",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0037",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0037",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0037",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0037",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0037",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0037",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0038",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0038",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0038",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0038",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0038",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0038",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0039",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0039",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0039",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0039",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0039",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0039",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0040",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0040",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0040",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0040",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0040",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0040",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0041",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0041",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0041",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0041",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0041",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0041",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0042",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0042",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0042",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0042",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0042",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0042",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0043",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0043",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0043",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0043",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0043",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 1,
+    "pending": 2
+  },
+  {
+    "employeeId": "HZT-0043",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0044",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0044",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0044",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0044",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0044",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0044",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0045",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0045",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0045",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0045",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0045",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0045",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0046",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0046",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0046",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0046",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0046",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0046",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0047",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0047",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0047",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0047",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0047",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0047",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0048",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0048",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0048",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0048",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0048",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0048",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0049",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0049",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0049",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0049",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0049",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0049",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0050",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0050",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0050",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0050",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0050",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0050",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0051",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0051",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0051",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0051",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0051",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0051",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0052",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0052",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0052",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0052",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0052",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0052",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0053",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0053",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0053",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0053",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0053",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 7,
+    "pending": 1
+  },
+  {
+    "employeeId": "HZT-0053",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0054",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0054",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0054",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0054",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0054",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0054",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 3
+  },
+  {
+    "employeeId": "HZT-0055",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0055",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0055",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0055",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0055",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 3
+  },
+  {
+    "employeeId": "HZT-0055",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0056",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0056",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0056",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0056",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0056",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0056",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0057",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0057",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0057",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0057",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0057",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0057",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0058",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0058",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0058",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0058",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0058",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0058",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0059",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0059",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0059",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0059",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0059",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0059",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0060",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0060",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0060",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0060",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0060",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0060",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0061",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0061",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0061",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0061",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0061",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0061",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0062",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0062",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0062",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0062",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0062",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0062",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0063",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0063",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0063",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0063",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0063",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0063",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0064",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0064",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0064",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0064",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0064",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0064",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0065",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 1
+  },
+  {
+    "employeeId": "HZT-0065",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0065",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0065",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0065",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0065",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0066",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0066",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0066",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0066",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0066",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0066",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0067",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0067",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0067",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0067",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0067",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0067",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0068",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0068",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0068",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0068",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0068",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0068",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0069",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0069",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0069",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0069",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0069",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0069",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0070",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0070",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0070",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0070",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0070",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0070",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0071",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0071",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0071",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0071",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0071",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0071",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0072",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0072",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0072",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0072",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0072",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0072",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0073",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0073",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0073",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0073",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0073",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0073",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0074",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0074",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0074",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0074",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0074",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0074",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0075",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0075",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0075",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0075",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0075",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0075",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0076",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0076",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 2
+  },
+  {
+    "employeeId": "HZT-0076",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0076",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0076",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0076",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0077",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0077",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0077",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0077",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0077",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0077",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0078",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0078",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0078",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0078",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0078",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0078",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0079",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0079",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0079",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0079",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0079",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0079",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0080",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0080",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0080",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0080",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0080",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0080",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0081",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0081",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0081",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0081",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0081",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0081",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0082",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0082",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0082",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0082",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0082",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0082",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0083",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0083",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0083",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 3
+  },
+  {
+    "employeeId": "HZT-0083",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0083",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0083",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0084",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0084",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0084",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 13,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0084",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0084",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0084",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0085",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0085",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0085",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0085",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0085",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0085",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0086",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0086",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0086",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0086",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0086",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0086",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0087",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0087",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0087",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 3
+  },
+  {
+    "employeeId": "HZT-0087",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0087",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0087",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0088",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0088",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0088",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0088",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 2
+  },
+  {
+    "employeeId": "HZT-0088",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0088",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0089",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0089",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0089",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0089",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0089",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0089",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0090",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0090",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0090",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0090",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0090",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0090",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0091",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0091",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0091",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0091",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0091",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0091",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0092",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0092",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0092",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0092",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0092",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0092",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0093",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0093",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0093",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0093",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0093",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0093",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0094",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0094",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0094",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0094",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0094",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0094",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0095",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0095",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0095",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0095",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0095",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0095",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0096",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0096",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0096",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0096",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0096",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0096",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0097",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0097",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0097",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0097",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0097",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0097",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0098",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0098",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0098",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0098",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 1
+  },
+  {
+    "employeeId": "HZT-0098",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0098",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0099",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0099",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0099",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0099",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0099",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0099",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0100",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0100",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0100",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0100",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0100",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0100",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0101",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0101",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0101",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0101",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0101",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0101",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0102",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0102",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0102",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0102",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0102",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0102",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0103",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0103",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0103",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0103",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0103",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0103",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0104",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0104",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0104",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0104",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0104",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0104",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0105",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0105",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0105",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0105",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0105",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0105",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0106",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0106",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0106",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0106",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0106",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0106",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0107",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0107",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0107",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0107",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0107",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0107",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0108",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0108",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0108",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0108",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0108",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0108",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0109",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0109",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0109",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0109",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0109",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 1,
+    "pending": 2
+  },
+  {
+    "employeeId": "HZT-0109",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0110",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0110",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0110",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0110",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0110",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0110",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0111",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0111",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0111",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0111",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0111",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0111",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0112",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0112",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0112",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0112",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0112",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0112",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0113",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0113",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0113",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0113",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0113",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0113",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0114",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0114",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0114",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0114",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0114",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0114",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0115",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0115",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0115",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0115",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0115",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0115",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0116",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0116",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0116",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0116",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0116",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0116",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0117",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0117",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0117",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0117",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0117",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0117",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0118",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0118",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 4
+  },
+  {
+    "employeeId": "HZT-0118",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0118",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0118",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0118",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0119",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0119",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0119",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 7,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0119",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0119",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0119",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0120",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0120",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0120",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0120",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0120",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0120",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0121",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0121",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0121",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0121",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0121",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0121",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0122",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 6,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0122",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0122",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0122",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0122",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0122",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0123",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0123",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0123",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0123",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0123",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0123",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0124",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0124",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0124",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0124",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0124",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 10,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0124",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0125",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 1,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0125",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0125",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0125",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0125",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0125",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0126",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0126",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0126",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 9,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0126",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0126",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0126",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0127",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0127",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 2,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0127",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0127",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0127",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0127",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0128",
+    "leaveTypeId": "lt-casual",
+    "allocated": 12,
+    "used": 3,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0128",
+    "leaveTypeId": "lt-sick",
+    "allocated": 10,
+    "used": 4,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0128",
+    "leaveTypeId": "lt-earned",
+    "allocated": 18,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0128",
+    "leaveTypeId": "lt-unpaid",
+    "allocated": 0,
+    "used": 0,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0128",
+    "leaveTypeId": "lt-paternity",
+    "allocated": 10,
+    "used": 8,
+    "pending": 0
+  },
+  {
+    "employeeId": "HZT-0128",
+    "leaveTypeId": "lt-comp",
+    "allocated": 5,
+    "used": 5,
+    "pending": 0
+  }
+]

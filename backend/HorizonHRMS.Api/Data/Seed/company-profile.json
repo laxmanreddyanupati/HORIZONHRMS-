@@ -1,0 +1,17 @@
+{
+  "legalName": "Horizon Technologies Private Limited",
+  "displayName": "Horizon Technologies",
+  "domain": "horizontech.example",
+  "industry": "Information Technology",
+  "headquarters": "Hyderabad, Telangana, India",
+  "email": "people@horizontech.example",
+  "phone": "+91 40 6789 1200",
+  "website": "www.horizontech.example",
+  "gstin": "36AABCH1234P1ZQ (demo)",
+  "pan": "AABCH1234P (demo)",
+  "cin": "U72200TG2016PTC104521 (demo)",
+  "currency": "INR (₹)",
+  "timezone": "Asia/Kolkata (IST)",
+  "financialYear": "April – March",
+  "payrollFrequency": "Monthly"
+}

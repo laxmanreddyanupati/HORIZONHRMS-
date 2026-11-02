@@ -1,0 +1,110 @@
+[
+  {
+    "module": "Employees",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Edit",
+    "manager": "Team view",
+    "payrollAdmin": "View",
+    "employee": "Self"
+  },
+  {
+    "module": "Organization",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Edit",
+    "manager": "View",
+    "payrollAdmin": "View",
+    "employee": "View"
+  },
+  {
+    "module": "Recruitment",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Full",
+    "manager": "View",
+    "payrollAdmin": "None",
+    "employee": "None"
+  },
+  {
+    "module": "Attendance",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Edit",
+    "manager": "Team approvals",
+    "payrollAdmin": "View",
+    "employee": "Self"
+  },
+  {
+    "module": "Leave",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Approve",
+    "manager": "Team approvals",
+    "payrollAdmin": "View",
+    "employee": "Self"
+  },
+  {
+    "module": "Payroll",
+    "superAdmin": "Full",
+    "hrAdmin": "View",
+    "hrExecutive": "None",
+    "manager": "None",
+    "payrollAdmin": "Full",
+    "employee": "Own payslips"
+  },
+  {
+    "module": "Performance",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Edit",
+    "manager": "Team reviews",
+    "payrollAdmin": "None",
+    "employee": "Self"
+  },
+  {
+    "module": "Expenses",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "Approve",
+    "manager": "Team approvals",
+    "payrollAdmin": "Approve",
+    "employee": "Self"
+  },
+  {
+    "module": "Reports",
+    "superAdmin": "Full",
+    "hrAdmin": "Full",
+    "hrExecutive": "View",
+    "manager": "Team view",
+    "payrollAdmin": "Payroll view",
+    "employee": "None"
+  },
+  {
+    "module": "Settings",
+    "superAdmin": "Full",
+    "hrAdmin": "People policies",
+    "hrExecutive": "None",
+    "manager": "None",
+    "payrollAdmin": "Payroll settings",
+    "employee": "None"
+  },
+  {
+    "module": "User Management",
+    "superAdmin": "Full",
+    "hrAdmin": "Invite only",
+    "hrExecutive": "None",
+    "manager": "None",
+    "payrollAdmin": "None",
+    "employee": "None"
+  },
+  {
+    "module": "Audit Logs",
+    "superAdmin": "Full",
+    "hrAdmin": "View",
+    "hrExecutive": "None",
+    "manager": "None",
+    "payrollAdmin": "None",
+    "employee": "None"
+  }
+]

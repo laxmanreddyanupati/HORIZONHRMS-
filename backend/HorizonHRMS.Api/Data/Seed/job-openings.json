@@ -1,0 +1,183 @@
+[
+  {
+    "id": "JOB-1001",
+    "title": "Senior Software Engineer",
+    "departmentId": "dept-eng",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "experienceMin": 5,
+    "experienceMax": 8,
+    "openings": 3,
+    "status": "Open",
+    "postedOn": "2026-09-18",
+    "hiringManagerId": "HZT-0003",
+    "description": "Build and scale the Horizon platform across web and API surfaces. You will own features end to end, mentor engineers and improve platform reliability.",
+    "salaryRange": "₹28L – ₹38L",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "id": "JOB-1002",
+    "title": "Product Manager",
+    "departmentId": "dept-product",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "experienceMin": 4,
+    "experienceMax": 7,
+    "openings": 1,
+    "status": "Open",
+    "postedOn": "2026-09-25",
+    "hiringManagerId": "HZT-0051",
+    "description": "Own the HRMS product roadmap for mid-market customers. Partner with design and engineering to ship measurable outcomes.",
+    "salaryRange": "₹24L – ₹32L",
+    "skills": [
+      "Product Strategy",
+      "B2B SaaS",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "JOB-1003",
+    "title": "Product Designer",
+    "departmentId": "dept-design",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "experienceMin": 3,
+    "experienceMax": 6,
+    "openings": 1,
+    "status": "Open",
+    "postedOn": "2026-10-01",
+    "hiringManagerId": "HZT-0004",
+    "description": "Design intuitive enterprise workflows and contribute to the Horizon design system.",
+    "salaryRange": "₹18L – ₹26L",
+    "skills": [
+      "Figma",
+      "Design Systems",
+      "User Research"
+    ]
+  },
+  {
+    "id": "JOB-1004",
+    "title": "HR Executive",
+    "departmentId": "dept-hr",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "experienceMin": 2,
+    "experienceMax": 4,
+    "openings": 1,
+    "status": "On Hold",
+    "postedOn": "2026-09-12",
+    "hiringManagerId": "HZT-0002",
+    "description": "Support onboarding, employee lifecycle and engagement initiatives across India offices.",
+    "salaryRange": "₹7L – ₹10L",
+    "skills": [
+      "HR Operations",
+      "Onboarding",
+      "Engagement"
+    ]
+  },
+  {
+    "id": "JOB-1005",
+    "title": "Enterprise Account Executive",
+    "departmentId": "dept-sales",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "experienceMin": 5,
+    "experienceMax": 9,
+    "openings": 4,
+    "status": "Open",
+    "postedOn": "2026-09-05",
+    "hiringManagerId": "HZT-0009",
+    "description": "Own enterprise pipeline and close strategic HRMS deals across India.",
+    "salaryRange": "₹20L – ₹30L + variable",
+    "skills": [
+      "Enterprise Sales",
+      "SaaS",
+      "Negotiation"
+    ]
+  },
+  {
+    "id": "JOB-1006",
+    "title": "Content Specialist",
+    "departmentId": "dept-marketing",
+    "location": "Bengaluru",
+    "employmentType": "Full-time",
+    "experienceMin": 2,
+    "experienceMax": 5,
+    "openings": 2,
+    "status": "Open",
+    "postedOn": "2026-10-06",
+    "hiringManagerId": "HZT-0010",
+    "description": "Create product-led content, customer stories and demand generation assets.",
+    "salaryRange": "₹9L – ₹14L",
+    "skills": [
+      "Content Marketing",
+      "SEO",
+      "B2B Writing"
+    ]
+  },
+  {
+    "id": "JOB-1007",
+    "title": "Customer Success Executive",
+    "departmentId": "dept-cs",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "experienceMin": 2,
+    "experienceMax": 5,
+    "openings": 3,
+    "status": "Open",
+    "postedOn": "2026-10-09",
+    "hiringManagerId": "HZT-0109",
+    "description": "Drive product adoption, renewals and customer health for enterprise accounts.",
+    "salaryRange": "₹8L – ₹13L",
+    "skills": [
+      "Customer Success",
+      "Account Management",
+      "CRM"
+    ]
+  },
+  {
+    "id": "JOB-1008",
+    "title": "DevOps Engineer",
+    "departmentId": "dept-eng",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "experienceMin": 3,
+    "experienceMax": 6,
+    "openings": 1,
+    "status": "Open",
+    "postedOn": "2026-10-12",
+    "hiringManagerId": "HZT-0003",
+    "description": "Own CI/CD, cloud infrastructure and observability for the Horizon platform.",
+    "salaryRange": "₹18L – ₹26L",
+    "skills": [
+      "AWS",
+      "Kubernetes",
+      "Terraform"
+    ]
+  },
+  {
+    "id": "JOB-1009",
+    "title": "Payroll Specialist",
+    "departmentId": "dept-finance",
+    "location": "Chennai",
+    "employmentType": "Full-time",
+    "experienceMin": 2,
+    "experienceMax": 5,
+    "openings": 1,
+    "status": "Closed",
+    "postedOn": "2026-08-02",
+    "hiringManagerId": "HZT-0007",
+    "description": "Support monthly payroll inputs, reconciliations and employee payroll queries.",
+    "salaryRange": "₹7L – ₹11L",
+    "skills": [
+      "Payroll",
+      "Excel",
+      "Compliance"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "leaveTypeId": "lt-casual",
+    "accrual": "Credited annually (January)",
+    "maxConsecutiveDays": 4,
+    "noticePeriodDays": 2,
+    "allowHalfDay": true,
+    "policy": "Casual leave is intended for short personal errands. Requests above four consecutive days require HR approval."
+  },
+  {
+    "leaveTypeId": "lt-sick",
+    "accrual": "Credited annually (January)",
+    "maxConsecutiveDays": 10,
+    "noticePeriodDays": 0,
+    "allowHalfDay": true,
+    "policy": "Inform your manager on the first day of absence. Medical documentation is required beyond three consecutive days."
+  },
+  {
+    "leaveTypeId": "lt-earned",
+    "accrual": "1.5 days per completed month",
+    "maxConsecutiveDays": 15,
+    "noticePeriodDays": 14,
+    "allowHalfDay": true,
+    "policy": "Earned leave should be planned with your manager at least two weeks in advance. Carry forward up to 10 days."
+  },
+  {
+    "leaveTypeId": "lt-unpaid",
+    "accrual": "Not accrued",
+    "maxConsecutiveDays": 10,
+    "noticePeriodDays": 7,
+    "allowHalfDay": false,
+    "policy": "Leave without pay may be approved after paid balances are exhausted. Salary is pro-rated for unpaid days."
+  },
+  {
+    "leaveTypeId": "lt-paternity",
+    "accrual": "Credited on event",
+    "maxConsecutiveDays": 10,
+    "noticePeriodDays": 7,
+    "allowHalfDay": false,
+    "policy": "Supporting documentation is required. Leave must be completed within six months of the event."
+  },
+  {
+    "leaveTypeId": "lt-comp",
+    "accrual": "Earned per approved holiday work",
+    "maxConsecutiveDays": 2,
+    "noticePeriodDays": 2,
+    "allowHalfDay": true,
+    "policy": "Compensatory off must be used within 90 days of being credited and cannot be encashed."
+  }
+]

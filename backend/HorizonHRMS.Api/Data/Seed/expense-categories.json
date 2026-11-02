@@ -1,0 +1,50 @@
+[
+  {
+    "id": "exp-travel",
+    "name": "Travel",
+    "limit": 25000,
+    "description": "Airfare, rail, cabs and local transport for approved business travel."
+  },
+  {
+    "id": "exp-accommodation",
+    "name": "Accommodation",
+    "limit": 12000,
+    "description": "Hotel stays for approved business travel."
+  },
+  {
+    "id": "exp-meals",
+    "name": "Meals",
+    "limit": 2500,
+    "description": "Meals during business travel or approved overtime."
+  },
+  {
+    "id": "exp-client",
+    "name": "Client Entertainment",
+    "limit": 15000,
+    "description": "Customer meetings and approved business entertainment."
+  },
+  {
+    "id": "exp-telecom",
+    "name": "Telecom & Internet",
+    "limit": 3000,
+    "description": "Monthly mobile or home internet reimbursement."
+  },
+  {
+    "id": "exp-software",
+    "name": "Software & Tools",
+    "limit": 20000,
+    "description": "Approved productivity or development tools."
+  },
+  {
+    "id": "exp-supplies",
+    "name": "Office Supplies",
+    "limit": 5000,
+    "description": "Work-from-home equipment and office supplies."
+  },
+  {
+    "id": "exp-training",
+    "name": "Training & Certification",
+    "limit": 40000,
+    "description": "Approved courses, certifications and conferences."
+  }
+]

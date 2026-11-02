@@ -1,0 +1,11 @@
+{
+  "label": "Demo statutory profile",
+  "effectiveFrom": "2026-04-01",
+  "description": "Illustrative percentages used only to populate demonstration payslips.",
+  "pfEmployeeRate": 0.12,
+  "esiEmployeeRate": 0.0075,
+  "esiGrossThreshold": 21000,
+  "professionalTaxMonthly": 200,
+  "illustrativeTdsRate": 0.1,
+  "tdsThresholdMonthly": 50000
+}

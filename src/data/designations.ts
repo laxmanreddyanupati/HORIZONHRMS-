@@ -1,0 +1,64 @@
+import type { Designation } from '@/types'
+
+export const designations: Designation[] = [
+  { id: 'des-ceo', title: 'Chief Executive Officer', departmentId: 'dept-exec', level: 'L6', grade: 'E1' },
+
+  { id: 'des-eng-mgr', title: 'Engineering Manager', departmentId: 'dept-eng', level: 'L5', grade: 'M3' },
+  { id: 'des-staff', title: 'Staff Engineer', departmentId: 'dept-eng', level: 'L5', grade: 'IC5' },
+  { id: 'des-sse', title: 'Senior Software Engineer', departmentId: 'dept-eng', level: 'L4', grade: 'IC4' },
+  { id: 'des-se', title: 'Software Engineer', departmentId: 'dept-eng', level: 'L3', grade: 'IC3' },
+  { id: 'des-jse', title: 'Junior Software Engineer', departmentId: 'dept-eng', level: 'L2', grade: 'IC2' },
+  { id: 'des-qa', title: 'QA Engineer', departmentId: 'dept-eng', level: 'L3', grade: 'IC3' },
+  { id: 'des-devops', title: 'DevOps Engineer', departmentId: 'dept-eng', level: 'L3', grade: 'IC3' },
+
+  { id: 'des-prod-mgr', title: 'Senior Product Manager', departmentId: 'dept-product', level: 'L5', grade: 'M2' },
+  { id: 'des-pm', title: 'Product Manager', departmentId: 'dept-product', level: 'L4', grade: 'IC4' },
+  { id: 'des-apm', title: 'Associate Product Manager', departmentId: 'dept-product', level: 'L3', grade: 'IC3' },
+  { id: 'des-product-analyst', title: 'Product Analyst', departmentId: 'dept-product', level: 'L2', grade: 'IC2' },
+
+  { id: 'des-design-lead', title: 'Design Lead', departmentId: 'dept-design', level: 'L5', grade: 'M2' },
+  { id: 'des-spd', title: 'Senior Product Designer', departmentId: 'dept-design', level: 'L4', grade: 'IC4' },
+  { id: 'des-pd', title: 'Product Designer', departmentId: 'dept-design', level: 'L3', grade: 'IC3' },
+
+  { id: 'des-hr-head', title: 'Head of Human Resources', departmentId: 'dept-hr', level: 'L6', grade: 'M4' },
+  { id: 'des-hr-mgr', title: 'HR Manager', departmentId: 'dept-hr', level: 'L5', grade: 'M3' },
+  { id: 'des-hr-exec', title: 'HR Executive', departmentId: 'dept-hr', level: 'L3', grade: 'IC3' },
+  { id: 'des-ta-tl', title: 'Talent Acquisition Lead', departmentId: 'dept-hr', level: 'L4', grade: 'M2' },
+  { id: 'des-ta', title: 'Talent Acquisition Specialist', departmentId: 'dept-hr', level: 'L3', grade: 'IC3' },
+
+  { id: 'des-fin-mgr', title: 'Finance Manager', departmentId: 'dept-finance', level: 'L5', grade: 'M3' },
+  { id: 'des-payroll-spec', title: 'Payroll Specialist', departmentId: 'dept-finance', level: 'L3', grade: 'IC3' },
+  { id: 'des-accountant', title: 'Accountant', departmentId: 'dept-finance', level: 'L3', grade: 'IC3' },
+  { id: 'des-fin-analyst', title: 'Financial Analyst', departmentId: 'dept-finance', level: 'L3', grade: 'IC3' },
+
+  { id: 'des-sales-mgr', title: 'Sales Manager', departmentId: 'dept-sales', level: 'L5', grade: 'M3' },
+  { id: 'des-asm', title: 'Senior Account Executive', departmentId: 'dept-sales', level: 'L4', grade: 'IC4' },
+  { id: 'des-ae', title: 'Account Executive', departmentId: 'dept-sales', level: 'L3', grade: 'IC3' },
+  { id: 'des-sdr', title: 'Sales Development Representative', departmentId: 'dept-sales', level: 'L2', grade: 'IC2' },
+  { id: 'des-sales-ops', title: 'Sales Operations Analyst', departmentId: 'dept-sales', level: 'L3', grade: 'IC3' },
+
+  { id: 'des-mkt-mgr', title: 'Marketing Manager', departmentId: 'dept-marketing', level: 'L5', grade: 'M3' },
+  { id: 'des-content-lead', title: 'Content Lead', departmentId: 'dept-marketing', level: 'L4', grade: 'M2' },
+  { id: 'des-content-spec', title: 'Content Specialist', departmentId: 'dept-marketing', level: 'L3', grade: 'IC3' },
+  { id: 'des-perf-mkt', title: 'Performance Marketing Specialist', departmentId: 'dept-marketing', level: 'L3', grade: 'IC3' },
+  { id: 'des-mkt-assoc', title: 'Marketing Associate', departmentId: 'dept-marketing', level: 'L2', grade: 'IC2' },
+
+  { id: 'des-cs-mgr', title: 'Customer Success Manager', departmentId: 'dept-cs', level: 'L5', grade: 'M3' },
+  { id: 'des-csm', title: 'Customer Success Executive', departmentId: 'dept-cs', level: 'L3', grade: 'IC3' },
+  { id: 'des-support', title: 'Support Specialist', departmentId: 'dept-cs', level: 'L2', grade: 'IC2' },
+
+  { id: 'des-it-mgr', title: 'IT Operations Manager', departmentId: 'dept-itops', level: 'L5', grade: 'M3' },
+  { id: 'des-sysadmin', title: 'Systems Administrator', departmentId: 'dept-itops', level: 'L3', grade: 'IC3' },
+  { id: 'des-helpdesk', title: 'Helpdesk Engineer', departmentId: 'dept-itops', level: 'L2', grade: 'IC2' },
+
+  { id: 'des-legal-mgr', title: 'Legal & Compliance Manager', departmentId: 'dept-legal', level: 'L5', grade: 'M3' },
+  { id: 'des-legal-assoc', title: 'Legal Associate', departmentId: 'dept-legal', level: 'L3', grade: 'IC3' },
+]
+
+export function getDesignationById(id: string): Designation | undefined {
+  return designations.find((designation) => designation.id === id)
+}
+
+export function getDesignationTitle(id: string): string {
+  return getDesignationById(id)?.title ?? '—'
+}

@@ -1,0 +1,7810 @@
+[
+  {
+    "employeeId": "HZT-0001",
+    "annualCtc": 8383000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0001-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 279440
+      },
+      {
+        "id": "HZT-0001-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 139720
+      },
+      {
+        "id": "HZT-0001-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 244510
+      },
+      {
+        "id": "HZT-0001-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 34930
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0001-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 33533,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0001-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0001-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0001-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 69860,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0002",
+    "annualCtc": 8785000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0002-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 292840
+      },
+      {
+        "id": "HZT-0002-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 146420
+      },
+      {
+        "id": "HZT-0002-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 256235
+      },
+      {
+        "id": "HZT-0002-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 36605
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0002-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 35141,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0002-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0002-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0002-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 73210,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0003",
+    "annualCtc": 5117000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0003-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 170560
+      },
+      {
+        "id": "HZT-0003-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 85280
+      },
+      {
+        "id": "HZT-0003-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 149240
+      },
+      {
+        "id": "HZT-0003-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 21320
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0003-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 20467,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0003-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0003-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0003-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 42640,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0004",
+    "annualCtc": 3171000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0004-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 105720
+      },
+      {
+        "id": "HZT-0004-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 52860
+      },
+      {
+        "id": "HZT-0004-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 92505
+      },
+      {
+        "id": "HZT-0004-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 13215
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0004-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 12686,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0004-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0004-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0004-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 26430,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0005",
+    "annualCtc": 3070000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0005-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 102320
+      },
+      {
+        "id": "HZT-0005-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 51160
+      },
+      {
+        "id": "HZT-0005-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 89530
+      },
+      {
+        "id": "HZT-0005-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 12790
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0005-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 12278,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0005-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0005-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0005-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 25580,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0006",
+    "annualCtc": 1697000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0006-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 56560
+      },
+      {
+        "id": "HZT-0006-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28280
+      },
+      {
+        "id": "HZT-0006-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 49490
+      },
+      {
+        "id": "HZT-0006-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7070
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0006-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6787,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0006-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0006-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0006-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14140,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0007",
+    "annualCtc": 3691000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0007-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 123040
+      },
+      {
+        "id": "HZT-0007-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 61520
+      },
+      {
+        "id": "HZT-0007-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 107660
+      },
+      {
+        "id": "HZT-0007-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 15380
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0007-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 14765,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0007-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0007-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0007-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 30760,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0008",
+    "annualCtc": 1680000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0008-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 56000
+      },
+      {
+        "id": "HZT-0008-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28000
+      },
+      {
+        "id": "HZT-0008-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 49000
+      },
+      {
+        "id": "HZT-0008-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7000
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0008-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6720,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0008-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0008-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0008-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14000,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0009",
+    "annualCtc": 4604000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0009-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 153480
+      },
+      {
+        "id": "HZT-0009-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 76740
+      },
+      {
+        "id": "HZT-0009-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 134295
+      },
+      {
+        "id": "HZT-0009-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 19185
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0009-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 18418,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0009-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0009-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0009-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 38370,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0010",
+    "annualCtc": 4915000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0010-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 163840
+      },
+      {
+        "id": "HZT-0010-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 81920
+      },
+      {
+        "id": "HZT-0010-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 143360
+      },
+      {
+        "id": "HZT-0010-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 20480
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0010-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 19661,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0010-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0010-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0010-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 40960,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0011",
+    "annualCtc": 5200000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0011-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 173320
+      },
+      {
+        "id": "HZT-0011-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 86660
+      },
+      {
+        "id": "HZT-0011-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 151655
+      },
+      {
+        "id": "HZT-0011-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 21665
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0011-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 20798,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0011-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0011-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0011-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 43330,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0012",
+    "annualCtc": 2439000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0012-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 81320
+      },
+      {
+        "id": "HZT-0012-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 40660
+      },
+      {
+        "id": "HZT-0012-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 71155
+      },
+      {
+        "id": "HZT-0012-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 10165
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0012-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 9758,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0012-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0012-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0012-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 20330,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0013",
+    "annualCtc": 2829000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0013-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 94320
+      },
+      {
+        "id": "HZT-0013-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 47160
+      },
+      {
+        "id": "HZT-0013-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 82530
+      },
+      {
+        "id": "HZT-0013-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 11790
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0013-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 11318,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0013-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0013-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0013-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 23580,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0014",
+    "annualCtc": 2710000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0014-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 90320
+      },
+      {
+        "id": "HZT-0014-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 45160
+      },
+      {
+        "id": "HZT-0014-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 79030
+      },
+      {
+        "id": "HZT-0014-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 11290
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0014-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 10838,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0014-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0014-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0014-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 22580,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0015",
+    "annualCtc": 1512000,
+    "effectiveFrom": "2026-04-17",
+    "earnings": [
+      {
+        "id": "HZT-0015-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50400
+      },
+      {
+        "id": "HZT-0015-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25200
+      },
+      {
+        "id": "HZT-0015-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44100
+      },
+      {
+        "id": "HZT-0015-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6300
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0015-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6048,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0015-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0015-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0015-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12600,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0016",
+    "annualCtc": 1534000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0016-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 51120
+      },
+      {
+        "id": "HZT-0016-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25560
+      },
+      {
+        "id": "HZT-0016-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44730
+      },
+      {
+        "id": "HZT-0016-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6390
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0016-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6134,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0016-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0016-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0016-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0017",
+    "annualCtc": 1655000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0017-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55160
+      },
+      {
+        "id": "HZT-0017-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27580
+      },
+      {
+        "id": "HZT-0017-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48265
+      },
+      {
+        "id": "HZT-0017-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6895
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0017-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6619,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0017-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0017-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0017-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13790,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0018",
+    "annualCtc": 1796000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0018-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59880
+      },
+      {
+        "id": "HZT-0018-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29940
+      },
+      {
+        "id": "HZT-0018-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 52395
+      },
+      {
+        "id": "HZT-0018-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7485
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0018-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7186,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0018-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0018-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0018-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14970,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0019",
+    "annualCtc": 1660000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0019-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55320
+      },
+      {
+        "id": "HZT-0019-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27660
+      },
+      {
+        "id": "HZT-0019-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48405
+      },
+      {
+        "id": "HZT-0019-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6915
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0019-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6638,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0019-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0019-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0019-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13830,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0020",
+    "annualCtc": 1629000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0020-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54320
+      },
+      {
+        "id": "HZT-0020-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27160
+      },
+      {
+        "id": "HZT-0020-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47530
+      },
+      {
+        "id": "HZT-0020-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6790
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0020-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6518,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0020-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0020-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0020-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13580,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0021",
+    "annualCtc": 1515000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0021-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50520
+      },
+      {
+        "id": "HZT-0021-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25260
+      },
+      {
+        "id": "HZT-0021-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44205
+      },
+      {
+        "id": "HZT-0021-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6315
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0021-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6062,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0021-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0021-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0021-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12630,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0022",
+    "annualCtc": 1695000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0022-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 56520
+      },
+      {
+        "id": "HZT-0022-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28260
+      },
+      {
+        "id": "HZT-0022-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 49455
+      },
+      {
+        "id": "HZT-0022-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7065
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0022-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6782,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0022-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0022-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0022-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14130,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0023",
+    "annualCtc": 1407000,
+    "effectiveFrom": "2026-12-25",
+    "earnings": [
+      {
+        "id": "HZT-0023-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 46920
+      },
+      {
+        "id": "HZT-0023-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23460
+      },
+      {
+        "id": "HZT-0023-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41055
+      },
+      {
+        "id": "HZT-0023-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5865
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0023-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5630,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0023-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0023-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0023-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11730,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0024",
+    "annualCtc": 1581000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0024-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52720
+      },
+      {
+        "id": "HZT-0024-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26360
+      },
+      {
+        "id": "HZT-0024-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 46130
+      },
+      {
+        "id": "HZT-0024-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6590
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0024-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6326,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0024-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0024-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0024-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13180,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0025",
+    "annualCtc": 1799000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0025-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59960
+      },
+      {
+        "id": "HZT-0025-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29980
+      },
+      {
+        "id": "HZT-0025-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 52465
+      },
+      {
+        "id": "HZT-0025-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7495
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0025-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7195,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0025-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0025-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0025-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14990,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0026",
+    "annualCtc": 1655000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0026-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55160
+      },
+      {
+        "id": "HZT-0026-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27580
+      },
+      {
+        "id": "HZT-0026-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48265
+      },
+      {
+        "id": "HZT-0026-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6895
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0026-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6619,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0026-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0026-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0026-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13790,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0027",
+    "annualCtc": 1647000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0027-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54920
+      },
+      {
+        "id": "HZT-0027-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27460
+      },
+      {
+        "id": "HZT-0027-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48055
+      },
+      {
+        "id": "HZT-0027-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6865
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0027-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6590,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0027-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0027-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0027-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13730,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0028",
+    "annualCtc": 1523000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0028-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50760
+      },
+      {
+        "id": "HZT-0028-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25380
+      },
+      {
+        "id": "HZT-0028-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44415
+      },
+      {
+        "id": "HZT-0028-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6345
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0028-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6091,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0028-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0028-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0028-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12690,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0029",
+    "annualCtc": 1659000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0029-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55320
+      },
+      {
+        "id": "HZT-0029-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27660
+      },
+      {
+        "id": "HZT-0029-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48405
+      },
+      {
+        "id": "HZT-0029-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6915
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0029-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6638,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0029-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0029-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0029-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13830,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0030",
+    "annualCtc": 843000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0030-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 28120
+      },
+      {
+        "id": "HZT-0030-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 14060
+      },
+      {
+        "id": "HZT-0030-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 24605
+      },
+      {
+        "id": "HZT-0030-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3515
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0030-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3374,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0030-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0030-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0030-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7030,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0031",
+    "annualCtc": 908000,
+    "effectiveFrom": "2026-08-08",
+    "earnings": [
+      {
+        "id": "HZT-0031-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 30280
+      },
+      {
+        "id": "HZT-0031-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 15140
+      },
+      {
+        "id": "HZT-0031-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 26495
+      },
+      {
+        "id": "HZT-0031-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3785
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0031-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3634,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0031-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0031-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0031-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7570,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0032",
+    "annualCtc": 826000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0032-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 27520
+      },
+      {
+        "id": "HZT-0032-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13760
+      },
+      {
+        "id": "HZT-0032-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 24080
+      },
+      {
+        "id": "HZT-0032-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3440
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0032-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3302,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0032-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0032-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0032-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6880,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0033",
+    "annualCtc": 750000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0033-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 25000
+      },
+      {
+        "id": "HZT-0033-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 12500
+      },
+      {
+        "id": "HZT-0033-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 21875
+      },
+      {
+        "id": "HZT-0033-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3125
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0033-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3000,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0033-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0033-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0033-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6250,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0034",
+    "annualCtc": 865000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0034-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 28840
+      },
+      {
+        "id": "HZT-0034-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 14420
+      },
+      {
+        "id": "HZT-0034-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 25235
+      },
+      {
+        "id": "HZT-0034-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3605
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0034-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3461,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0034-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0034-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0034-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7210,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0035",
+    "annualCtc": 1671000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0035-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55720
+      },
+      {
+        "id": "HZT-0035-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27860
+      },
+      {
+        "id": "HZT-0035-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48755
+      },
+      {
+        "id": "HZT-0035-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6965
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0035-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6686,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0035-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0035-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0035-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13930,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0036",
+    "annualCtc": 1643000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0036-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54760
+      },
+      {
+        "id": "HZT-0036-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27380
+      },
+      {
+        "id": "HZT-0036-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47915
+      },
+      {
+        "id": "HZT-0036-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6845
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0036-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6571,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0036-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0036-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0036-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13690,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0037",
+    "annualCtc": 1414000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0037-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 47120
+      },
+      {
+        "id": "HZT-0037-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23560
+      },
+      {
+        "id": "HZT-0037-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41230
+      },
+      {
+        "id": "HZT-0037-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5890
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0037-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5654,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0037-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0037-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0037-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0038",
+    "annualCtc": 1714000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0038-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 57120
+      },
+      {
+        "id": "HZT-0038-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28560
+      },
+      {
+        "id": "HZT-0038-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 49980
+      },
+      {
+        "id": "HZT-0038-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7140
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0038-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6854,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0038-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0038-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0038-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14280,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0039",
+    "annualCtc": 1522000,
+    "effectiveFrom": "2026-04-16",
+    "earnings": [
+      {
+        "id": "HZT-0039-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50720
+      },
+      {
+        "id": "HZT-0039-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25360
+      },
+      {
+        "id": "HZT-0039-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44380
+      },
+      {
+        "id": "HZT-0039-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6340
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0039-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6086,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0039-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0039-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0039-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12680,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0040",
+    "annualCtc": 2522000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0040-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 84080
+      },
+      {
+        "id": "HZT-0040-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 42040
+      },
+      {
+        "id": "HZT-0040-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 73570
+      },
+      {
+        "id": "HZT-0040-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 10510
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0040-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 10090,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0040-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0040-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0040-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 21020,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0041",
+    "annualCtc": 1495000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0041-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 49840
+      },
+      {
+        "id": "HZT-0041-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24920
+      },
+      {
+        "id": "HZT-0041-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 43610
+      },
+      {
+        "id": "HZT-0041-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6230
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0041-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5981,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0041-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0041-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0041-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12460,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0042",
+    "annualCtc": 1564000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0042-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52120
+      },
+      {
+        "id": "HZT-0042-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26060
+      },
+      {
+        "id": "HZT-0042-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 45605
+      },
+      {
+        "id": "HZT-0042-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6515
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0042-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6254,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0042-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0042-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0042-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13030,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0043",
+    "annualCtc": 1644000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0043-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54800
+      },
+      {
+        "id": "HZT-0043-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27400
+      },
+      {
+        "id": "HZT-0043-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47950
+      },
+      {
+        "id": "HZT-0043-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6850
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0043-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6576,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0043-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0043-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0043-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13700,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0044",
+    "annualCtc": 1569000,
+    "effectiveFrom": "2026-09-14",
+    "earnings": [
+      {
+        "id": "HZT-0044-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52320
+      },
+      {
+        "id": "HZT-0044-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26160
+      },
+      {
+        "id": "HZT-0044-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 45780
+      },
+      {
+        "id": "HZT-0044-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6540
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0044-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6278,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0044-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0044-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0044-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13080,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0045",
+    "annualCtc": 1527000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0045-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50920
+      },
+      {
+        "id": "HZT-0045-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25460
+      },
+      {
+        "id": "HZT-0045-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44555
+      },
+      {
+        "id": "HZT-0045-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6365
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0045-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6110,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0045-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0045-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0045-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12730,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0046",
+    "annualCtc": 1408000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0046-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 46920
+      },
+      {
+        "id": "HZT-0046-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23460
+      },
+      {
+        "id": "HZT-0046-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41055
+      },
+      {
+        "id": "HZT-0046-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5865
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0046-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5630,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0046-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0046-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0046-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11730,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0047",
+    "annualCtc": 808000,
+    "effectiveFrom": "2026-12-24",
+    "earnings": [
+      {
+        "id": "HZT-0047-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 26920
+      },
+      {
+        "id": "HZT-0047-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13460
+      },
+      {
+        "id": "HZT-0047-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 23555
+      },
+      {
+        "id": "HZT-0047-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3365
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0047-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3230,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0047-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0047-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0047-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6730,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0048",
+    "annualCtc": 1654000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0048-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55120
+      },
+      {
+        "id": "HZT-0048-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27560
+      },
+      {
+        "id": "HZT-0048-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48230
+      },
+      {
+        "id": "HZT-0048-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6890
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0048-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6614,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0048-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0048-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0048-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0049",
+    "annualCtc": 1509000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0049-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50320
+      },
+      {
+        "id": "HZT-0049-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25160
+      },
+      {
+        "id": "HZT-0049-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44030
+      },
+      {
+        "id": "HZT-0049-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6290
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0049-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6038,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0049-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0049-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0049-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12580,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0050",
+    "annualCtc": 5063000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0050-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 168760
+      },
+      {
+        "id": "HZT-0050-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 84380
+      },
+      {
+        "id": "HZT-0050-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 147665
+      },
+      {
+        "id": "HZT-0050-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 21095
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0050-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 20251,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0050-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0050-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0050-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 42190,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0051",
+    "annualCtc": 4510000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0051-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 150320
+      },
+      {
+        "id": "HZT-0051-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 75160
+      },
+      {
+        "id": "HZT-0051-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 131530
+      },
+      {
+        "id": "HZT-0051-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 18790
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0051-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 18038,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0051-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0051-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0051-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 37580,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0052",
+    "annualCtc": 2658000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0052-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 88600
+      },
+      {
+        "id": "HZT-0052-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 44300
+      },
+      {
+        "id": "HZT-0052-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 77525
+      },
+      {
+        "id": "HZT-0052-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 11075
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0052-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 10632,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0052-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0052-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0052-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 22150,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0053",
+    "annualCtc": 2646000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0053-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 88200
+      },
+      {
+        "id": "HZT-0053-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 44100
+      },
+      {
+        "id": "HZT-0053-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 77175
+      },
+      {
+        "id": "HZT-0053-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 11025
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0053-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 10584,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0053-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0053-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0053-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 22050,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0054",
+    "annualCtc": 2802000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0054-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 93400
+      },
+      {
+        "id": "HZT-0054-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 46700
+      },
+      {
+        "id": "HZT-0054-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 81725
+      },
+      {
+        "id": "HZT-0054-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 11675
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0054-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 11208,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0054-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0054-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0054-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 23350,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0055",
+    "annualCtc": 1758000,
+    "effectiveFrom": "2026-08-07",
+    "earnings": [
+      {
+        "id": "HZT-0055-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 58600
+      },
+      {
+        "id": "HZT-0055-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29300
+      },
+      {
+        "id": "HZT-0055-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51275
+      },
+      {
+        "id": "HZT-0055-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7325
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0055-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7032,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0055-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0055-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0055-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14650,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0056",
+    "annualCtc": 1402000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0056-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 46720
+      },
+      {
+        "id": "HZT-0056-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23360
+      },
+      {
+        "id": "HZT-0056-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 40880
+      },
+      {
+        "id": "HZT-0056-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5840
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0056-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5606,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0056-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0056-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0056-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11680,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0057",
+    "annualCtc": 1774000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0057-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59120
+      },
+      {
+        "id": "HZT-0057-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29560
+      },
+      {
+        "id": "HZT-0057-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51730
+      },
+      {
+        "id": "HZT-0057-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7390
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0057-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7094,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0057-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0057-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0057-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0058",
+    "annualCtc": 1498000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0058-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 49920
+      },
+      {
+        "id": "HZT-0058-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24960
+      },
+      {
+        "id": "HZT-0058-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 43680
+      },
+      {
+        "id": "HZT-0058-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6240
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0058-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5990,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0058-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0058-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0058-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12480,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0059",
+    "annualCtc": 918000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0059-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 30600
+      },
+      {
+        "id": "HZT-0059-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 15300
+      },
+      {
+        "id": "HZT-0059-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 26775
+      },
+      {
+        "id": "HZT-0059-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3825
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0059-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3672,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0059-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0059-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0059-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7650,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0060",
+    "annualCtc": 779000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0060-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 25960
+      },
+      {
+        "id": "HZT-0060-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 12980
+      },
+      {
+        "id": "HZT-0060-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 22715
+      },
+      {
+        "id": "HZT-0060-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3245
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0060-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3115,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0060-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0060-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0060-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6490,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0061",
+    "annualCtc": 751000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0061-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 25040
+      },
+      {
+        "id": "HZT-0061-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 12520
+      },
+      {
+        "id": "HZT-0061-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 21910
+      },
+      {
+        "id": "HZT-0061-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3130
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0061-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3005,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0061-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0061-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0061-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6260,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0062",
+    "annualCtc": 837000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0062-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 27920
+      },
+      {
+        "id": "HZT-0062-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13960
+      },
+      {
+        "id": "HZT-0062-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 24430
+      },
+      {
+        "id": "HZT-0062-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3490
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0062-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3350,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0062-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0062-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0062-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6980,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0063",
+    "annualCtc": 4945000,
+    "effectiveFrom": "2026-04-15",
+    "earnings": [
+      {
+        "id": "HZT-0063-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 164840
+      },
+      {
+        "id": "HZT-0063-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 82420
+      },
+      {
+        "id": "HZT-0063-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 144235
+      },
+      {
+        "id": "HZT-0063-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 20605
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0063-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 19781,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0063-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0063-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0063-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 41210,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0064",
+    "annualCtc": 3108000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0064-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 103600
+      },
+      {
+        "id": "HZT-0064-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 51800
+      },
+      {
+        "id": "HZT-0064-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 90650
+      },
+      {
+        "id": "HZT-0064-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 12950
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0064-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 12432,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0064-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0064-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0064-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 25900,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0065",
+    "annualCtc": 1654000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0065-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55120
+      },
+      {
+        "id": "HZT-0065-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27560
+      },
+      {
+        "id": "HZT-0065-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48230
+      },
+      {
+        "id": "HZT-0065-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6890
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0065-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6614,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0065-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0065-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0065-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0066",
+    "annualCtc": 1795000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0066-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59840
+      },
+      {
+        "id": "HZT-0066-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29920
+      },
+      {
+        "id": "HZT-0066-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 52360
+      },
+      {
+        "id": "HZT-0066-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7480
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0066-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7181,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0066-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0066-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0066-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14960,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0067",
+    "annualCtc": 1608000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0067-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 53600
+      },
+      {
+        "id": "HZT-0067-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26800
+      },
+      {
+        "id": "HZT-0067-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 46900
+      },
+      {
+        "id": "HZT-0067-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6700
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0067-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6432,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0067-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0067-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0067-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13400,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0068",
+    "annualCtc": 1776000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0068-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59200
+      },
+      {
+        "id": "HZT-0068-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29600
+      },
+      {
+        "id": "HZT-0068-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51800
+      },
+      {
+        "id": "HZT-0068-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7400
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0068-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7104,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0068-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0068-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0068-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14800,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0069",
+    "annualCtc": 2486000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0069-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 82880
+      },
+      {
+        "id": "HZT-0069-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 41440
+      },
+      {
+        "id": "HZT-0069-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 72520
+      },
+      {
+        "id": "HZT-0069-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 10360
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0069-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 9946,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0069-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0069-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0069-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 20720,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0070",
+    "annualCtc": 4692000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0070-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 156400
+      },
+      {
+        "id": "HZT-0070-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 78200
+      },
+      {
+        "id": "HZT-0070-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 136850
+      },
+      {
+        "id": "HZT-0070-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 19550
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0070-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 18768,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0070-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0070-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0070-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 39100,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0071",
+    "annualCtc": 1406000,
+    "effectiveFrom": "2026-12-23",
+    "earnings": [
+      {
+        "id": "HZT-0071-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 46880
+      },
+      {
+        "id": "HZT-0071-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23440
+      },
+      {
+        "id": "HZT-0071-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41020
+      },
+      {
+        "id": "HZT-0071-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5860
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0071-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5626,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0071-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0071-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0071-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11720,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0072",
+    "annualCtc": 1719000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0072-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 57320
+      },
+      {
+        "id": "HZT-0072-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28660
+      },
+      {
+        "id": "HZT-0072-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 50155
+      },
+      {
+        "id": "HZT-0072-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7165
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0072-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6878,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0072-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0072-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0072-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14330,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0073",
+    "annualCtc": 3010000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0073-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 100320
+      },
+      {
+        "id": "HZT-0073-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 50160
+      },
+      {
+        "id": "HZT-0073-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 87780
+      },
+      {
+        "id": "HZT-0073-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 12540
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0073-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 12038,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0073-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0073-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0073-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 25080,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0074",
+    "annualCtc": 1781000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0074-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59360
+      },
+      {
+        "id": "HZT-0074-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29680
+      },
+      {
+        "id": "HZT-0074-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51940
+      },
+      {
+        "id": "HZT-0074-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7420
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0074-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7123,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0074-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0074-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0074-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14840,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0075",
+    "annualCtc": 1691000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0075-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 56360
+      },
+      {
+        "id": "HZT-0075-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28180
+      },
+      {
+        "id": "HZT-0075-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 49315
+      },
+      {
+        "id": "HZT-0075-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7045
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0075-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6763,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0075-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0075-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0075-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14090,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0076",
+    "annualCtc": 1673000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0076-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55760
+      },
+      {
+        "id": "HZT-0076-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27880
+      },
+      {
+        "id": "HZT-0076-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48790
+      },
+      {
+        "id": "HZT-0076-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6970
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0076-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6691,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0076-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0076-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0076-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13940,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0077",
+    "annualCtc": 1579000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0077-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52640
+      },
+      {
+        "id": "HZT-0077-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26320
+      },
+      {
+        "id": "HZT-0077-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 46060
+      },
+      {
+        "id": "HZT-0077-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6580
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0077-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6317,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0077-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0077-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0077-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13160,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0078",
+    "annualCtc": 1593000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0078-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 53120
+      },
+      {
+        "id": "HZT-0078-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26560
+      },
+      {
+        "id": "HZT-0078-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 46480
+      },
+      {
+        "id": "HZT-0078-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6640
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0078-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6374,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0078-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0078-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0078-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13280,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0079",
+    "annualCtc": 1481000,
+    "effectiveFrom": "2026-08-06",
+    "earnings": [
+      {
+        "id": "HZT-0079-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 49360
+      },
+      {
+        "id": "HZT-0079-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24680
+      },
+      {
+        "id": "HZT-0079-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 43190
+      },
+      {
+        "id": "HZT-0079-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6170
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0079-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5923,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0079-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0079-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0079-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12340,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0080",
+    "annualCtc": 1466000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0080-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 48880
+      },
+      {
+        "id": "HZT-0080-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24440
+      },
+      {
+        "id": "HZT-0080-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 42770
+      },
+      {
+        "id": "HZT-0080-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6110
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0080-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5866,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0080-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0080-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0080-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12220,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0081",
+    "annualCtc": 1477000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0081-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 49240
+      },
+      {
+        "id": "HZT-0081-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24620
+      },
+      {
+        "id": "HZT-0081-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 43085
+      },
+      {
+        "id": "HZT-0081-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6155
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0081-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5909,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0081-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0081-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0081-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12310,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0082",
+    "annualCtc": 1461000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0082-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 48720
+      },
+      {
+        "id": "HZT-0082-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24360
+      },
+      {
+        "id": "HZT-0082-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 42630
+      },
+      {
+        "id": "HZT-0082-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6090
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0082-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5846,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0082-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0082-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0082-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12180,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0083",
+    "annualCtc": 2439000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0083-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 81320
+      },
+      {
+        "id": "HZT-0083-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 40660
+      },
+      {
+        "id": "HZT-0083-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 71155
+      },
+      {
+        "id": "HZT-0083-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 10165
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0083-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 9758,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0083-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0083-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0083-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 20330,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0084",
+    "annualCtc": 2706000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0084-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 90200
+      },
+      {
+        "id": "HZT-0084-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 45100
+      },
+      {
+        "id": "HZT-0084-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 78925
+      },
+      {
+        "id": "HZT-0084-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 11275
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0084-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 10824,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0084-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0084-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0084-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 22550,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0085",
+    "annualCtc": 1551000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0085-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 51720
+      },
+      {
+        "id": "HZT-0085-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25860
+      },
+      {
+        "id": "HZT-0085-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 45255
+      },
+      {
+        "id": "HZT-0085-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6465
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0085-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6206,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0085-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0085-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0085-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12930,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0086",
+    "annualCtc": 1408000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0086-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 46920
+      },
+      {
+        "id": "HZT-0086-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23460
+      },
+      {
+        "id": "HZT-0086-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41055
+      },
+      {
+        "id": "HZT-0086-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5865
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0086-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5630,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0086-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0086-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0086-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11730,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0087",
+    "annualCtc": 1645000,
+    "effectiveFrom": "2026-04-14",
+    "earnings": [
+      {
+        "id": "HZT-0087-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54840
+      },
+      {
+        "id": "HZT-0087-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27420
+      },
+      {
+        "id": "HZT-0087-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47985
+      },
+      {
+        "id": "HZT-0087-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6855
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0087-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6581,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0087-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0087-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0087-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13710,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0088",
+    "annualCtc": 1664000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0088-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55480
+      },
+      {
+        "id": "HZT-0088-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27740
+      },
+      {
+        "id": "HZT-0088-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48545
+      },
+      {
+        "id": "HZT-0088-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6935
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0088-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6658,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0088-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0088-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0088-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13870,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0089",
+    "annualCtc": 1770000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0089-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59000
+      },
+      {
+        "id": "HZT-0089-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29500
+      },
+      {
+        "id": "HZT-0089-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51625
+      },
+      {
+        "id": "HZT-0089-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7375
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0089-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7080,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0089-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0089-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0089-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14750,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0090",
+    "annualCtc": 1631000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0090-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54360
+      },
+      {
+        "id": "HZT-0090-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27180
+      },
+      {
+        "id": "HZT-0090-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47565
+      },
+      {
+        "id": "HZT-0090-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6795
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0090-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6523,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0090-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0090-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0090-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13590,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0091",
+    "annualCtc": 1723000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0091-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 57440
+      },
+      {
+        "id": "HZT-0091-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28720
+      },
+      {
+        "id": "HZT-0091-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 50260
+      },
+      {
+        "id": "HZT-0091-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7180
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0091-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6893,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0091-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0091-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0091-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14360,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0092",
+    "annualCtc": 1458000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0092-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 48600
+      },
+      {
+        "id": "HZT-0092-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24300
+      },
+      {
+        "id": "HZT-0092-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 42525
+      },
+      {
+        "id": "HZT-0092-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6075
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0092-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5832,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0092-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0092-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0092-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12150,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0093",
+    "annualCtc": 878000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0093-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 29280
+      },
+      {
+        "id": "HZT-0093-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 14640
+      },
+      {
+        "id": "HZT-0093-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 25620
+      },
+      {
+        "id": "HZT-0093-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3660
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0093-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3514,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0093-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0093-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0093-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7320,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0094",
+    "annualCtc": 786000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0094-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 26200
+      },
+      {
+        "id": "HZT-0094-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13100
+      },
+      {
+        "id": "HZT-0094-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 22925
+      },
+      {
+        "id": "HZT-0094-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3275
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0094-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3144,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0094-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0094-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0094-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6550,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0095",
+    "annualCtc": 903000,
+    "effectiveFrom": "2026-12-22",
+    "earnings": [
+      {
+        "id": "HZT-0095-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 30120
+      },
+      {
+        "id": "HZT-0095-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 15060
+      },
+      {
+        "id": "HZT-0095-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 26355
+      },
+      {
+        "id": "HZT-0095-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3765
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0095-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3614,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0095-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0095-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0095-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7530,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0096",
+    "annualCtc": 813000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0096-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 27120
+      },
+      {
+        "id": "HZT-0096-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13560
+      },
+      {
+        "id": "HZT-0096-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 23730
+      },
+      {
+        "id": "HZT-0096-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3390
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0096-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3254,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0096-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0096-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0096-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0097",
+    "annualCtc": 837000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0097-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 27920
+      },
+      {
+        "id": "HZT-0097-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13960
+      },
+      {
+        "id": "HZT-0097-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 24430
+      },
+      {
+        "id": "HZT-0097-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3490
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0097-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3350,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0097-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0097-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0097-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6980,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0098",
+    "annualCtc": 1737000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0098-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 57920
+      },
+      {
+        "id": "HZT-0098-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28960
+      },
+      {
+        "id": "HZT-0098-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 50680
+      },
+      {
+        "id": "HZT-0098-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7240
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0098-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6950,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0098-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0098-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0098-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14480,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0099",
+    "annualCtc": 1637000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0099-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54560
+      },
+      {
+        "id": "HZT-0099-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27280
+      },
+      {
+        "id": "HZT-0099-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47740
+      },
+      {
+        "id": "HZT-0099-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6820
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0099-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6547,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0099-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0099-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0099-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13640,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0100",
+    "annualCtc": 2928000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0100-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 97600
+      },
+      {
+        "id": "HZT-0100-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 48800
+      },
+      {
+        "id": "HZT-0100-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 85400
+      },
+      {
+        "id": "HZT-0100-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 12200
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0100-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 11712,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0100-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0100-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0100-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 24400,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0101",
+    "annualCtc": 1637000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0101-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 54560
+      },
+      {
+        "id": "HZT-0101-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27280
+      },
+      {
+        "id": "HZT-0101-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 47740
+      },
+      {
+        "id": "HZT-0101-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6820
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0101-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6547,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0101-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0101-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0101-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13640,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0102",
+    "annualCtc": 1526000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0102-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50880
+      },
+      {
+        "id": "HZT-0102-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25440
+      },
+      {
+        "id": "HZT-0102-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44520
+      },
+      {
+        "id": "HZT-0102-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6360
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0102-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6106,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0102-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0102-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0102-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12720,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0103",
+    "annualCtc": 1567000,
+    "effectiveFrom": "2026-08-05",
+    "earnings": [
+      {
+        "id": "HZT-0103-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52240
+      },
+      {
+        "id": "HZT-0103-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26120
+      },
+      {
+        "id": "HZT-0103-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 45710
+      },
+      {
+        "id": "HZT-0103-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6530
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0103-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6269,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0103-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0103-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0103-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13060,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0104",
+    "annualCtc": 1564000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0104-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52120
+      },
+      {
+        "id": "HZT-0104-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26060
+      },
+      {
+        "id": "HZT-0104-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 45605
+      },
+      {
+        "id": "HZT-0104-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6515
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0104-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6254,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0104-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0104-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0104-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13030,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0105",
+    "annualCtc": 1405000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0105-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 46840
+      },
+      {
+        "id": "HZT-0105-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23420
+      },
+      {
+        "id": "HZT-0105-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 40985
+      },
+      {
+        "id": "HZT-0105-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5855
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0105-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5621,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0105-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0105-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0105-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11710,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0106",
+    "annualCtc": 1754000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0106-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 58480
+      },
+      {
+        "id": "HZT-0106-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29240
+      },
+      {
+        "id": "HZT-0106-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51170
+      },
+      {
+        "id": "HZT-0106-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7310
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0106-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7018,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0106-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0106-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0106-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14620,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0107",
+    "annualCtc": 859000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0107-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 28640
+      },
+      {
+        "id": "HZT-0107-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 14320
+      },
+      {
+        "id": "HZT-0107-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 25060
+      },
+      {
+        "id": "HZT-0107-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3580
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0107-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3437,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0107-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0107-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0107-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7160,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0108",
+    "annualCtc": 836000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0108-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 27880
+      },
+      {
+        "id": "HZT-0108-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13940
+      },
+      {
+        "id": "HZT-0108-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 24395
+      },
+      {
+        "id": "HZT-0108-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3485
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0108-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3346,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0108-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0108-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0108-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6970,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0109",
+    "annualCtc": 3945000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0109-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 131520
+      },
+      {
+        "id": "HZT-0109-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 65760
+      },
+      {
+        "id": "HZT-0109-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 115080
+      },
+      {
+        "id": "HZT-0109-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 16440
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0109-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 15782,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0109-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0109-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0109-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 32880,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0110",
+    "annualCtc": 1428000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0110-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 47600
+      },
+      {
+        "id": "HZT-0110-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23800
+      },
+      {
+        "id": "HZT-0110-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41650
+      },
+      {
+        "id": "HZT-0110-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5950
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0110-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5712,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0110-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0110-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0110-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11900,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0111",
+    "annualCtc": 1434000,
+    "effectiveFrom": "2026-04-13",
+    "earnings": [
+      {
+        "id": "HZT-0111-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 47800
+      },
+      {
+        "id": "HZT-0111-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 23900
+      },
+      {
+        "id": "HZT-0111-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 41825
+      },
+      {
+        "id": "HZT-0111-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 5975
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0111-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5736,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0111-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0111-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0111-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 11950,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0112",
+    "annualCtc": 1558000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0112-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 51920
+      },
+      {
+        "id": "HZT-0112-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25960
+      },
+      {
+        "id": "HZT-0112-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 45430
+      },
+      {
+        "id": "HZT-0112-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6490
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0112-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6230,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0112-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0112-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0112-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12980,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0113",
+    "annualCtc": 1756000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0113-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 58520
+      },
+      {
+        "id": "HZT-0113-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29260
+      },
+      {
+        "id": "HZT-0113-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51205
+      },
+      {
+        "id": "HZT-0113-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7315
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0113-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7022,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0113-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0113-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0113-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14630,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0114",
+    "annualCtc": 1515000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0114-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50520
+      },
+      {
+        "id": "HZT-0114-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25260
+      },
+      {
+        "id": "HZT-0114-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44205
+      },
+      {
+        "id": "HZT-0114-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6315
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0114-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6062,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0114-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0114-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0114-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12630,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0115",
+    "annualCtc": 1779000,
+    "effectiveFrom": "2026-08-03",
+    "earnings": [
+      {
+        "id": "HZT-0115-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 59320
+      },
+      {
+        "id": "HZT-0115-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29660
+      },
+      {
+        "id": "HZT-0115-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51905
+      },
+      {
+        "id": "HZT-0115-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7415
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0115-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7118,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0115-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0115-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0115-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14830,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0116",
+    "annualCtc": 1588000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0116-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 52920
+      },
+      {
+        "id": "HZT-0116-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 26460
+      },
+      {
+        "id": "HZT-0116-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 46305
+      },
+      {
+        "id": "HZT-0116-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6615
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0116-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6350,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0116-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0116-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0116-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13230,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0117",
+    "annualCtc": 1654000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0117-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 55120
+      },
+      {
+        "id": "HZT-0117-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 27560
+      },
+      {
+        "id": "HZT-0117-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 48230
+      },
+      {
+        "id": "HZT-0117-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6890
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0117-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6614,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0117-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0117-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0117-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 13780,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0118",
+    "annualCtc": 912000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0118-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 30400
+      },
+      {
+        "id": "HZT-0118-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 15200
+      },
+      {
+        "id": "HZT-0118-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 26600
+      },
+      {
+        "id": "HZT-0118-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3800
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0118-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3648,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0118-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0118-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0118-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7600,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0119",
+    "annualCtc": 881000,
+    "effectiveFrom": "2026-12-21",
+    "earnings": [
+      {
+        "id": "HZT-0119-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 29360
+      },
+      {
+        "id": "HZT-0119-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 14680
+      },
+      {
+        "id": "HZT-0119-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 25690
+      },
+      {
+        "id": "HZT-0119-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3670
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0119-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3523,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0119-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0119-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0119-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7340,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0120",
+    "annualCtc": 847000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0120-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 28240
+      },
+      {
+        "id": "HZT-0120-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 14120
+      },
+      {
+        "id": "HZT-0120-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 24710
+      },
+      {
+        "id": "HZT-0120-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3530
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0120-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3389,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0120-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0120-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0120-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 7060,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0121",
+    "annualCtc": 4726000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0121-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 157520
+      },
+      {
+        "id": "HZT-0121-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 78760
+      },
+      {
+        "id": "HZT-0121-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 137830
+      },
+      {
+        "id": "HZT-0121-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 19690
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0121-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 18902,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0121-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0121-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0121-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 39380,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0122",
+    "annualCtc": 1525000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0122-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 50840
+      },
+      {
+        "id": "HZT-0122-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 25420
+      },
+      {
+        "id": "HZT-0122-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 44485
+      },
+      {
+        "id": "HZT-0122-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6355
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0122-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6101,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0122-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0122-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0122-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12710,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0123",
+    "annualCtc": 1692000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0123-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 56400
+      },
+      {
+        "id": "HZT-0123-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 28200
+      },
+      {
+        "id": "HZT-0123-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 49350
+      },
+      {
+        "id": "HZT-0123-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7050
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0123-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 6768,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0123-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0123-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0123-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14100,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0124",
+    "annualCtc": 1755000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0124-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 58520
+      },
+      {
+        "id": "HZT-0124-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 29260
+      },
+      {
+        "id": "HZT-0124-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 51205
+      },
+      {
+        "id": "HZT-0124-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 7315
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0124-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 7022,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0124-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0124-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0124-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 14630,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0125",
+    "annualCtc": 765000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0125-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 25520
+      },
+      {
+        "id": "HZT-0125-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 12760
+      },
+      {
+        "id": "HZT-0125-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 22330
+      },
+      {
+        "id": "HZT-0125-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3190
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0125-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3062,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0125-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0125-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0125-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6380,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0126",
+    "annualCtc": 788000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0126-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 26280
+      },
+      {
+        "id": "HZT-0126-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 13140
+      },
+      {
+        "id": "HZT-0126-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 22995
+      },
+      {
+        "id": "HZT-0126-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 3285
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0126-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 3154,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0126-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0126-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0126-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 6570,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0127",
+    "annualCtc": 3991000,
+    "effectiveFrom": "2026-08-04",
+    "earnings": [
+      {
+        "id": "HZT-0127-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 133040
+      },
+      {
+        "id": "HZT-0127-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 66520
+      },
+      {
+        "id": "HZT-0127-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 116410
+      },
+      {
+        "id": "HZT-0127-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 16630
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0127-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 15965,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0127-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0127-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0127-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 33260,
+        "statutory": true
+      }
+    ]
+  },
+  {
+    "employeeId": "HZT-0128",
+    "annualCtc": 1467000,
+    "effectiveFrom": "2026-04-01",
+    "earnings": [
+      {
+        "id": "HZT-0128-basic",
+        "name": "Basic Salary",
+        "type": "earning",
+        "amount": 48920
+      },
+      {
+        "id": "HZT-0128-hra",
+        "name": "House Rent Allowance",
+        "type": "earning",
+        "amount": 24460
+      },
+      {
+        "id": "HZT-0128-special",
+        "name": "Special Allowance",
+        "type": "earning",
+        "amount": 42805
+      },
+      {
+        "id": "HZT-0128-conveyance",
+        "name": "Conveyance Allowance",
+        "type": "earning",
+        "amount": 6115
+      }
+    ],
+    "deductions": [
+      {
+        "id": "HZT-0128-pf",
+        "name": "Provident Fund (Employee)",
+        "type": "deduction",
+        "amount": 5870,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0128-esi",
+        "name": "ESI (Employee)",
+        "type": "deduction",
+        "amount": 0,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0128-pt",
+        "name": "Professional Tax",
+        "type": "deduction",
+        "amount": 200,
+        "statutory": true
+      },
+      {
+        "id": "HZT-0128-tds",
+        "name": "TDS (Illustrative)",
+        "type": "deduction",
+        "amount": 12230,
+        "statutory": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "REV-SELF-HZT-0001",
+    "employeeId": "HZT-0001",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Self",
+    "rating": 3,
+    "status": "Pending"
+  },
+  {
+    "id": "REV-MGR-HZT-0001",
+    "employeeId": "HZT-0001",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0002",
+    "employeeId": "HZT-0002",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0002",
+    "type": "Self",
+    "rating": 4,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0002",
+    "employeeId": "HZT-0002",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Exceeded delivery targets this cycle. Next focus area is broader stakeholder communication."
+  },
+  {
+    "id": "REV-SELF-HZT-0003",
+    "employeeId": "HZT-0003",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Self",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0003",
+    "employeeId": "HZT-0003",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Solid technical contribution with visible growth in ownership. Continue building mentoring capability."
+  },
+  {
+    "id": "REV-SELF-HZT-0004",
+    "employeeId": "HZT-0004",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0004",
+    "type": "Self",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0004",
+    "employeeId": "HZT-0004",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0005",
+    "employeeId": "HZT-0005",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0005",
+    "type": "Self",
+    "rating": 4,
+    "status": "Pending"
+  },
+  {
+    "id": "REV-MGR-HZT-0005",
+    "employeeId": "HZT-0005",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Strong people leadership and clear prioritisation. Continue improving cross-functional planning."
+  },
+  {
+    "id": "REV-SELF-HZT-0006",
+    "employeeId": "HZT-0006",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0006",
+    "type": "Self",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0006",
+    "employeeId": "HZT-0006",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0002",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Good progress on individual goals. Recommend sharper focus on measurable outcomes next cycle."
+  },
+  {
+    "id": "REV-SELF-HZT-0007",
+    "employeeId": "HZT-0007",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0007",
+    "type": "Self",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0007",
+    "employeeId": "HZT-0007",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0008",
+    "employeeId": "HZT-0008",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0008",
+    "type": "Self",
+    "rating": 4,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0008",
+    "employeeId": "HZT-0008",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0007",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Exceeded delivery targets this cycle. Next focus area is broader stakeholder communication."
+  },
+  {
+    "id": "REV-SELF-HZT-0009",
+    "employeeId": "HZT-0009",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0009",
+    "type": "Self",
+    "rating": 5,
+    "status": "Pending"
+  },
+  {
+    "id": "REV-MGR-HZT-0009",
+    "employeeId": "HZT-0009",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Solid technical contribution with visible growth in ownership. Continue building mentoring capability."
+  },
+  {
+    "id": "REV-SELF-HZT-0010",
+    "employeeId": "HZT-0010",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0010",
+    "type": "Self",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0010",
+    "employeeId": "HZT-0010",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0001",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0011",
+    "employeeId": "HZT-0011",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0011",
+    "type": "Self",
+    "rating": 4,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0011",
+    "employeeId": "HZT-0011",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Strong people leadership and clear prioritisation. Continue improving cross-functional planning."
+  },
+  {
+    "id": "REV-SELF-HZT-0012",
+    "employeeId": "HZT-0012",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0012",
+    "type": "Self",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0012",
+    "employeeId": "HZT-0012",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Good progress on individual goals. Recommend sharper focus on measurable outcomes next cycle."
+  },
+  {
+    "id": "REV-SELF-HZT-0013",
+    "employeeId": "HZT-0013",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0013",
+    "type": "Self",
+    "rating": 3,
+    "status": "Pending"
+  },
+  {
+    "id": "REV-MGR-HZT-0013",
+    "employeeId": "HZT-0013",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0014",
+    "employeeId": "HZT-0014",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0014",
+    "type": "Self",
+    "rating": 4,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0014",
+    "employeeId": "HZT-0014",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Exceeded delivery targets this cycle. Next focus area is broader stakeholder communication."
+  },
+  {
+    "id": "REV-SELF-HZT-0015",
+    "employeeId": "HZT-0015",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0015",
+    "type": "Self",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0015",
+    "employeeId": "HZT-0015",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Solid technical contribution with visible growth in ownership. Continue building mentoring capability."
+  },
+  {
+    "id": "REV-SELF-HZT-0016",
+    "employeeId": "HZT-0016",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0016",
+    "type": "Self",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0016",
+    "employeeId": "HZT-0016",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0017",
+    "employeeId": "HZT-0017",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0017",
+    "type": "Self",
+    "rating": 4,
+    "status": "Pending"
+  },
+  {
+    "id": "REV-MGR-HZT-0017",
+    "employeeId": "HZT-0017",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Strong people leadership and clear prioritisation. Continue improving cross-functional planning."
+  },
+  {
+    "id": "REV-SELF-HZT-0018",
+    "employeeId": "HZT-0018",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0018",
+    "type": "Self",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0018",
+    "employeeId": "HZT-0018",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Good progress on individual goals. Recommend sharper focus on measurable outcomes next cycle."
+  },
+  {
+    "id": "REV-SELF-HZT-0019",
+    "employeeId": "HZT-0019",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0019",
+    "type": "Self",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0019",
+    "employeeId": "HZT-0019",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0020",
+    "employeeId": "HZT-0020",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0020",
+    "type": "Self",
+    "rating": 4,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0020",
+    "employeeId": "HZT-0020",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Exceeded delivery targets this cycle. Next focus area is broader stakeholder communication."
+  },
+  {
+    "id": "REV-SELF-HZT-0021",
+    "employeeId": "HZT-0021",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0021",
+    "type": "Self",
+    "rating": 5,
+    "status": "Pending"
+  },
+  {
+    "id": "REV-MGR-HZT-0021",
+    "employeeId": "HZT-0021",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Solid technical contribution with visible growth in ownership. Continue building mentoring capability."
+  },
+  {
+    "id": "REV-SELF-HZT-0022",
+    "employeeId": "HZT-0022",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0022",
+    "type": "Self",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0022",
+    "employeeId": "HZT-0022",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 4,
+    "status": "In Progress"
+  },
+  {
+    "id": "REV-SELF-HZT-0023",
+    "employeeId": "HZT-0023",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0023",
+    "type": "Self",
+    "rating": 4,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0023",
+    "employeeId": "HZT-0023",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Strong people leadership and clear prioritisation. Continue improving cross-functional planning."
+  },
+  {
+    "id": "REV-SELF-HZT-0024",
+    "employeeId": "HZT-0024",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0024",
+    "type": "Self",
+    "rating": 5,
+    "status": "Completed",
+    "submittedOn": "2026-10-24",
+    "summary": "Shared progress against goals and areas where I would like more support."
+  },
+  {
+    "id": "REV-MGR-HZT-0024",
+    "employeeId": "HZT-0024",
+    "cycleId": "CYC-2026-H2",
+    "reviewerId": "HZT-0003",
+    "type": "Manager",
+    "rating": 3,
+    "status": "Completed",
+    "submittedOn": "2026-10-27",
+    "summary": "Good progress on individual goals. Recommend sharper focus on measurable outcomes next cycle."
+  }
+]

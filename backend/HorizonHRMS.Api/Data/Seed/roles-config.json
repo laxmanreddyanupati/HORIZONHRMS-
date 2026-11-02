@@ -1,0 +1,38 @@
+[
+  {
+    "id": "super-admin",
+    "name": "Super Admin",
+    "description": "Full platform access and configuration.",
+    "members": 2
+  },
+  {
+    "id": "hr-admin",
+    "name": "HR Admin",
+    "description": "People operations, policies and reporting.",
+    "members": 1
+  },
+  {
+    "id": "hr-executive",
+    "name": "HR Executive",
+    "description": "Employee records, recruitment and HR operations.",
+    "members": 2
+  },
+  {
+    "id": "manager",
+    "name": "Manager",
+    "description": "Team attendance, leave, performance and expenses.",
+    "members": 2
+  },
+  {
+    "id": "payroll-admin",
+    "name": "Payroll Admin",
+    "description": "Payroll processing and salary configuration.",
+    "members": 2
+  },
+  {
+    "id": "employee",
+    "name": "Employee",
+    "description": "Self-service attendance, leave and payslips.",
+    "members": 1
+  }
+]

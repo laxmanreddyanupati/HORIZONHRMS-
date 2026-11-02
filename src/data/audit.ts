@@ -1,0 +1,26 @@
+import type { AuditLog } from '@/types'
+
+export const auditLogs: AuditLog[] = [
+  { id: 'AUD-9001', actor: 'Priya Menon', actorRole: 'HR Admin', action: 'Approved leave request', module: 'Leave', target: 'LV-1012 · Aditi Sharma', timestamp: '2026-10-30T09:51:00', ipAddress: '10.24.8.14' },
+  { id: 'AUD-9002', actor: 'Meera Joshi', actorRole: 'Payroll Admin', action: 'Generated payroll preview', module: 'Payroll', target: 'October 2026 payroll run', timestamp: '2026-10-30T08:20:00', ipAddress: '10.24.11.32' },
+  { id: 'AUD-9003', actor: 'Sneha Reddy', actorRole: 'HR Executive', action: 'Updated employee record', module: 'Employees', target: 'HZT-0067 · Ananya Deshpande', timestamp: '2026-10-29T18:04:00', ipAddress: '10.24.8.27' },
+  { id: 'AUD-9004', actor: 'Rohan Iyer', actorRole: 'Manager', action: 'Submitted performance feedback', module: 'Performance', target: 'HZT-0005 · Arjun Nair', timestamp: '2026-10-29T16:45:00', ipAddress: '10.24.9.61' },
+  { id: 'AUD-9005', actor: 'Kavita Rao', actorRole: 'Super Admin', action: 'Updated permission matrix', module: 'Administration', target: 'Role · HR Executive', timestamp: '2026-10-29T15:12:00', ipAddress: '10.24.2.8' },
+  { id: 'AUD-9006', actor: 'Priya Menon', actorRole: 'HR Admin', action: 'Created job opening', module: 'Recruitment', target: 'JOB-1008 · DevOps Engineer', timestamp: '2026-10-29T12:30:00', ipAddress: '10.24.8.14' },
+  { id: 'AUD-9007', actor: 'Aditya Verma', actorRole: 'Manager', action: 'Rejected expense claim', module: 'Expenses', target: 'EXP-5008 · ₹4,250', timestamp: '2026-10-29T11:16:00', ipAddress: '10.24.12.44' },
+  { id: 'AUD-9008', actor: 'System', actorRole: 'Automation', action: 'Sent payroll reminder', module: 'Payroll', target: '12 pending inputs', timestamp: '2026-10-29T07:00:00', ipAddress: '—' },
+  { id: 'AUD-9009', actor: 'Kavita Rao', actorRole: 'Super Admin', action: 'Invited system user', module: 'User Management', target: 'dev.patel@horizontech.example', timestamp: '2026-10-28T17:40:00', ipAddress: '10.24.2.8' },
+  { id: 'AUD-9010', actor: 'Priya Menon', actorRole: 'HR Admin', action: 'Deactivated employee', module: 'Employees', target: 'HZT-0048 · Sahil Bhatt', timestamp: '2026-10-28T14:22:00', ipAddress: '10.24.8.14' },
+  { id: 'AUD-9011', actor: 'Meera Joshi', actorRole: 'Payroll Admin', action: 'Exported bank transfer file (demo)', module: 'Payroll', target: 'September 2026 payroll run', timestamp: '2026-10-28T11:05:00', ipAddress: '10.24.11.32' },
+  { id: 'AUD-9012', actor: 'Sneha Reddy', actorRole: 'HR Executive', action: 'Scheduled interview', module: 'Recruitment', target: 'CND-2010 · Devika Pillai', timestamp: '2026-10-28T10:14:00', ipAddress: '10.24.8.27' },
+  { id: 'AUD-9013', actor: 'Rohan Iyer', actorRole: 'Manager', action: 'Approved attendance correction', module: 'Attendance', target: 'ACR-1003 · HZT-0067', timestamp: '2026-10-27T17:32:00', ipAddress: '10.24.9.61' },
+  { id: 'AUD-9014', actor: 'Priya Menon', actorRole: 'HR Admin', action: 'Updated leave policy', module: 'Settings', target: 'Earned Leave · carry forward', timestamp: '2026-10-27T15:48:00', ipAddress: '10.24.8.14' },
+  { id: 'AUD-9015', actor: 'System', actorRole: 'Automation', action: 'Created work anniversary digest', module: 'Dashboard', target: '5 employees this week', timestamp: '2026-10-27T06:30:00', ipAddress: '—' },
+  { id: 'AUD-9016', actor: 'Karthik Subramanian', actorRole: 'Manager', action: 'Approved expense claim', module: 'Expenses', target: 'EXP-5002 · ₹6,840', timestamp: '2026-10-26T18:20:00', ipAddress: '10.24.10.19' },
+  { id: 'AUD-9017', actor: 'Sneha Reddy', actorRole: 'HR Executive', action: 'Added employee document', module: 'Employees', target: 'HZT-0012 · Offer Letter', timestamp: '2026-10-26T13:10:00', ipAddress: '10.24.8.27' },
+  { id: 'AUD-9018', actor: 'Kavita Rao', actorRole: 'Super Admin', action: 'Enabled MFA requirement', module: 'Administration', target: 'All admin roles', timestamp: '2026-10-25T16:00:00', ipAddress: '10.24.2.8' },
+  { id: 'AUD-9019', actor: 'System', actorRole: 'Automation', action: 'Archived payroll run', module: 'Payroll', target: 'August 2026 payroll run', timestamp: '2026-10-25T02:00:00', ipAddress: '—' },
+  { id: 'AUD-9020', actor: 'Priya Menon', actorRole: 'HR Admin', action: 'Added holiday to calendar', module: 'Settings', target: 'Diwali · 8 Nov 2026', timestamp: '2026-10-24T12:44:00', ipAddress: '10.24.8.14' },
+  { id: 'AUD-9021', actor: 'Rohan Iyer', actorRole: 'Manager', action: 'Updated employee goals', module: 'Performance', target: 'HZT-0018 · Platform stability', timestamp: '2026-10-23T15:25:00', ipAddress: '10.24.9.61' },
+  { id: 'AUD-9022', actor: 'Meera Joshi', actorRole: 'Payroll Admin', action: 'Viewed salary structure', module: 'Payroll', target: 'HZT-0024 · Restricted', timestamp: '2026-10-23T10:05:00', ipAddress: '10.24.11.32' },
+]

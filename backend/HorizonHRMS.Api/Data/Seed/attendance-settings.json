@@ -1,0 +1,12 @@
+{
+  "workWeek": "Monday to Friday",
+  "shiftStart": "09:00",
+  "shiftEnd": "18:00",
+  "graceMinutes": 15,
+  "halfDayHours": 4,
+  "fullDayHours": 8,
+  "autoMarkAbsent": true,
+  "requireLocation": false,
+  "allowCorrections": true,
+  "correctionWindowDays": 7
+}

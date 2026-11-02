@@ -1,0 +1,38 @@
+[
+  {
+    "id": "leave",
+    "label": "Leave requests and approvals",
+    "email": true,
+    "inApp": true
+  },
+  {
+    "id": "payroll",
+    "label": "Payroll processing and payslips",
+    "email": true,
+    "inApp": true
+  },
+  {
+    "id": "attendance",
+    "label": "Attendance exceptions and corrections",
+    "email": false,
+    "inApp": true
+  },
+  {
+    "id": "recruitment",
+    "label": "Candidate pipeline and interviews",
+    "email": true,
+    "inApp": true
+  },
+  {
+    "id": "performance",
+    "label": "Performance review reminders",
+    "email": true,
+    "inApp": false
+  },
+  {
+    "id": "announcements",
+    "label": "Company announcements",
+    "email": true,
+    "inApp": true
+  }
+]

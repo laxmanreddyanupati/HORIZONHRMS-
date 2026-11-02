@@ -1,0 +1,92 @@
+[
+  {
+    "id": "NTF-001",
+    "title": "Leave request awaiting approval",
+    "message": "Rahul Chauhan requested 3 days of casual leave from 2 Nov 2026.",
+    "time": "2026-10-30T09:42:00",
+    "type": "leave",
+    "read": false,
+    "href": "/leave?tab=approvals"
+  },
+  {
+    "id": "NTF-002",
+    "title": "October payroll is ready for preview",
+    "message": "The draft payroll run for October 2026 is ready for review before processing.",
+    "time": "2026-10-30T08:15:00",
+    "type": "payroll",
+    "read": false,
+    "href": "/payroll?tab=preview"
+  },
+  {
+    "id": "NTF-003",
+    "title": "Attendance correction requested",
+    "message": "Three attendance corrections are pending review for the Bengaluru office.",
+    "time": "2026-10-29T17:28:00",
+    "type": "attendance",
+    "read": false,
+    "href": "/attendance?tab=corrections"
+  },
+  {
+    "id": "NTF-004",
+    "title": "Interview scheduled",
+    "message": "Technical Round 2 for Nikhil Bhatia is scheduled for 31 Oct at 10:00 AM.",
+    "time": "2026-10-29T15:02:00",
+    "type": "recruitment",
+    "read": false,
+    "href": "/recruitment?tab=interviews"
+  },
+  {
+    "id": "NTF-005",
+    "title": "Expense claim submitted",
+    "message": "Ira Banerjee submitted a travel claim of ₹5,480 for review.",
+    "time": "2026-10-29T12:40:00",
+    "type": "system",
+    "read": false,
+    "href": "/expenses"
+  },
+  {
+    "id": "NTF-006",
+    "title": "Performance self-review due",
+    "message": "Self reviews for the H2 2026 cycle close on 15 November 2026.",
+    "time": "2026-10-28T10:00:00",
+    "type": "system",
+    "read": true,
+    "href": "/performance?tab=reviews"
+  },
+  {
+    "id": "NTF-007",
+    "title": "New joiner confirmed",
+    "message": "Deepak Ghosh has accepted the offer for Customer Success Executive.",
+    "time": "2026-10-27T16:20:00",
+    "type": "recruitment",
+    "read": true,
+    "href": "/recruitment?tab=candidates"
+  },
+  {
+    "id": "NTF-008",
+    "title": "Payroll inputs pending",
+    "message": "Two employees have pending reimbursement entries for the October payroll.",
+    "time": "2026-10-27T09:12:00",
+    "type": "payroll",
+    "read": true,
+    "href": "/payroll"
+  },
+  {
+    "id": "NTF-009",
+    "title": "Diwali holiday reminder",
+    "message": "The Hyderabad and Bengaluru offices will be closed on 8 November 2026.",
+    "time": "2026-10-26T11:30:00",
+    "type": "system",
+    "read": true,
+    "href": "/attendance?tab=holidays"
+  },
+  {
+    "id": "NTF-010",
+    "title": "Onboarding checklist complete",
+    "message": "Sneha Reddy completed the October onboarding checklist for 6 new employees.",
+    "time": "2026-10-25T14:05:00",
+    "type": "system",
+    "read": true,
+    "href": "/employees"
+  }
+]

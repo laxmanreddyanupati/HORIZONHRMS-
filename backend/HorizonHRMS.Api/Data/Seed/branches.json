@@ -1,0 +1,52 @@
+[
+  {
+    "id": "br-hyd",
+    "name": "Hyderabad Headquarters",
+    "address": "Level 8, Horizon Tower, Hitech City, Madhapur",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "phone": "+91 40 6789 1200",
+    "headId": "HZT-0001",
+    "isHeadquarters": true
+  },
+  {
+    "id": "br-blr",
+    "name": "Bengaluru Office",
+    "address": "4th Floor, Prestige Tech Park, Kadubeesanahalli",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "phone": "+91 80 4567 8900",
+    "headId": "HZT-0009",
+    "isHeadquarters": false
+  },
+  {
+    "id": "br-pune",
+    "name": "Pune Office",
+    "address": "Unit 302, Panchshil Business Park, Baner",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "phone": "+91 20 6712 4400",
+    "headId": "HZT-0004",
+    "isHeadquarters": false
+  },
+  {
+    "id": "br-che",
+    "name": "Chennai Office",
+    "address": "6th Floor, Olympia Cyberspace, Guindy",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "phone": "+91 44 4850 3300",
+    "headId": "HZT-0007",
+    "isHeadquarters": false
+  },
+  {
+    "id": "br-remote",
+    "name": "Remote — India",
+    "address": "Distributed workforce across India",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "phone": "+91 40 6789 1299",
+    "headId": null,
+    "isHeadquarters": false
+  }
+]

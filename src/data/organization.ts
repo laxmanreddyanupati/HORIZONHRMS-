@@ -1,0 +1,194 @@
+import type { Branch, Department } from '@/types'
+
+export const branches: Branch[] = [
+  {
+    id: 'br-hyd',
+    name: 'Hyderabad Headquarters',
+    address: 'Level 8, Horizon Tower, Hitech City, Madhapur',
+    city: 'Hyderabad',
+    state: 'Telangana',
+    phone: '+91 40 6789 1200',
+    headId: 'HZT-0001',
+    isHeadquarters: true,
+  },
+  {
+    id: 'br-blr',
+    name: 'Bengaluru Office',
+    address: '4th Floor, Prestige Tech Park, Kadubeesanahalli',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    phone: '+91 80 4567 8900',
+    headId: 'HZT-0009',
+    isHeadquarters: false,
+  },
+  {
+    id: 'br-pune',
+    name: 'Pune Office',
+    address: 'Unit 302, Panchshil Business Park, Baner',
+    city: 'Pune',
+    state: 'Maharashtra',
+    phone: '+91 20 6712 4400',
+    headId: 'HZT-0004',
+    isHeadquarters: false,
+  },
+  {
+    id: 'br-che',
+    name: 'Chennai Office',
+    address: '6th Floor, Olympia Cyberspace, Guindy',
+    city: 'Chennai',
+    state: 'Tamil Nadu',
+    phone: '+91 44 4850 3300',
+    headId: 'HZT-0007',
+    isHeadquarters: false,
+  },
+  {
+    id: 'br-remote',
+    name: 'Remote — India',
+    address: 'Distributed workforce across India',
+    city: 'Hyderabad',
+    state: 'Telangana',
+    phone: '+91 40 6789 1299',
+    headId: null,
+    isHeadquarters: false,
+  },
+]
+
+export const departments: Department[] = [
+  {
+    id: 'dept-exec',
+    name: 'Executive Office',
+    code: 'EXEC',
+    description: 'Company strategy, governance and executive leadership.',
+    headId: 'HZT-0001',
+    parentId: null,
+    location: 'Hyderabad HQ',
+    email: 'executive.office@horizontech.example',
+    createdAt: '2016-04-01',
+  },
+  {
+    id: 'dept-eng',
+    name: 'Engineering',
+    code: 'ENG',
+    description: 'Platform engineering, product development, QA and infrastructure.',
+    headId: 'HZT-0003',
+    parentId: null,
+    location: 'Hyderabad HQ',
+    email: 'engineering@horizontech.example',
+    createdAt: '2016-04-01',
+  },
+  {
+    id: 'dept-product',
+    name: 'Product',
+    code: 'PRD',
+    description: 'Product strategy, discovery, roadmap and business analysis.',
+    headId: 'HZT-0051',
+    parentId: null,
+    location: 'Bengaluru',
+    email: 'product@horizontech.example',
+    createdAt: '2017-01-15',
+  },
+  {
+    id: 'dept-design',
+    name: 'Design',
+    code: 'DES',
+    description: 'Product design, design systems, research and brand experience.',
+    headId: 'HZT-0004',
+    parentId: null,
+    location: 'Pune',
+    email: 'design@horizontech.example',
+    createdAt: '2018-06-04',
+  },
+  {
+    id: 'dept-hr',
+    name: 'Human Resources',
+    code: 'HR',
+    description: 'People strategy, talent acquisition, HR operations and engagement.',
+    headId: 'HZT-0002',
+    parentId: null,
+    location: 'Hyderabad HQ',
+    email: 'people@horizontech.example',
+    createdAt: '2016-04-01',
+  },
+  {
+    id: 'dept-finance',
+    name: 'Finance',
+    code: 'FIN',
+    description: 'Controllership, payroll, FP&A, taxation and commercial operations.',
+    headId: 'HZT-0007',
+    parentId: null,
+    location: 'Chennai',
+    email: 'finance@horizontech.example',
+    createdAt: '2016-05-10',
+  },
+  {
+    id: 'dept-sales',
+    name: 'Sales',
+    code: 'SLS',
+    description: 'Enterprise and mid-market revenue across India.',
+    headId: 'HZT-0009',
+    parentId: null,
+    location: 'Bengaluru',
+    email: 'sales@horizontech.example',
+    createdAt: '2016-07-01',
+  },
+  {
+    id: 'dept-marketing',
+    name: 'Marketing',
+    code: 'MKT',
+    description: 'Brand, content, demand generation and product marketing.',
+    headId: 'HZT-0010',
+    parentId: null,
+    location: 'Bengaluru',
+    email: 'marketing@horizontech.example',
+    createdAt: '2017-02-20',
+  },
+  {
+    id: 'dept-cs',
+    name: 'Customer Success',
+    code: 'CS',
+    description: 'Onboarding, adoption, support and renewals for enterprise customers.',
+    headId: 'HZT-0109',
+    parentId: null,
+    location: 'Hyderabad HQ',
+    email: 'customer.success@horizontech.example',
+    createdAt: '2017-08-12',
+  },
+  {
+    id: 'dept-itops',
+    name: 'IT Operations',
+    code: 'ITO',
+    description: 'Corporate IT, infrastructure, security and workplace technology.',
+    headId: 'HZT-0121',
+    parentId: null,
+    location: 'Hyderabad HQ',
+    email: 'it.operations@horizontech.example',
+    createdAt: '2016-06-15',
+  },
+  {
+    id: 'dept-legal',
+    name: 'Legal & Compliance',
+    code: 'LGL',
+    description: 'Contracts, corporate legal, privacy and regulatory compliance.',
+    headId: 'HZT-0127',
+    parentId: null,
+    location: 'Hyderabad HQ',
+    email: 'legal@horizontech.example',
+    createdAt: '2019-03-01',
+  },
+]
+
+export function getDepartmentById(id: string): Department | undefined {
+  return departments.find((department) => department.id === id)
+}
+
+export function getDepartmentName(id: string): string {
+  return getDepartmentById(id)?.name ?? '—'
+}
+
+export function getBranchById(id: string): Branch | undefined {
+  return branches.find((branch) => branch.id === id)
+}
+
+export function getBranchName(id: string): string {
+  return getBranchById(id)?.name ?? '—'
+}

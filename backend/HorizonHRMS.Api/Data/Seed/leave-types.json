@@ -1,0 +1,62 @@
+[
+  {
+    "id": "lt-casual",
+    "name": "Casual Leave",
+    "code": "CL",
+    "color": "#2563eb",
+    "annualQuota": 12,
+    "carryForward": false,
+    "requiresDocument": false,
+    "description": "Short planned absences for personal matters. Applied at least two days in advance."
+  },
+  {
+    "id": "lt-sick",
+    "name": "Sick Leave",
+    "code": "SL",
+    "color": "#f59e0b",
+    "annualQuota": 10,
+    "carryForward": true,
+    "requiresDocument": true,
+    "description": "Absence due to illness. A medical certificate is required for three or more consecutive days."
+  },
+  {
+    "id": "lt-earned",
+    "name": "Earned Leave",
+    "code": "EL",
+    "color": "#14b8a6",
+    "annualQuota": 18,
+    "carryForward": true,
+    "requiresDocument": false,
+    "description": "Planned annual leave accrued monthly. Up to 10 days may be carried forward."
+  },
+  {
+    "id": "lt-unpaid",
+    "name": "Leave Without Pay",
+    "code": "LWP",
+    "color": "#64748b",
+    "annualQuota": 0,
+    "carryForward": false,
+    "requiresDocument": false,
+    "description": "Unpaid leave used when paid balances are exhausted. Requires manager and HR approval."
+  },
+  {
+    "id": "lt-paternity",
+    "name": "Paternity Leave",
+    "code": "PL",
+    "color": "#8b5cf6",
+    "annualQuota": 10,
+    "carryForward": false,
+    "requiresDocument": true,
+    "description": "Paid leave for employees on the birth or adoption of a child, taken within six months."
+  },
+  {
+    "id": "lt-comp",
+    "name": "Compensatory Off",
+    "code": "CO",
+    "color": "#0ea5e9",
+    "annualQuota": 5,
+    "carryForward": false,
+    "requiresDocument": false,
+    "description": "Time off earned for approved weekend or public holiday work. Expires in 90 days."
+  }
+]

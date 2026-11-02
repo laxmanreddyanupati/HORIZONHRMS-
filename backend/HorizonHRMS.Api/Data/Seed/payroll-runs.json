@@ -1,0 +1,85 @@
+[
+  {
+    "id": "PR-2026-04",
+    "month": 4,
+    "year": 2026,
+    "periodLabel": "April 2026",
+    "status": "Paid",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743,
+    "processedOn": "2026-04-30"
+  },
+  {
+    "id": "PR-2026-05",
+    "month": 5,
+    "year": 2026,
+    "periodLabel": "May 2026",
+    "status": "Paid",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743,
+    "processedOn": "2026-05-29"
+  },
+  {
+    "id": "PR-2026-06",
+    "month": 6,
+    "year": 2026,
+    "periodLabel": "June 2026",
+    "status": "Paid",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743,
+    "processedOn": "2026-06-30"
+  },
+  {
+    "id": "PR-2026-07",
+    "month": 7,
+    "year": 2026,
+    "periodLabel": "July 2026",
+    "status": "Paid",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743,
+    "processedOn": "2026-07-31"
+  },
+  {
+    "id": "PR-2026-08",
+    "month": 8,
+    "year": 2026,
+    "periodLabel": "August 2026",
+    "status": "Paid",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743,
+    "processedOn": "2026-08-31"
+  },
+  {
+    "id": "PR-2026-09",
+    "month": 9,
+    "year": 2026,
+    "periodLabel": "September 2026",
+    "status": "Paid",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743,
+    "processedOn": "2026-09-30"
+  },
+  {
+    "id": "PR-2026-10",
+    "month": 10,
+    "year": 2026,
+    "periodLabel": "October 2026",
+    "status": "Draft",
+    "employeeCount": 124,
+    "grossTotal": 20903200,
+    "deductionsTotal": 3118457,
+    "netTotal": 17784743
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "FB-4001",
+    "employeeId": "HZT-0005",
+    "fromId": "HZT-0003",
+    "date": "2026-10-24",
+    "type": "Praise",
+    "message": "Great work leading the accessibility audit. The resulting fixes were shipped ahead of schedule and improved the platform for every customer.",
+    "rating": 5
+  },
+  {
+    "id": "FB-4002",
+    "employeeId": "HZT-0006",
+    "fromId": "HZT-0002",
+    "date": "2026-10-21",
+    "type": "Praise",
+    "message": "The October onboarding cohort was one of our smoothest yet. Clear communication with every stakeholder involved.",
+    "rating": 5
+  },
+  {
+    "id": "FB-4003",
+    "employeeId": "HZT-0004",
+    "fromId": "HZT-0001",
+    "date": "2026-10-18",
+    "type": "Check-in",
+    "message": "Let us review the design system roadmap next week and align on the Q3 priorities."
+  },
+  {
+    "id": "FB-4004",
+    "employeeId": "HZT-0018",
+    "fromId": "HZT-0003",
+    "date": "2026-10-15",
+    "type": "Constructive",
+    "message": "Good progress on the API migration. Please include rollout risks earlier in the design review so the team can plan dependencies.",
+    "rating": 3
+  },
+  {
+    "id": "FB-4005",
+    "employeeId": "HZT-0094",
+    "fromId": "HZT-0009",
+    "date": "2026-10-12",
+    "type": "Praise",
+    "message": "Excellent recovery on the enterprise renewal conversation. The customer specifically called out your preparation and follow-through.",
+    "rating": 5
+  },
+  {
+    "id": "FB-4006",
+    "employeeId": "HZT-0051",
+    "fromId": "HZT-0003",
+    "date": "2026-10-08",
+    "type": "Check-in",
+    "message": "Monthly product-engineering sync is working well. Let us add a short customer signal review to the agenda."
+  },
+  {
+    "id": "FB-4007",
+    "employeeId": "HZT-0022",
+    "fromId": "HZT-0004",
+    "date": "2026-10-04",
+    "type": "Constructive",
+    "message": "Strong visual craft. Tighten the handoff notes so engineering can estimate without additional clarification cycles.",
+    "rating": 3
+  }
+]
