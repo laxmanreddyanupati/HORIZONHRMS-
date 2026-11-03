@@ -1,13 +1,12 @@
 services:
   - type: web
     name: horizon-hrms-backend-python
-    runtime: python
-    rootDir: backend-python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    runtime: docker
+    dockerfilePath: ./backend-python/Dockerfile
+    dockerContext: ./backend-python
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.0
+      - key: PORT
+        value: 8000
       - key: DATABASE_URL
         value: sqlite:///./horizon.db
       - key: JWT_SECRET
