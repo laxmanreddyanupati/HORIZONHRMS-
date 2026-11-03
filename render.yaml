@@ -1,20 +1,42 @@
 services:
   - type: web
-    name: horizon-hrms-backend-python
+    name: horizon-hrms-backend
     runtime: docker
-    dockerfilePath: ./backend-python/Dockerfile
-    dockerContext: ./backend-python
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
     envVars:
-      - key: PORT
-        value: 8000
-      - key: DATABASE_URL
-        value: sqlite:///./horizon.db
-      - key: JWT_SECRET
-        generateValue: true
-      - key: SEED_PASSWORD
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Development
+      - key: Auth__SigningKey
+        value: docker-dev-signing-key-at-least-32-chars-long!!
+      - key: Database__ApplyMigrations
+        value: "true"
+      - key: Seed__Enabled
+        value: "true"
+      - key: Seed__UserPasswords__vikram.rao@horizontech.example
         value: HorizonDev!2026
-      - key: ENVIRONMENT
-        value: Production
+      - key: Seed__UserPasswords__priya.menon@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__sneha.reddy@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__rohan.iyer@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__meera.joshi@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__arjun.nair@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__aditya.verma@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__kavita.rao@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__dev.patel@horizontech.example
+        value: HorizonDev!2026
+      - key: Seed__UserPasswords__farah.khan@horizontech.example
+        value: HorizonDev!2026
+      - key: Cors__AllowedOrigins__0
+        value: https://horizon-hrms-frontend.onrender.com
+      - key: Demo__SnapshotDate
+        value: "2026-10-30"
 
   - type: web
     name: horizon-hrms-frontend
@@ -23,4 +45,4 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_BASE_URL
-        value: https://horizon-hrms-backend-python.onrender.com/api
+        value: https://horizon-hrms-backend.onrender.com/api
