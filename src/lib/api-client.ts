@@ -98,7 +98,7 @@ async function refreshSession(): Promise<AuthSession> {
 
       const response = await fetch(buildUrl('/auth/refresh'), {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'ngrok-skip-browser-warning': 'true' },
         body: JSON.stringify({ refreshToken }),
       })
 
@@ -123,6 +123,7 @@ async function send(path: string, options: ApiRequestOptions): Promise<Response>
   const perform = (token: string | null) => {
     const requestHeaders = new Headers(headers)
     requestHeaders.set('Accept', 'application/json')
+    requestHeaders.set('ngrok-skip-browser-warning', 'true')
     if (token) requestHeaders.set('Authorization', `Bearer ${token}`)
     const payload = serializeBody(body, requestHeaders)
     return fetch(buildUrl(path, query), {
