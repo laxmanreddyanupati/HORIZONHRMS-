@@ -67,7 +67,7 @@ const emptyValues: FormValues = {
   maritalStatus: 'Single',
   bloodGroup: 'O+',
   departmentId: departments[0]?.id ?? '',
-  designationId: designations[0]?.id ?? '',
+  designationId: designations.find((d) => d.departmentId === (departments[0]?.id ?? ''))?.id ?? designations[0]?.id ?? '',
   branchId: branches[0]?.id ?? '',
   managerId: null,
   employmentType: 'Full-time',
@@ -139,6 +139,18 @@ export function EmployeeFormPage() {
   })
 
   useEffect(() => {
+    const departmentId = form.watch('departmentId')
+    const currentDesignation = form.getValues('designationId')
+    const stillValid = designations.some(
+      (designation) => designation.id === currentDesignation && designation.departmentId === departmentId,
+    )
+    if (!stillValid) {
+      const next = designations.find((designation) => designation.departmentId === departmentId)?.id ?? ''
+      form.setValue('designationId', next, { shouldValidate: true })
+    }
+  }, [form.watch('departmentId')])
+
+  useEffect(() => {
     const employee = employeeQuery.data
     if (!employee) return
     form.reset({
@@ -179,7 +191,15 @@ export function EmployeeFormPage() {
       void queryClient.invalidateQueries({ queryKey: ['dashboard'] })
       navigate(`/employees/${employee.id}`)
     },
-    onError: (error: Error) => toast.error('Could not save the employee', { description: error.message }),
+    onError: (error: Error) => {
+      const apiError = error as { errors?: Record<string, string[]> }
+      if (apiError.errors) {
+        Object.entries(apiError.errors).forEach(([field, messages]) => {
+          form.setError(field as keyof FormValues, { message: messages[0] })
+        })
+      }
+      toast.error('Could not save the employee', { description: error.message })
+    },
   })
 
   const onSubmit = form.handleSubmit((values) => {
@@ -356,7 +376,9 @@ export function EmployeeFormPage() {
               name="designationId"
               control={form.control}
               placeholder="Select designation"
-              options={designations.map((designation) => ({ value: designation.id, label: designation.title }))}
+              options={designations
+                .filter((designation) => designation.departmentId === form.watch('departmentId'))
+                .map((designation) => ({ value: designation.id, label: designation.title }))}
             />
           </FormField>
           <FormField label="Branch" required error={form.formState.errors.branchId?.message}>
