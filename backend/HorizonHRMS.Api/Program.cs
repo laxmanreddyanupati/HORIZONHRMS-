@@ -29,19 +29,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     ?? throw new InvalidOperationException(
         "Connection string 'DefaultConnection' is not configured. Set ConnectionStrings__DefaultConnection.");
 
-var dbProvider = builder.Configuration.GetValue<string>("Database:Provider") ?? "SqlServer";
 builder.Services.AddDbContext<HrmsDbContext>(options =>
-{
-    if (string.Equals(dbProvider, "Postgres", StringComparison.OrdinalIgnoreCase) ||
-        string.Equals(dbProvider, "PostgreSQL", StringComparison.OrdinalIgnoreCase))
-    {
-        options.UseNpgsql(connectionString);
-    }
-    else
-    {
-        options.UseSqlServer(connectionString, sql => sql.EnableRetryOnFailure(3));
-    }
-});
+    options.UseSqlServer(connectionString, sql => sql.EnableRetryOnFailure(3)));
 
 var authSettings = builder.Configuration.GetSection(AuthSettings.SectionName).Get<AuthSettings>() ?? new AuthSettings();
 if (string.IsNullOrWhiteSpace(authSettings.SigningKey))
