@@ -3,7 +3,7 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "env": {
-    "VITE_API_BASE_URL": "https://horizon-hrms-backend-python.onrender.com/api"
+    "VITE_API_BASE_URL": "https://discharge-drainer-backwater.ngrok-free.dev/api"
   },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
