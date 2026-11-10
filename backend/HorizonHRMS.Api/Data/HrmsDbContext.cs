@@ -17,6 +17,9 @@ public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(
     public DbSet<Employee> Employees => Set<Employee>();
     public DbSet<EmergencyContact> EmergencyContacts => Set<EmergencyContact>();
     public DbSet<EmployeeDocument> EmployeeDocuments => Set<EmployeeDocument>();
+    public DbSet<Project> Projects => Set<Project>();
+    public DbSet<ProjectMember> ProjectMembers => Set<ProjectMember>();
+    public DbSet<ProjectDocument> ProjectDocuments => Set<ProjectDocument>();
     public DbSet<EmploymentHistoryItem> EmploymentHistory => Set<EmploymentHistoryItem>();
     public DbSet<Shift> Shifts => Set<Shift>();
     public DbSet<Holiday> Holidays => Set<Holiday>();
@@ -528,6 +531,39 @@ public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(
             entity.HasKey(preference => preference.Id);
             entity.Property(preference => preference.Id).HasMaxLength(32);
             entity.Property(preference => preference.Label).HasMaxLength(160);
+        });
+
+        modelBuilder.Entity<Project>(entity =>
+        {
+            entity.HasKey(project => project.Id);
+            entity.Property(project => project.Id).HasMaxLength(32);
+            entity.Property(project => project.Title).HasMaxLength(160).IsRequired();
+            entity.Property(project => project.Description).HasMaxLength(2000);
+            entity.Property(project => project.Status).HasMaxLength(40);
+            entity.Property(project => project.ManagerId).HasMaxLength(32);
+            entity.Property(project => project.DepartmentId).HasMaxLength(32);
+            entity.Property(project => project.Budget).HasPrecision(18, 2);
+            entity.HasMany(project => project.Members).WithOne().HasForeignKey(m => m.ProjectId).OnDelete(DeleteBehavior.Cascade);
+            entity.HasMany(project => project.Documents).WithOne().HasForeignKey(d => d.ProjectId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<ProjectMember>(entity =>
+        {
+            entity.HasKey(member => member.Id);
+            entity.Property(member => member.Id).HasMaxLength(48);
+            entity.Property(member => member.ProjectId).HasMaxLength(32);
+            entity.Property(member => member.EmployeeId).HasMaxLength(32);
+            entity.Property(member => member.Role).HasMaxLength(40);
+        });
+
+        modelBuilder.Entity<ProjectDocument>(entity =>
+        {
+            entity.HasKey(document => document.Id);
+            entity.Property(document => document.Id).HasMaxLength(48);
+            entity.Property(document => document.ProjectId).HasMaxLength(32);
+            entity.Property(document => document.Name).HasMaxLength(240);
+            entity.Property(document => document.Category).HasMaxLength(64);
+            entity.Property(document => document.Size).HasMaxLength(32);
         });
     }
 }

@@ -27,6 +27,7 @@ public sealed class ReportsController(HrmsDbContext db, DemoClock clock) : Contr
         "leave",
         "payroll",
         "recruitment",
+        "projects",
     ];
 
     [HttpGet]
@@ -100,6 +101,12 @@ public sealed class ReportsController(HrmsDbContext db, DemoClock clock) : Contr
         if (requested.Contains("recruitment"))
         {
             reports.Add(BuildRecruitment(departments, jobs, candidates, interviews));
+        }
+
+        if (requested.Contains("projects"))
+        {
+            var projects = await db.Projects.AsNoTracking().Include(p => p.Members).OrderBy(p => p.Id).ToListAsync(cancellationToken);
+            reports.Add(BuildProjects(projects, employees, departments));
         }
 
         return reports;
@@ -444,6 +451,55 @@ public sealed class ReportsController(HrmsDbContext db, DemoClock clock) : Contr
                     interviews.Count(interview => interview.Status == "Scheduled").ToString(CultureInfo.InvariantCulture)),
             ],
             Notice = "Candidate records are fictional demonstration data.",
+        };
+    }
+
+    private static ReportDefinitionDto BuildProjects(
+        List<Project> projects,
+        List<Employee> employees,
+        List<Department> departments)
+    {
+        var rows = projects.Select(project =>
+        {
+            var manager = employees.FirstOrDefault(employee => employee.Id == project.ManagerId);
+            return new Dictionary<string, object?>
+            {
+                ["title"] = project.Title,
+                ["department"] = departments.FirstOrDefault(department => department.Id == project.DepartmentId)?.Name ?? "—",
+                ["manager"] = manager is null ? "—" : $"{manager.FirstName} {manager.LastName}",
+                ["members"] = project.Members.Count,
+                ["status"] = project.Status,
+                ["budget"] = project.Budget,
+                ["start"] = project.StartDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                ["end"] = project.EndDate?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "—",
+            };
+        }).ToList();
+
+        return new ReportDefinitionDto
+        {
+            Id = "projects",
+            Title = "Project Report",
+            Description = "Project allocation, members and status.",
+            Columns =
+            [
+                Column("title", "Project"),
+                Column("department", "Department"),
+                Column("manager", "Manager"),
+                Column("members", "Members", "right"),
+                Column("status", "Status"),
+                Column("budget", "Budget", "right"),
+                Column("start", "Start"),
+                Column("end", "End"),
+            ],
+            Rows = rows,
+            Summary =
+            [
+                Summary("Projects", projects.Count.ToString(CultureInfo.InvariantCulture)),
+                Summary("Active", projects.Count(project => project.Status == "Active" || project.Status == "In Progress").ToString(CultureInfo.InvariantCulture)),
+                Summary("Completed", projects.Count(project => project.Status == "Completed").ToString(CultureInfo.InvariantCulture)),
+                Summary("Members", projects.Sum(project => project.Members.Count).ToString(CultureInfo.InvariantCulture)),
+            ],
+            Notice = "Project records are stored by the HRMS API.",
         };
     }
 

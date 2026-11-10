@@ -6,6 +6,7 @@ import {
   CalendarDays,
   Users,
   Wallet,
+  FolderKanban,
   type LucideIcon,
 } from 'lucide-react'
 import { DataTable, type DataTableColumn } from '@/components/common/data-table'
@@ -30,6 +31,7 @@ const REPORT_META: Record<ReportId, { label: string; icon: LucideIcon }> = {
   leave: { label: 'Leave', icon: CalendarDays },
   payroll: { label: 'Payroll', icon: Wallet },
   recruitment: { label: 'Recruitment', icon: Briefcase },
+  projects: { label: 'Projects', icon: FolderKanban },
 }
 
 const CHART_META: Partial<Record<ReportId, { title: string; description: string }>> = {

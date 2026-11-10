@@ -3,6 +3,7 @@ import {
   Briefcase,
   Building2,
   CalendarCheck2,
+  FolderKanban,
   CalendarDays,
   LayoutDashboard,
   ReceiptText,
@@ -74,6 +75,7 @@ export type ModuleKey =
   | 'payroll'
   | 'expenses'
   | 'reports'
+  | 'projects'
   | 'settings'
   | 'users'
   | 'audit'
@@ -99,6 +101,7 @@ export const MODULE_ACCESS: Record<ModuleKey, Role[]> = {
   payroll: ['super-admin', 'hr-admin', 'payroll-admin', 'employee'],
   expenses: ALL_ROLES,
   reports: ['super-admin', 'hr-admin', 'hr-executive', 'manager', 'payroll-admin'],
+  projects: ALL_ROLES,
   settings: ['super-admin', 'hr-admin', 'payroll-admin'],
   users: ['super-admin', 'hr-admin'],
   audit: ['super-admin', 'hr-admin'],
@@ -194,7 +197,10 @@ export const NAV_SECTIONS: NavSection[] = [
   },
   {
     label: 'Analytics',
-    items: [{ label: 'Reports', href: '/reports', icon: BarChart3, module: 'reports' }],
+    items: [
+      { label: 'Reports', href: '/reports', icon: BarChart3, module: 'reports' },
+      { label: 'Projects', href: '/projects', icon: FolderKanban, module: 'projects' },
+    ],
   },
   {
     label: 'Administration',
@@ -227,6 +233,7 @@ export const SEGMENT_LABELS: Record<string, string> = {
   payslip: 'Payslip',
   expenses: 'Expenses',
   reports: 'Reports',
+  projects: 'Projects',
   settings: 'Settings',
   users: 'User Management',
   'audit-logs': 'Audit Logs',

@@ -1282,3 +1282,50 @@ public sealed class DashboardOverviewDto
     public int PendingExpenses { get; set; }
     public int OpenRoles { get; set; }
 }
+
+public sealed class ProjectDto
+{
+    public string Id { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public string Status { get; set; } = string.Empty;
+    public DateOnly StartDate { get; set; }
+    public DateOnly? EndDate { get; set; }
+    public decimal Budget { get; set; }
+    public string ManagerId { get; set; } = string.Empty;
+    public string DepartmentId { get; set; } = string.Empty;
+    public List<string> MemberIds { get; set; } = [];
+}
+
+public sealed class ProjectRequest
+{
+    [Required, MinLength(2), MaxLength(160)]
+    public string Title { get; set; } = string.Empty;
+
+    [MaxLength(2000)]
+    public string Description { get; set; } = string.Empty;
+
+    [Required, MaxLength(40)]
+    public string Status { get; set; } = "Planning";
+
+    [Required]
+    public DateOnly StartDate { get; set; }
+
+    public DateOnly? EndDate { get; set; }
+
+    [Range(0, 1000000000)]
+    public decimal Budget { get; set; }
+
+    public string? ManagerId { get; set; }
+
+    [Required]
+    public string DepartmentId { get; set; } = string.Empty;
+
+    public List<string> MemberIds { get; set; } = [];
+}
+
+public sealed class ProjectStatusRequest
+{
+    [Required, MaxLength(40)]
+    public string Status { get; set; } = string.Empty;
+}

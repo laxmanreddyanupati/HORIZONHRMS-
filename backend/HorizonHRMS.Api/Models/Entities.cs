@@ -224,6 +224,44 @@ public class EmployeeDocument
     public DateOnly UploadedOn { get; set; }
     public string Size { get; set; } = string.Empty;
     public string Status { get; set; } = "Pending";
+    public string? FilePath { get; set; }
+}
+
+public class Project
+{
+    public string Id { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public string Status { get; set; } = "Planning";
+    public DateOnly StartDate { get; set; }
+    public DateOnly? EndDate { get; set; }
+    public decimal Budget { get; set; }
+    public string ManagerId { get; set; } = string.Empty;
+    public string DepartmentId { get; set; } = string.Empty;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+    public ICollection<ProjectMember> Members { get; set; } = [];
+    public ICollection<ProjectDocument> Documents { get; set; } = [];
+}
+
+public class ProjectMember
+{
+    public string Id { get; set; } = string.Empty;
+    public string ProjectId { get; set; } = string.Empty;
+    public string EmployeeId { get; set; } = string.Empty;
+    public string Role { get; set; } = "Member";
+    public DateOnly JoinedOn { get; set; }
+}
+
+public class ProjectDocument
+{
+    public string Id { get; set; } = string.Empty;
+    public string ProjectId { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string Category { get; set; } = string.Empty;
+    public DateOnly UploadedOn { get; set; }
+    public string Size { get; set; } = string.Empty;
+    public string? FilePath { get; set; }
 }
 
 public class EmploymentHistoryItem

@@ -7,6 +7,7 @@ export type ReportId =
   | 'leave'
   | 'payroll'
   | 'recruitment'
+  | 'projects'
 
 export interface ReportColumn {
   key: string

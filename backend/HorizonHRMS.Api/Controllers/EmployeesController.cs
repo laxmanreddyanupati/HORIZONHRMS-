@@ -274,6 +274,96 @@ public sealed class EmployeesController(HrmsDbContext db, AuditService audit) : 
         return Ok(employee.ToDto());
     }
 
+    [HttpPost("{id}/documents")]
+    [Authorize(Policy = Policies.HrStaff)]
+    public async Task<ActionResult<EmployeeDocumentDto>> UploadDocument(string id, IFormFile file, [FromForm] string? category, CancellationToken cancellationToken)
+    {
+        var employee = await db.Employees.Include(e => e.Documents).FirstOrDefaultAsync(e => e.Id == id, cancellationToken)
+            ?? throw ApiException.NotFound("Employee not found.");
+
+        if (file is null || file.Length == 0)
+            throw ApiException.BadRequest("Please choose a file to upload.", "empty_file");
+
+        var maxBytes = 5 * 1024 * 1024;
+        if (file.Length > maxBytes)
+            throw ApiException.BadRequest("File exceeds the 5 MB limit.", "file_too_large");
+
+        var uploadsRoot = Path.Combine(AppContext.BaseDirectory, "App_Data", "uploads", "employees", id);
+        Directory.CreateDirectory(uploadsRoot);
+        var safeName = Path.GetFileName(file.FileName);
+        var storedName = $"{Guid.NewGuid():N}_{safeName}";
+        var fullPath = Path.Combine(uploadsRoot, storedName);
+        await using (var stream = System.IO.File.Create(fullPath))
+        {
+            await file.CopyToAsync(stream, cancellationToken);
+        }
+
+        var doc = new EmployeeDocument
+        {
+            Id = $"DOC-{Guid.NewGuid():N}",
+            EmployeeId = id,
+            Name = safeName,
+            Category = string.IsNullOrWhiteSpace(category) ? "General" : category.Trim(),
+            UploadedOn = DateOnly.FromDateTime(DateTime.UtcNow),
+            Size = FormatSize(file.Length),
+            Status = "Active",
+            FilePath = fullPath,
+        };
+        employee.Documents.Add(doc);
+        employee.UpdatedAt = DateTime.UtcNow;
+        audit.Record(User, HttpContext, "Uploaded document", "Employees", $"{employee.FirstName} {employee.LastName}: {safeName}");
+        await db.SaveChangesAsync(cancellationToken);
+        return Ok(new EmployeeDocumentDto
+        {
+            Id = doc.Id,
+            Name = doc.Name,
+            Category = doc.Category,
+            UploadedOn = doc.UploadedOn,
+            Size = doc.Size,
+            Status = doc.Status,
+        });
+    }
+
+    [HttpGet("{id}/documents/{docId}/download")]
+    public async Task<IActionResult> DownloadDocument(string id, string docId, CancellationToken cancellationToken)
+    {
+        var employee = await db.Employees.AsNoTracking().Include(e => e.Documents).FirstOrDefaultAsync(e => e.Id == id, cancellationToken)
+            ?? throw ApiException.NotFound("Employee not found.");
+        var doc = employee.Documents.FirstOrDefault(d => d.Id == docId)
+            ?? throw ApiException.NotFound("Document not found.");
+        if (string.IsNullOrWhiteSpace(doc.FilePath) || !System.IO.File.Exists(doc.FilePath))
+            throw ApiException.NotFound("The file is no longer available.");
+        await AccessScope.EnsureCanSeeEmployeeAsync(db, User, id, cancellationToken);
+        var bytes = await System.IO.File.ReadAllBytesAsync(doc.FilePath, cancellationToken);
+        return File(bytes, "application/octet-stream", doc.Name);
+    }
+
+    [HttpDelete("{id}/documents/{docId}")]
+    [Authorize(Policy = Policies.HrStaff)]
+    public async Task<IActionResult> DeleteDocument(string id, string docId, CancellationToken cancellationToken)
+    {
+        var employee = await db.Employees.Include(e => e.Documents).FirstOrDefaultAsync(e => e.Id == id, cancellationToken)
+            ?? throw ApiException.NotFound("Employee not found.");
+        var doc = employee.Documents.FirstOrDefault(d => d.Id == docId)
+            ?? throw ApiException.NotFound("Document not found.");
+        if (!string.IsNullOrWhiteSpace(doc.FilePath) && System.IO.File.Exists(doc.FilePath))
+        {
+            try { System.IO.File.Delete(doc.FilePath); } catch { /* best effort */ }
+        }
+        employee.Documents.Remove(doc);
+        db.EmployeeDocuments.Remove(doc);
+        audit.Record(User, HttpContext, "Deleted document", "Employees", $"{employee.FirstName} {employee.LastName}: {doc.Name}");
+        await db.SaveChangesAsync(cancellationToken);
+        return NoContent();
+    }
+
+    private static string FormatSize(long bytes)
+    {
+        if (bytes < 1024) return $"{bytes} B";
+        if (bytes < 1024 * 1024) return $"{bytes / 1024.0:0.#} KB";
+        return $"{bytes / (1024.0 * 1024.0):0.#} MB";
+    }
+
     private static bool IsFilter(string? value) => !string.IsNullOrWhiteSpace(value) && value != "all";
 
     private async Task ValidateRequestAsync(EmployeeUpsertRequest request, string? currentEmployeeId, CancellationToken cancellationToken)
