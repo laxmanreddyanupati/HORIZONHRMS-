@@ -1346,3 +1346,76 @@ public sealed class UnreadCountDto
 {
     public int Count { get; set; }
 }
+
+public sealed class ItAssetDto
+{
+    public string Id { get; set; } = string.Empty;
+    public int Version { get; set; }
+    public string AssetId { get; set; } = string.Empty;
+    public string SerialNumber { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string Type { get; set; } = string.Empty;
+    public string Status { get; set; } = string.Empty;
+    public string? EmployeeId { get; set; }
+    public string? EmployeeCode { get; set; }
+    public string? EmployeeName { get; set; }
+    public DateOnly? AllocationDate { get; set; }
+    public string Condition { get; set; } = string.Empty;
+    public string? Remarks { get; set; }
+}
+
+public sealed class ItAssetEventDto
+{
+    public string Id { get; set; } = string.Empty;
+    public string Action { get; set; } = string.Empty;
+    public string? EmployeeId { get; set; }
+    public string? EmployeeCode { get; set; }
+    public string? EmployeeName { get; set; }
+    public DateOnly Date { get; set; }
+    public string Condition { get; set; } = string.Empty;
+    public string? Remarks { get; set; }
+    public string ActorId { get; set; } = string.Empty;
+    public DateTime RecordedAt { get; set; }
+}
+
+public sealed class ItAssetRegisterRequest
+{
+    [Required, MinLength(2), MaxLength(64)]
+    public string AssetId { get; set; } = string.Empty;
+
+    [Required, MinLength(2), MaxLength(120)]
+    public string SerialNumber { get; set; } = string.Empty;
+
+    [Required, MinLength(2), MaxLength(160)]
+    public string Name { get; set; } = string.Empty;
+
+    [Required, MaxLength(32)]
+    public string Type { get; set; } = "LAPTOP";
+
+    [MaxLength(24)]
+    public string Condition { get; set; } = "Good";
+
+    [MaxLength(500)]
+    public string? Remarks { get; set; }
+}
+
+public sealed class ItAssetActionRequest
+{
+    [Required]
+    public int Version { get; set; }
+
+    [Required, MaxLength(24)]
+    public string Action { get; set; } = string.Empty;
+
+    [Required]
+    public DateOnly Date { get; set; }
+
+    [MaxLength(24)]
+    public string Condition { get; set; } = "Good";
+
+    [MaxLength(500)]
+    public string? Remarks { get; set; }
+
+    public string? EmployeeId { get; set; }
+    public string? EmployeeCode { get; set; }
+}

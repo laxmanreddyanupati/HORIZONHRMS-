@@ -20,6 +20,8 @@ public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(
     public DbSet<Project> Projects => Set<Project>();
     public DbSet<ProjectMember> ProjectMembers => Set<ProjectMember>();
     public DbSet<ProjectDocument> ProjectDocuments => Set<ProjectDocument>();
+    public DbSet<ItAsset> ItAssets => Set<ItAsset>();
+    public DbSet<ItAssetEvent> ItAssetEvents => Set<ItAssetEvent>();
     public DbSet<EmploymentHistoryItem> EmploymentHistory => Set<EmploymentHistoryItem>();
     public DbSet<Shift> Shifts => Set<Shift>();
     public DbSet<Holiday> Holidays => Set<Holiday>();
@@ -578,6 +580,39 @@ public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(
             entity.Property(document => document.Name).HasMaxLength(240);
             entity.Property(document => document.Category).HasMaxLength(64);
             entity.Property(document => document.Size).HasMaxLength(32);
+        });
+
+        modelBuilder.Entity<ItAsset>(entity =>
+        {
+            entity.HasKey(a => a.Id);
+            entity.Property(a => a.Id).HasMaxLength(48);
+            entity.Property(a => a.AssetId).HasMaxLength(64).IsRequired();
+            entity.HasIndex(a => a.AssetId).IsUnique();
+            entity.Property(a => a.SerialNumber).HasMaxLength(120).IsRequired();
+            entity.HasIndex(a => a.SerialNumber).IsUnique();
+            entity.Property(a => a.Name).HasMaxLength(160).IsRequired();
+            entity.Property(a => a.Type).HasMaxLength(32);
+            entity.Property(a => a.Status).HasMaxLength(24);
+            entity.Property(a => a.EmployeeId).HasMaxLength(32);
+            entity.Property(a => a.EmployeeCode).HasMaxLength(32);
+            entity.Property(a => a.EmployeeName).HasMaxLength(160);
+            entity.Property(a => a.Condition).HasMaxLength(24);
+            entity.Property(a => a.Remarks).HasMaxLength(500);
+            entity.HasMany(a => a.History).WithOne().HasForeignKey(e => e.AssetId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<ItAssetEvent>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).HasMaxLength(48);
+            entity.Property(e => e.AssetId).HasMaxLength(48);
+            entity.Property(e => e.Action).HasMaxLength(24);
+            entity.Property(e => e.EmployeeId).HasMaxLength(32);
+            entity.Property(e => e.EmployeeCode).HasMaxLength(32);
+            entity.Property(e => e.EmployeeName).HasMaxLength(160);
+            entity.Property(e => e.Condition).HasMaxLength(24);
+            entity.Property(e => e.Remarks).HasMaxLength(500);
+            entity.Property(e => e.ActorId).HasMaxLength(48);
         });
     }
 }

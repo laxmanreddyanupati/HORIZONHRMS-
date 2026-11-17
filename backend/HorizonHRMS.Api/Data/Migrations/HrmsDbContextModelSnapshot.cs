@@ -1056,6 +1056,136 @@ namespace HorizonHRMS.Api.Data.Migrations
                     b.ToTable("Interviews");
                 });
 
+            modelBuilder.Entity("HorizonHRMS.Api.Models.ItAsset", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasMaxLength(48)
+                        .HasColumnType("nvarchar(48)");
+
+                    b.Property<DateOnly?>("AllocationDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("AssetId")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("Condition")
+                        .IsRequired()
+                        .HasMaxLength(24)
+                        .HasColumnType("nvarchar(24)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EmployeeCode")
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("EmployeeId")
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("EmployeeName")
+                        .HasMaxLength(160)
+                        .HasColumnType("nvarchar(160)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(160)
+                        .HasColumnType("nvarchar(160)");
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(24)
+                        .HasColumnType("nvarchar(24)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssetId")
+                        .IsUnique();
+
+                    b.HasIndex("SerialNumber")
+                        .IsUnique();
+
+                    b.ToTable("ItAssets");
+                });
+
+            modelBuilder.Entity("HorizonHRMS.Api.Models.ItAssetEvent", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasMaxLength(48)
+                        .HasColumnType("nvarchar(48)");
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasMaxLength(24)
+                        .HasColumnType("nvarchar(24)");
+
+                    b.Property<string>("ActorId")
+                        .IsRequired()
+                        .HasMaxLength(48)
+                        .HasColumnType("nvarchar(48)");
+
+                    b.Property<string>("AssetId")
+                        .IsRequired()
+                        .HasMaxLength(48)
+                        .HasColumnType("nvarchar(48)");
+
+                    b.Property<string>("Condition")
+                        .IsRequired()
+                        .HasMaxLength(24)
+                        .HasColumnType("nvarchar(24)");
+
+                    b.Property<DateOnly>("Date")
+                        .HasColumnType("date");
+
+                    b.Property<string>("EmployeeCode")
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("EmployeeId")
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("EmployeeName")
+                        .HasMaxLength(160)
+                        .HasColumnType("nvarchar(160)");
+
+                    b.Property<DateTime>("RecordedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssetId");
+
+                    b.ToTable("ItAssetEvents");
+                });
+
             modelBuilder.Entity("HorizonHRMS.Api.Models.JobOpening", b =>
                 {
                     b.Property<string>("Id")
@@ -2005,6 +2135,15 @@ namespace HorizonHRMS.Api.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("HorizonHRMS.Api.Models.ItAssetEvent", b =>
+                {
+                    b.HasOne("HorizonHRMS.Api.Models.ItAsset", null)
+                        .WithMany("History")
+                        .HasForeignKey("AssetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("HorizonHRMS.Api.Models.ProjectDocument", b =>
                 {
                     b.HasOne("HorizonHRMS.Api.Models.Project", null)
@@ -2046,6 +2185,11 @@ namespace HorizonHRMS.Api.Data.Migrations
                     b.Navigation("EmergencyContacts");
 
                     b.Navigation("EmploymentHistory");
+                });
+
+            modelBuilder.Entity("HorizonHRMS.Api.Models.ItAsset", b =>
+                {
+                    b.Navigation("History");
                 });
 
             modelBuilder.Entity("HorizonHRMS.Api.Models.Project", b =>

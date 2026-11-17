@@ -76,6 +76,7 @@ const MODULE_LABELS: Record<ModuleKey, string> = {
   reports: 'Reports',
   projects: 'Projects',
   notifications: 'Notifications',
+  assets: 'IT Assets',
   settings: 'Settings',
   users: 'User Management',
   audit: 'Audit Logs',

@@ -264,6 +264,41 @@ public class ProjectDocument
     public string? FilePath { get; set; }
 }
 
+public class ItAsset
+{
+    public string Id { get; set; } = string.Empty;
+    public int Version { get; set; } = 1;
+    public string AssetId { get; set; } = string.Empty;
+    public string SerialNumber { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string Type { get; set; } = "LAPTOP";
+    public string Status { get; set; } = "AVAILABLE";
+    public string? EmployeeId { get; set; }
+    public string? EmployeeCode { get; set; }
+    public string? EmployeeName { get; set; }
+    public DateOnly? AllocationDate { get; set; }
+    public string Condition { get; set; } = "Good";
+    public string? Remarks { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+    public ICollection<ItAssetEvent> History { get; set; } = [];
+}
+
+public class ItAssetEvent
+{
+    public string Id { get; set; } = string.Empty;
+    public string AssetId { get; set; } = string.Empty;
+    public string Action { get; set; } = string.Empty;
+    public string? EmployeeId { get; set; }
+    public string? EmployeeCode { get; set; }
+    public string? EmployeeName { get; set; }
+    public DateOnly Date { get; set; }
+    public string Condition { get; set; } = "Good";
+    public string? Remarks { get; set; }
+    public string ActorId { get; set; } = string.Empty;
+    public DateTime RecordedAt { get; set; } = DateTime.UtcNow;
+}
+
 public class EmploymentHistoryItem
 {
     public string Id { get; set; } = string.Empty;

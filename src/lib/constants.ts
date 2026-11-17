@@ -7,6 +7,7 @@ import {
   FolderKanban,
   CalendarDays,
   LayoutDashboard,
+  Laptop,
   ReceiptText,
   ScrollText,
   Settings,
@@ -81,6 +82,7 @@ export type ModuleKey =
   | 'settings'
   | 'users'
   | 'audit'
+  | 'assets'
   | 'profile'
 
 const ALL_ROLES: Role[] = [
@@ -108,6 +110,7 @@ export const MODULE_ACCESS: Record<ModuleKey, Role[]> = {
   settings: ['super-admin', 'hr-admin', 'payroll-admin'],
   users: ['super-admin', 'hr-admin'],
   audit: ['super-admin', 'hr-admin'],
+  assets: ['super-admin'],
   profile: ALL_ROLES,
 }
 
@@ -212,6 +215,7 @@ export const NAV_SECTIONS: NavSection[] = [
       { label: 'Settings', href: '/settings', icon: Settings, module: 'settings' },
       { label: 'User Management', href: '/users', icon: ShieldCheck, module: 'users' },
       { label: 'Audit Logs', href: '/audit-logs', icon: ScrollText, module: 'audit' },
+      { label: 'IT Assets', href: '/assets', icon: Laptop, module: 'assets' },
     ],
   },
 ]
@@ -242,6 +246,7 @@ export const SEGMENT_LABELS: Record<string, string> = {
   settings: 'Settings',
   users: 'User Management',
   'audit-logs': 'Audit Logs',
+  assets: 'IT Assets',
   profile: 'My Profile',
   unauthorized: 'Access Restricted',
 }
