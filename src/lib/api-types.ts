@@ -80,7 +80,7 @@ export interface DashboardOverview {
   departments: Array<{ name: string; value: number; color: string }>
   attendance: Array<{ day: string; date: string; present: number; absent: number; onLeave: number }>
   payroll: Array<{ month: string; gross: number; net: number; deductions: number }>
-  currentRun: PayrollRun
+  currentRun: PayrollRun | null
   birthdays: Array<{ employee: import('@/types').Employee; date: string; daysAway: number; years?: number | null }>
   anniversaries: Array<{ employee: import('@/types').Employee; date: string; daysAway: number; years?: number | null }>
   activities: Array<import('@/types').AuditLog>

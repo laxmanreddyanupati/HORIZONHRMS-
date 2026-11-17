@@ -41,7 +41,7 @@ import {
   fetchReportingLines,
   type DepartmentWithStats,
 } from '@/services'
-import { ORGANIZATION_EDIT_ROLES, COMPANY } from '@/lib/constants'
+import { ORGANIZATION_EDIT_ROLES } from '@/lib/constants'
 import { formatDate } from '@/lib/utils'
 import {
   BranchDialog,
@@ -52,6 +52,7 @@ import {
   type DesignationWithCount,
 } from './organization-dialogs'
 import { OrgChart } from './org-chart'
+import { fetchCompanyProfile } from '@/services/admin-service'
 
 type DeleteTarget =
   | { kind: 'department'; item: DepartmentWithStats }
@@ -129,6 +130,9 @@ export function OrganizationPage() {
     branch: null,
   })
   const [deleteTarget, setDeleteTarget] = useState<DeleteTarget | null>(null)
+
+  const companyQuery = useQuery({ queryKey: ['company-profile'], queryFn: fetchCompanyProfile })
+  const company = companyQuery.data
 
   const departmentsQuery = useQuery({
     queryKey: ['organization-departments'],
@@ -462,7 +466,7 @@ export function OrganizationPage() {
       <PageHeader
         eyebrow="People operations"
         title="Organization"
-        description="Understand how Horizon Technologies is structured across departments, designations, branches and reporting lines."
+        description="Understand how your organization is structured across departments, designations, branches and reporting lines."
       />
 
       <DemoNotice>
@@ -624,29 +628,29 @@ export function OrganizationPage() {
                   <CardContent className="grid gap-3 sm:grid-cols-2">
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Legal entity</p>
-                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{COMPANY.name}</p>
+                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{company?.legalName || 'Not configured'}</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Industry</p>
-                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{COMPANY.industry}</p>
+                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{company?.industry || 'Not configured'}</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Headquarters</p>
                       <p className="mt-0.5 text-[13px] font-medium text-slate-700">
-                        {headquarters?.name ?? COMPANY.location}
+                        {headquarters?.name || company?.headquarters || 'Not configured'}
                       </p>
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Time zone</p>
-                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{COMPANY.timezone}</p>
+                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{company?.timezone || 'Not configured'}</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Financial year</p>
-                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{COMPANY.financialYear}</p>
+                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{company?.financialYear || 'Not configured'}</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Pay frequency</p>
-                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{COMPANY.payFrequency}</p>
+                      <p className="mt-0.5 text-[13px] font-medium text-slate-700">{company?.payrollFrequency || 'Not configured'}</p>
                     </div>
                   </CardContent>
                 </Card>

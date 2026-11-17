@@ -48,7 +48,7 @@ public sealed class OrganizationController(HrmsDbContext db, AuditService audit)
             HeadId = Normalize(request.HeadId),
             ParentId = Normalize(request.ParentId),
             Location = request.Location.Trim(),
-            Email = request.Email.Trim().ToLowerInvariant(),
+            Email = request.Email?.Trim().ToLowerInvariant() ?? string.Empty,
             CreatedAt = DateOnly.FromDateTime(DateTime.UtcNow),
         };
 
@@ -76,7 +76,7 @@ public sealed class OrganizationController(HrmsDbContext db, AuditService audit)
             department.ParentId = Normalize(request.ParentId);
         }
         department.Location = request.Location.Trim();
-        department.Email = request.Email.Trim().ToLowerInvariant();
+        department.Email = request.Email?.Trim().ToLowerInvariant() ?? string.Empty;
 
         audit.Record(User, HttpContext, "Updated department", "Organization", $"{department.Name} ({department.Code})");
         await db.SaveChangesAsync(cancellationToken);

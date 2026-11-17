@@ -17,7 +17,7 @@ export function DetailItem({
   return (
     <div className={cn('min-w-0', className)}>
       <dt className="text-[10.5px] font-semibold uppercase tracking-wide text-slate-400">{label}</dt>
-      <dd className="mt-1 break-words text-[13px] text-slate-700">{children}</dd>
+      <dd className="mt-1 [overflow-wrap:anywhere] text-[13px] text-slate-700">{children}</dd>
     </div>
   )
 }

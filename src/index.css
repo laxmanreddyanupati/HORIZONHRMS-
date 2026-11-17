@@ -22,7 +22,10 @@
   --color-secondary: #f1f5f9;
   --color-secondary-foreground: #334155;
   --color-muted: #f1f5f9;
-  --color-muted-foreground: #64748b;
+  --color-muted-foreground: #475569;
+  --color-slate-400: #526277;
+  --color-slate-500: #526277;
+  --color-emerald-600: #047857;
   --color-accent: #eff4ff;
   --color-accent-foreground: #1d4ed8;
 
@@ -41,7 +44,7 @@
   --color-sidebar: #0b1526;
   --color-sidebar-2: #101d33;
   --color-sidebar-foreground: #c5d0e2;
-  --color-sidebar-muted: #7f8ea8;
+  --color-sidebar-muted: #a3b3cc;
   --color-sidebar-active: #1d4ed8;
   --color-sidebar-hover: #15233b;
 

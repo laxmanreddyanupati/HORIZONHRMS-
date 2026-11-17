@@ -12,6 +12,14 @@ using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Render supplies PORT; local launches continue to use their launch profile.
+if (Environment.GetEnvironmentVariable("PORT") is { Length: > 0 } portValue)
+{
+    if (!int.TryParse(portValue, out var port) || port is < 1 or > 65535)
+        throw new InvalidOperationException("PORT must be an integer between 1 and 65535.");
+    builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+}
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -176,7 +184,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "Horizon HRMS API v1"));
 }
-else
+else if (!app.Configuration.GetValue<bool>("Hosting:HttpsTerminatedAtProxy"))
 {
     app.UseHttpsRedirection();
 }
@@ -204,6 +212,11 @@ using (var scope = app.Services.CreateScope())
         logger.LogInformation("Applying pending EF Core migrations...");
         await db.Database.MigrateAsync();
     }
+
+    var bootstrap = app.Configuration.GetSection("BootstrapAdmin").Get<BootstrapAdminOptions>() ?? new();
+    if (bootstrap.Enabled && seedOptions.Enabled)
+        throw new InvalidOperationException("Disable demo seeding before enabling the bootstrap administrator.");
+    await BootstrapAdmin.EnsureAsync(db, bootstrap);
 
     try
     {

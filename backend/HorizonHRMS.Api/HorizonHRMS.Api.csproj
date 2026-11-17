@@ -22,6 +22,7 @@
   <ItemGroup>
     <!-- Postgres migration is kept for reference only; excluded from build (SQL Server is default provider). -->
     <Compile Remove="Data\MigrationsPostgres/**/*.cs" />
+    <Content Update="appsettings.Development.json" CopyToPublishDirectory="Never" />
   </ItemGroup>
 
 </Project>

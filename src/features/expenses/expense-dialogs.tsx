@@ -15,15 +15,13 @@ import {
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Textarea } from '@/components/ui/textarea'
-import { formatCurrency, formatDate } from '@/lib/utils'
+import { formatCurrency, formatDate, getWorkspaceDate } from '@/lib/utils'
 import type { ExpenseCategory, ExpenseClaim, ExpenseFormInput } from '@/types'
 
 export interface ExpenseEmployeeOption {
   id: string
   name: string
 }
-
-const MAX_EXPENSE_DATE = '2026-10-30'
 
 interface SubmitExpenseDialogProps {
   open: boolean
@@ -53,11 +51,12 @@ export function SubmitExpenseDialog({
   lockEmployee,
   onSubmit,
 }: SubmitExpenseDialogProps) {
+  const maxExpenseDate = getWorkspaceDate()
   const [employeeId, setEmployeeId] = useState(defaultEmployeeId)
   const [categoryId, setCategoryId] = useState('')
   const [title, setTitle] = useState('')
   const [amount, setAmount] = useState('')
-  const [date, setDate] = useState(MAX_EXPENSE_DATE)
+  const [date, setDate] = useState(getWorkspaceDate)
   const [description, setDescription] = useState('')
   const [receiptName, setReceiptName] = useState('')
   const [errors, setErrors] = useState<SubmitErrors>({})
@@ -81,7 +80,7 @@ export function SubmitExpenseDialog({
     }
     if (!date) {
       nextErrors.date = 'Choose the date the expense was incurred.'
-    } else if (date > MAX_EXPENSE_DATE) {
+    } else if (date > maxExpenseDate) {
       nextErrors.date = 'Choose a date on or before the current HRMS snapshot date.'
     }
     if (!description.trim()) nextErrors.description = 'Describe the business purpose of this expense.'
@@ -191,7 +190,7 @@ export function SubmitExpenseDialog({
             <Input
               id="expense-date"
               type="date"
-              max={MAX_EXPENSE_DATE}
+              max={maxExpenseDate}
               value={date}
               onChange={(event) => setDate(event.target.value)}
             />

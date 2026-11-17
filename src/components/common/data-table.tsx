@@ -57,7 +57,7 @@ export function DataTable<T>({
                 key={column.key}
                 className={cn(column.align === 'right' && 'text-right', column.headerClassName)}
               >
-                {column.header}
+                {column.header || <span className="sr-only">Actions</span>}
               </TableHead>
             ))}
           </TableRow>

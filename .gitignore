@@ -44,3 +44,9 @@ backend-python/__pycache__/
 backend-python/*.db
 backend-python/horizon.db
 *.pyc
+
+# Verification artifacts and generated deployment output may contain user data.
+verification/
+backend/**/TestResults/
+deployment-output/
+deployment/*.env

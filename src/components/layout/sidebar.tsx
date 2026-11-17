@@ -2,9 +2,8 @@ import { NavLink } from 'react-router-dom'
 import { ChevronsLeft, ChevronsRight, LifeBuoy } from 'lucide-react'
 import { NAV_SECTIONS, type NavItem } from '@/lib/constants'
 import { useRole } from '@/contexts/role-context'
-import { leaveRequests } from '@/data/leaves'
-import { jobOpenings } from '@/data/recruitment'
-import { expenseClaims } from '@/data/expenses'
+import { useQuery } from '@tanstack/react-query'
+import { apiRequest } from '@/lib/api-client'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 
@@ -80,12 +79,19 @@ function NavRow({
 export function SidebarNav({ collapsed, onNavigate }: { collapsed: boolean; onNavigate?: () => void }) {
   const { canAccess, roleLabel } = useRole()
 
-  // Recomputed on every render so the badges follow the hydrated API records
-  // instead of the static mock fixture counts captured at module load.
+  const leaves = useQuery({ queryKey: ['leave-requests', 'navigation'],
+    queryFn: () => apiRequest<Array<{ status: string }>>('/leave/requests'),
+    enabled: canAccess('leave'), refetchInterval: 30_000 })
+  const jobs = useQuery({ queryKey: ['jobs', 'navigation'],
+    queryFn: () => apiRequest<Array<{ status: string }>>('/recruitment/jobs'),
+    enabled: canAccess('recruitment'), refetchInterval: 30_000 })
+  const expenses = useQuery({ queryKey: ['expenses', 'navigation'],
+    queryFn: () => apiRequest<Array<{ status: string }>>('/expenses'),
+    enabled: canAccess('expenses'), refetchInterval: 30_000 })
   const badgeCounts: Record<string, number> = {
-    'pending-leaves': leaveRequests.filter((request) => request.status === 'Pending').length,
-    'open-roles': jobOpenings.filter((job) => job.status === 'Open').length,
-    'pending-expenses': expenseClaims.filter((claim) => claim.status === 'Pending').length,
+    'pending-leaves': leaves.data?.filter((request) => request.status === 'Pending').length ?? 0,
+    'open-roles': jobs.data?.filter((job) => job.status === 'Open').length ?? 0,
+    'pending-expenses': expenses.data?.filter((claim) => claim.status === 'Pending').length ?? 0,
   }
 
   return (

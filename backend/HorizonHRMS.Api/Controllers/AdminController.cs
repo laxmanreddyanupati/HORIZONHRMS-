@@ -457,17 +457,6 @@ public sealed class AdminController(HrmsDbContext db, AuditService audit) : Cont
         setting = new CompanySetting
         {
             Id = 1,
-            LegalName = "Horizon Technologies Private Limited",
-            DisplayName = "Horizon Technologies",
-            Domain = "horizontech.example",
-            Industry = "Information Technology",
-            Headquarters = "Hyderabad, Telangana, India",
-            Email = "people@horizontech.example",
-            Phone = "+91 40 6789 1200",
-            Website = "www.horizontech.example",
-            Gstin = "36AABCH1234P1ZQ (demo)",
-            Pan = "AABCH1234P (demo)",
-            Cin = "U72200TG2016PTC104521 (demo)",
             Currency = "INR (₹)",
             Timezone = "Asia/Kolkata (IST)",
             FinancialYear = "April – March",

@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { toast } from 'sonner'
 import { useNavigate } from 'react-router-dom'
 import { format, parseISO } from 'date-fns'
 import {
@@ -15,7 +16,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { notifications as seedNotifications } from '@/data/notifications'
+import { fetchNotifications, fetchUnreadCount, markAllNotificationsRead, markNotificationRead } from '@/services/notification-service'
 import { cn } from '@/lib/utils'
 
 const typeStyles: Record<string, { icon: typeof Bell; className: string }> = {
@@ -27,15 +28,27 @@ const typeStyles: Record<string, { icon: typeof Bell; className: string }> = {
 }
 
 export function NotificationsMenu() {
-  const [items, setItems] = useState(seedNotifications)
+  const queryClient = useQueryClient()
+  const list = useQuery({ queryKey: ['notifications'], queryFn: () => fetchNotifications(false), refetchInterval: 30_000 })
+  const count = useQuery({ queryKey: ['notifications-unread'], queryFn: fetchUnreadCount, refetchInterval: 30_000 })
+  const items = list.data ?? []
   const navigate = useNavigate()
-  const unread = items.filter((item) => !item.read).length
+  const unread = count.data ?? items.filter((item) => !item.isRead).length
 
-  const markAllRead = () => setItems((current) => current.map((item) => ({ ...item, read: true })))
+  const invalidate = () => {
+    void queryClient.invalidateQueries({ queryKey: ['notifications'] })
+    void queryClient.invalidateQueries({ queryKey: ['notifications-unread'] })
+  }
+  const markAll = useMutation({ mutationFn: markAllNotificationsRead, onSuccess: invalidate,
+    onError: () => toast.error('Notifications could not be marked as read.') })
+  const markRead = useMutation({ mutationFn: markNotificationRead, onSuccess: invalidate,
+    onError: () => toast.error('Notification could not be marked as read.') })
 
-  const openNotification = (id: string, href?: string) => {
-    setItems((current) => current.map((item) => (item.id === id ? { ...item, read: true } : item)))
-    if (href) navigate(href)
+  const openNotification = async (id: string, href?: string | null) => {
+    try {
+      await markRead.mutateAsync(id)
+      if (href?.startsWith('/') && !href.startsWith('//')) navigate(href)
+    } catch { /* The mutation displays the error. */ }
   }
 
   return (
@@ -54,7 +67,7 @@ export function NotificationsMenu() {
           ) : null}
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[360px] p-0">
+      <DropdownMenuContent align="end" className="w-[min(360px,calc(100vw-2rem))] p-0">
         <div className="flex items-center justify-between border-b border-border px-4 py-3">
           <div>
             <p className="text-sm font-semibold text-foreground">Notifications</p>
@@ -62,8 +75,8 @@ export function NotificationsMenu() {
           </div>
           <button
             type="button"
-            onClick={markAllRead}
-            disabled={unread === 0}
+            onClick={() => markAll.mutate()}
+            disabled={unread === 0 || markAll.isPending}
             className="inline-flex items-center gap-1 text-[11px] font-medium text-primary hover:underline disabled:text-slate-300 disabled:no-underline"
           >
             <CheckCheck className="size-3.5" />
@@ -71,17 +84,20 @@ export function NotificationsMenu() {
           </button>
         </div>
         <div className="scrollbar-thin max-h-[380px] overflow-y-auto">
+          {list.isLoading ? <p className="p-4 text-sm text-muted-foreground">Loading notifications…</p> : list.isError ? (
+            <button type="button" className="p-4 text-sm text-primary" onClick={() => void list.refetch()}>Could not load notifications. Retry</button>
+          ) : items.length === 0 ? <p className="p-4 text-sm text-muted-foreground">No notifications. You're all caught up.</p> : null}
           {items.map((item) => {
-            const style = typeStyles[item.type] ?? typeStyles.system
+            const style = typeStyles[item.module.toLowerCase()] ?? typeStyles.system
             const Icon = style.icon
             return (
               <button
                 key={item.id}
                 type="button"
-                onClick={() => openNotification(item.id, item.href)}
+                onClick={() => void openNotification(item.id, item.target)}
                 className={cn(
                   'flex w-full gap-3 border-b border-border/70 px-4 py-3 text-left transition-colors last:border-0 hover:bg-slate-50',
-                  !item.read && 'bg-primary-50/30',
+                  !item.isRead && 'bg-primary-50/30',
                 )}
               >
                 <span className={cn('mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-md', style.className)}>
@@ -89,14 +105,14 @@ export function NotificationsMenu() {
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="flex items-start justify-between gap-2">
-                    <span className={cn('text-[12.5px] leading-tight text-foreground', !item.read ? 'font-semibold' : 'font-medium')}>
+                    <span className={cn('text-[12.5px] leading-tight text-foreground', !item.isRead ? 'font-semibold' : 'font-medium')}>
                       {item.title}
                     </span>
-                    {!item.read ? <span className="mt-1 size-1.5 shrink-0 rounded-full bg-primary" /> : null}
+                    {!item.isRead ? <span className="mt-1 size-1.5 shrink-0 rounded-full bg-primary" /> : null}
                   </span>
                   <span className="mt-0.5 block line-clamp-2 text-[11.5px] leading-snug text-slate-500">{item.message}</span>
                   <span className="mt-1 block text-[10.5px] text-slate-400">
-                    {format(parseISO(item.time), 'dd MMM, h:mm a')}
+                    {format(parseISO(item.createdAt), 'dd MMM, h:mm a')}
                   </span>
                 </span>
               </button>

@@ -228,19 +228,19 @@ function CompanyForm({ initial }: { initial: CompanyFormState }) {
       </CardHeader>
       <CardContent className="space-y-6">
         <section className="space-y-3">
-          <h4 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Identity</h4>
+          <h3 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Identity</h3>
           <div className="grid gap-4 sm:grid-cols-2">{COMPANY_IDENTITY_FIELDS.map(renderField)}</div>
         </section>
 
         <section className="space-y-3">
-          <h4 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Contact</h4>
+          <h3 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Contact</h3>
           <div className="grid gap-4 sm:grid-cols-2">{COMPANY_CONTACT_FIELDS.map(renderField)}</div>
         </section>
 
         <section className="space-y-3">
-          <h4 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+          <h3 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
             Statutory identifiers
-          </h4>
+          </h3>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {COMPANY_STATUTORY_FIELDS.map(renderField)}
           </div>
@@ -250,9 +250,9 @@ function CompanyForm({ initial }: { initial: CompanyFormState }) {
         </section>
 
         <section className="space-y-3">
-          <h4 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+          <h3 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
             Finance and payroll defaults
-          </h4>
+          </h3>
           <div className="grid gap-4 sm:grid-cols-2">{COMPANY_FINANCE_FIELDS.map(renderField)}</div>
         </section>
       </CardContent>
@@ -810,7 +810,7 @@ function PayrollForm({ initial }: { initial: PayrollSettingsData }) {
         </CardHeader>
         <CardContent className="space-y-6">
           <section className="space-y-3">
-            <h4 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Payroll calendar</h4>
+            <h3 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Payroll calendar</h3>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <FormField label="Pay day" htmlFor="payroll-pay-day" error={errors.payDay}>
                 <Input
@@ -874,9 +874,9 @@ function PayrollForm({ initial }: { initial: PayrollSettingsData }) {
           </section>
 
           <section className="space-y-3">
-            <h4 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+            <h3 className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
               Statutory and bank defaults
-            </h4>
+            </h3>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <FormField label="PF rate" htmlFor="payroll-pf-rate" error={errors.pfRate} hint="%">
                 <Input

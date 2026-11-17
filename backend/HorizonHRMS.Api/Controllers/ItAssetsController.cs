@@ -69,8 +69,8 @@ public sealed class ItAssetsController(HrmsDbContext db, AuditService audit, Dem
             Name = request.Name.Trim(),
             Type = request.Type,
             Status = "AVAILABLE",
-            Condition = request.Condition,
-            Remarks = request.Remarks,
+            Condition = request.Condition ?? string.Empty,
+            Remarks = request.Remarks ?? string.Empty,
             Version = 1,
         };
         db.ItAssets.Add(asset);
@@ -80,8 +80,8 @@ public sealed class ItAssetsController(HrmsDbContext db, AuditService audit, Dem
             AssetId = asset.Id,
             Action = "REGISTERED",
             Date = clock.Today,
-            Condition = request.Condition,
-            Remarks = request.Remarks,
+            Condition = request.Condition ?? string.Empty,
+            Remarks = request.Remarks ?? string.Empty,
             ActorId = User.GetUserId(),
             RecordedAt = DateTime.UtcNow,
         });
@@ -148,8 +148,8 @@ public sealed class ItAssetsController(HrmsDbContext db, AuditService audit, Dem
                         EmployeeCode = employee.Id,
                         EmployeeName = $"{employee.FirstName} {employee.LastName}",
                         Date = request.Date,
-                        Condition = request.Condition,
-                        Remarks = request.Remarks,
+                        Condition = request.Condition ?? string.Empty,
+                        Remarks = request.Remarks ?? string.Empty,
                         ActorId = User.GetUserId(),
                         RecordedAt = DateTime.UtcNow,
                     });
@@ -177,8 +177,8 @@ public sealed class ItAssetsController(HrmsDbContext db, AuditService audit, Dem
                         EmployeeCode = prevEmpId,
                         EmployeeName = prevEmpName,
                         Date = request.Date,
-                        Condition = request.Condition,
-                        Remarks = request.Remarks,
+                        Condition = request.Condition ?? string.Empty,
+                        Remarks = request.Remarks ?? string.Empty,
                         ActorId = User.GetUserId(),
                         RecordedAt = DateTime.UtcNow,
                     });
@@ -197,8 +197,8 @@ public sealed class ItAssetsController(HrmsDbContext db, AuditService audit, Dem
                         AssetId = asset.Id,
                         Action = "REPAIR",
                         Date = request.Date,
-                        Condition = request.Condition,
-                        Remarks = request.Remarks,
+                        Condition = request.Condition ?? string.Empty,
+                        Remarks = request.Remarks ?? string.Empty,
                         ActorId = User.GetUserId(),
                         RecordedAt = DateTime.UtcNow,
                     });
@@ -219,8 +219,8 @@ public sealed class ItAssetsController(HrmsDbContext db, AuditService audit, Dem
                         AssetId = asset.Id,
                         Action = "AVAILABLE",
                         Date = request.Date,
-                        Condition = request.Condition,
-                        Remarks = request.Remarks,
+                        Condition = request.Condition ?? string.Empty,
+                        Remarks = request.Remarks ?? string.Empty,
                         ActorId = User.GetUserId(),
                         RecordedAt = DateTime.UtcNow,
                     });

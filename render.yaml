@@ -1,48 +1,32 @@
+# Backend only; the frontend is hosted on Cloudflare Pages.
 services:
   - type: web
-    name: horizon-hrms-backend
+    name: horizon-hrms-api
     runtime: docker
+    plan: free
     dockerfilePath: ./backend/Dockerfile
     dockerContext: .
+    healthCheckPath: /health
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
-        value: Development
+        value: Production
+      - key: Hosting__HttpsTerminatedAtProxy
+        value: "true"
       - key: Auth__SigningKey
-        value: docker-dev-signing-key-at-least-32-chars-long!!
+        generateValue: true
+      - key: ConnectionStrings__DefaultConnection
+        sync: false
+      - key: Cors__AllowedOrigins__0
+        sync: false
       - key: Database__ApplyMigrations
         value: "true"
       - key: Seed__Enabled
+        value: "false"
+      - key: BootstrapAdmin__Enabled
         value: "true"
-      - key: Seed__UserPasswords__vikram.rao@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__priya.menon@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__sneha.reddy@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__rohan.iyer@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__meera.joshi@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__arjun.nair@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__aditya.verma@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__kavita.rao@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__dev.patel@horizontech.example
-        value: HorizonDev!2026
-      - key: Seed__UserPasswords__farah.khan@horizontech.example
-        value: HorizonDev!2026
-      - key: Cors__AllowedOrigins__0
-        value: https://horizon-hrms-frontend.onrender.com
-      - key: Demo__SnapshotDate
-        value: "2026-10-30"
-
-  - type: web
-    name: horizon-hrms-frontend
-    runtime: static
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    envVars:
-      - key: VITE_API_BASE_URL
-        value: https://horizon-hrms-backend.onrender.com/api
+      - key: BootstrapAdmin__Email
+        value: anupatilaxman2@gmail.com
+      - key: BootstrapAdmin__Name
+        value: Laxman Reddy Anupati
+      - key: BootstrapAdmin__Password
+        generateValue: true

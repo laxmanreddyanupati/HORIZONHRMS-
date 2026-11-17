@@ -47,7 +47,7 @@ export function AppShell() {
         </main>
         <footer className="mx-auto w-full max-w-[1560px] px-4 pb-6 pt-2 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-1 border-t border-border pt-4 text-[10.5px] text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-            <p>Horizon HRMS · Horizon Technologies Pvt. Ltd.</p>
+            <p>Horizon HRMS</p>
             <p>Asia/Kolkata (IST) · Connected to the HRMS API</p>
           </div>
         </footer>

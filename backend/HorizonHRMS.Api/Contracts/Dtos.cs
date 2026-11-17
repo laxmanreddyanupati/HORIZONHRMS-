@@ -265,8 +265,14 @@ public sealed class DepartmentRequest
     [MaxLength(120)]
     public string Location { get; set; } = string.Empty;
 
+    private string? email;
+
     [EmailAddress, MaxLength(256)]
-    public string Email { get; set; } = string.Empty;
+    public string? Email
+    {
+        get => email;
+        set => email = string.IsNullOrWhiteSpace(value) ? null : value.Trim();
+    }
 }
 
 public sealed class DesignationDto

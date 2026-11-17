@@ -96,8 +96,8 @@ function ProfileSkeleton() {
     <div className="space-y-5">
       <Skeleton className="h-9 w-64" />
       <Skeleton className="h-44 rounded-xl" />
-      <div className="grid gap-5 lg:grid-cols-3">
-        <div className="space-y-5 lg:col-span-2">
+      <div className="grid min-w-0 gap-5 lg:grid-cols-3">
+        <div className="min-w-0 space-y-5 lg:col-span-2">
           <Skeleton className="h-56 rounded-xl" />
           <Skeleton className="h-72 rounded-xl" />
         </div>
@@ -264,7 +264,7 @@ function EmployeeSelfProfile({
       <Card className="overflow-hidden">
         <div className="h-1.5 w-full bg-linear-to-r from-primary via-sky-500 to-teal-400" />
         <CardContent className="flex flex-col gap-5 pt-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex items-start gap-4">
+          <div className="flex min-w-0 flex-1 items-start gap-4">
             <AvatarName firstName={employee.firstName} lastName={employee.lastName} size="lg" />
             <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-2">
@@ -309,8 +309,8 @@ function EmployeeSelfProfile({
         </CardContent>
       </Card>
 
-      <div className="grid gap-5 lg:grid-cols-3">
-        <div className="space-y-5 lg:col-span-2">
+      <div className="grid min-w-0 gap-5 lg:grid-cols-3">
+        <div className="min-w-0 space-y-5 lg:col-span-2">
           <Card>
             <CardHeader>
               <CardTitle>About</CardTitle>
@@ -572,13 +572,13 @@ function AccountOnlyProfile({
         linked to it.
       </DemoNotice>
 
-      <div className="grid gap-5 lg:grid-cols-3">
-        <div className="space-y-5 lg:col-span-2">
+      <div className="grid min-w-0 gap-5 lg:grid-cols-3">
+        <div className="min-w-0 space-y-5 lg:col-span-2">
           <Card className="overflow-hidden">
             <div className="h-1.5 w-full bg-linear-to-r from-primary via-sky-500 to-teal-400" />
             <CardContent className="pt-5">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <div className="flex items-start gap-4">
+                <div className="flex min-w-0 flex-1 items-start gap-4">
                   <AvatarName firstName={first} lastName={last} size="lg" />
                   <div className="min-w-0">
                     <div className="flex flex-wrap items-center gap-2">

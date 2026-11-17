@@ -21,6 +21,7 @@ import { designations } from '@/data/designations'
 import { createEmployee, fetchEmployee, updateEmployee } from '@/services'
 import { EMPLOYEE_EDIT_ROLES } from '@/lib/constants'
 import type { EmployeeFormInput } from '@/types'
+import { getWorkspaceDate } from '@/lib/utils'
 
 const schema = z.object({
   firstName: z.string().trim().min(2, 'Enter at least two characters.'),
@@ -66,15 +67,15 @@ const emptyValues: FormValues = {
   dateOfBirth: '',
   maritalStatus: 'Single',
   bloodGroup: 'O+',
-  departmentId: departments[0]?.id ?? '',
-  designationId: designations.find((d) => d.departmentId === (departments[0]?.id ?? ''))?.id ?? designations[0]?.id ?? '',
-  branchId: branches[0]?.id ?? '',
+  departmentId: '',
+  designationId: '',
+  branchId: '',
   managerId: null,
   employmentType: 'Full-time',
   status: 'Probation',
-  dateOfJoining: '2026-10-30',
-  workLocation: 'Hyderabad HQ',
-  address: { line1: '', city: 'Hyderabad', state: 'Telangana', postalCode: '500081', country: 'India' },
+  dateOfJoining: getWorkspaceDate(),
+  workLocation: '',
+  address: { line1: '', city: '', state: '', postalCode: '', country: 'India' },
   emergencyContactName: '',
   emergencyContactRelationship: '',
   emergencyContactPhone: '',

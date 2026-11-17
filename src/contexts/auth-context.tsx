@@ -11,6 +11,7 @@ import { apiRequest } from '@/lib/api-client'
 import type { AuthSession, AuthUser } from '@/lib/api-types'
 import { clearSession, getRefreshToken, readSession, writeSession } from '@/lib/auth-storage'
 import { hydrateReferenceData } from '@/lib/reference-data'
+import { useQueryClient } from '@tanstack/react-query'
 
 interface AuthContextValue {
   user: AuthUser | null
@@ -23,6 +24,7 @@ interface AuthContextValue {
 const AuthContext = createContext<AuthContextValue | null>(null)
 
 export function AuthProvider({ children }: { children: ReactNode }) {
+  const queryClient = useQueryClient()
   const [user, setUser] = useState<AuthUser | null>(() => readSession()?.user ?? null)
   const [isBootstrapping, setIsBootstrapping] = useState(true)
 
@@ -60,11 +62,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const onExpired = () => {
       clearSession()
+      queryClient.clear()
       setUser(null)
     }
     window.addEventListener('horizon:session-expired', onExpired)
     return () => window.removeEventListener('horizon:session-expired', onExpired)
-  }, [])
+  }, [queryClient])
 
   const login = useCallback(async (email: string, password: string) => {
     const session = await apiRequest<AuthSession>('/auth/login', {
@@ -72,11 +75,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       body: { email, password },
       auth: false,
     })
+    queryClient.clear()
     writeSession(session)
-    setUser(session.user)
     await hydrateReferenceData(true)
+    setUser(session.user)
     return session.user
-  }, [])
+  }, [queryClient])
 
   const logout = useCallback(async () => {
     const refreshToken = getRefreshToken()
@@ -88,9 +92,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // A revoked or expired refresh token must not prevent local sign-out.
     } finally {
       clearSession()
+      queryClient.clear()
       setUser(null)
     }
-  }, [])
+  }, [queryClient])
 
   const value = useMemo<AuthContextValue>(
     () => ({

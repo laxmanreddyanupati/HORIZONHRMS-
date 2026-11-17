@@ -1093,7 +1093,7 @@ export function AttendancePage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Upcoming holidays</CardTitle>
-                  <CardDescription>Holidays on or after the 30 Oct 2026 snapshot.</CardDescription>
+                  <CardDescription>Holidays on or after {formatDate(ATTENDANCE_SNAPSHOT)}.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   {holidaysQuery.isLoading ? (

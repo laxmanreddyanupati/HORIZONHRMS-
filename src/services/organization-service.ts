@@ -198,7 +198,7 @@ export async function deleteBranch(id: string): Promise<void> {
 }
 
 export async function fetchOrgChart(): Promise<OrgNode | null> {
-  return apiRequest<OrgNode | null>('/organization/org-chart')
+  return (await apiRequest<OrgNode | null>('/organization/org-chart')) ?? null
 }
 
 export async function fetchReportingLines(): Promise<Array<{ manager: Employee; reports: Employee[] }>> {

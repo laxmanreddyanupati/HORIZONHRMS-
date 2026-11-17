@@ -49,7 +49,7 @@ export function LoginPage() {
   }
 
   return (
-    <div className="grid min-h-screen bg-background lg:grid-cols-[1.05fr_1fr]">
+    <main className="grid min-h-screen bg-background lg:grid-cols-[1.05fr_1fr]">
       <div className="relative hidden overflow-hidden bg-sidebar px-12 py-14 text-white lg:flex lg:flex-col lg:justify-between">
         <div
           className="pointer-events-none absolute -right-24 -top-24 size-[420px] rounded-full bg-primary/25 blur-3xl"
@@ -90,7 +90,7 @@ export function LoginPage() {
           </div>
         </div>
         <p className="relative text-[11px] text-sidebar-foreground/50">
-          {COMPANY.name} · {COMPANY.location}
+          Your secure HR workspace
         </p>
       </div>
 
@@ -124,7 +124,7 @@ export function LoginPage() {
                   required
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
-                  placeholder="you@horizontech.example"
+                  placeholder="you@company.com"
                   className="pl-9"
                   disabled={submitting}
                 />
@@ -186,6 +186,6 @@ export function LoginPage() {
           ) : null}
         </div>
       </div>
-    </div>
+    </main>
   )
 }

@@ -5,17 +5,18 @@ import { useAuth } from '@/contexts/auth-context'
 
 function SessionLoading() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
+    <main aria-busy="true" className="flex min-h-screen items-center justify-center bg-background">
+      <h1 className="sr-only">Restoring your session</h1>
       <div className="flex flex-col items-center gap-4 text-center">
         <span className="flex size-12 items-center justify-center rounded-2xl bg-primary text-white shadow-card">
           <ShieldCheck className="size-6" />
         </span>
-        <div className="flex items-center gap-2 text-[12.5px] text-muted-foreground">
+        <div role="status" className="flex items-center gap-2 text-[12.5px] text-muted-foreground">
           <Loader2 className="size-4 animate-spin" />
           Restoring your session…
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

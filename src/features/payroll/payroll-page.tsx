@@ -588,7 +588,7 @@ export function PayrollPage() {
             )
           ) : dashboardQuery.isError ? (
             <ErrorState title="Payroll dashboard could not be loaded" onRetry={() => void dashboardQuery.refetch()} />
-          ) : dashboardQuery.isLoading || !dashboardQuery.data || !currentRun ? (
+          ) : dashboardQuery.isLoading ? (
             <div className="space-y-5">
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -597,6 +597,13 @@ export function PayrollPage() {
               </div>
               <Skeleton className="h-64 rounded-xl" />
             </div>
+          ) : !dashboardQuery.data || !currentRun ? (
+            <EmptyState
+              icon={Wallet}
+              title="No payroll runs yet"
+              description="Configure your company and payroll settings, then add employees and salary structures before creating a payroll run."
+              action={<Button variant="outline" asChild><Link to="/settings">Open settings</Link></Button>}
+            />
           ) : (
             <div className="space-y-5">
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">

@@ -108,7 +108,7 @@ export function DashboardPage() {
       <PageHeader
         eyebrow={data ? `Snapshot · ${formatDate(data.snapshot, 'EEEE, dd MMMM yyyy')}` : 'Loading snapshot'}
         title={`Welcome back, ${firstName}`}
-        description={`You are viewing the ${roleLabel} experience. Here is what is happening across ${'Horizon Technologies'} today.`}
+        description={`You are viewing the ${roleLabel} experience. Here is what is happening in your workspace today.`}
         actions={
           <>
             {canAccess('reports') ? (
@@ -315,7 +315,7 @@ export function DashboardPage() {
               </CardContent>
             </Card>
 
-            <Card className="flex flex-col">
+            {data.currentRun ? <Card className="flex flex-col">
               <CardHeader className="flex-row items-start justify-between">
                 <div>
                   <CardTitle>Payroll summary</CardTitle>
@@ -350,12 +350,13 @@ export function DashboardPage() {
                         </span>
                       </div>
                       <Progress
-                        value={(data.currentRun.deductionsTotal / data.currentRun.grossTotal) * 100}
+                        aria-label="Payroll deductions as a percentage of gross earnings"
+                        value={data.currentRun.grossTotal > 0 ? (data.currentRun.deductionsTotal / data.currentRun.grossTotal) * 100 : 0}
                         indicatorClassName="bg-amber-500"
                       />
                       <p className="text-[10.5px] text-slate-400">
                         Deductions represent{' '}
-                        {Math.round((data.currentRun.deductionsTotal / data.currentRun.grossTotal) * 100)}% of gross.
+                        {data.currentRun.grossTotal > 0 ? Math.round((data.currentRun.deductionsTotal / data.currentRun.grossTotal) * 100) : 0}% of gross.
                         Values come from the current payroll run.
                       </p>
                     </div>
@@ -371,7 +372,17 @@ export function DashboardPage() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> : (
+              <Card>
+                <CardHeader><CardTitle>Payroll summary</CardTitle></CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">No payroll runs yet. Payroll totals will appear after a run is created.</p>
+                  <Button variant="outline" size="sm" asChild className="mt-4">
+                    <Link to="/payroll">Open payroll</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            )}
           </div>
 
           <div className="grid gap-5 lg:grid-cols-3">

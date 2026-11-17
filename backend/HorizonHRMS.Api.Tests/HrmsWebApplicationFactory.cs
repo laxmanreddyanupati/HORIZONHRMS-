@@ -3,15 +3,27 @@ using System.Net.Http.Json;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using HorizonHRMS.Api.Data;
+using Microsoft.Data.SqlClient;
 
 namespace HorizonHRMS.Api.Tests;
 
 public sealed class HrmsWebApplicationFactory : WebApplicationFactory<Program>
 {
     public string DatabaseName { get; } = $"HorizonHRMS_Tests_{Guid.NewGuid():N}";
+    private readonly Dictionary<string, string?> previousEnvironment = new();
+    private bool seedEnabled = true;
+    private bool disposed;
+    public bool SeedEnabled
+    {
+        get => seedEnabled;
+        set { seedEnabled = value; SetEnvironmentSetting("Seed__Enabled", value.ToString()); }
+    }
+    private string TestConnection => $"Server=localhost;Database={DatabaseName};Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True";
     public const string TestSigningKey = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef";
 
     public const string SuperAdminEmail = "vikram.rao@horizontech.example";
@@ -29,11 +41,28 @@ public sealed class HrmsWebApplicationFactory : WebApplicationFactory<Program>
 
     public HrmsWebApplicationFactory()
     {
-        var conn = $"Server=localhost;Database={DatabaseName};Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True";
-        Environment.SetEnvironmentVariable("ConnectionStrings__DefaultConnection", conn);
-        Environment.SetEnvironmentVariable("Auth__SigningKey", TestSigningKey);
-        Environment.SetEnvironmentVariable("Database__ApplyMigrations", "true");
-        Environment.SetEnvironmentVariable("Seed__Enabled", "true");
+        // Minimal-host startup reads some configuration before test host callbacks.
+        // Set these before startup and restore them when this fixture is disposed.
+        foreach (var (key, value) in GetSettings())
+            SetEnvironmentSetting(key.Replace(":", "__"), value);
+    }
+
+    private void SetEnvironmentSetting(string key, string? value)
+    {
+        if (!previousEnvironment.ContainsKey(key)) previousEnvironment[key] = Environment.GetEnvironmentVariable(key);
+        Environment.SetEnvironmentVariable(key, value);
+    }
+
+    private Dictionary<string, string?> GetSettings()
+    {
+        var settings = new Dictionary<string, string?>
+        {
+            ["ConnectionStrings:DefaultConnection"] = TestConnection,
+            ["Auth:SigningKey"] = TestSigningKey,
+            ["Database:ApplyMigrations"] = "true",
+            ["Seed:Enabled"] = SeedEnabled.ToString(),
+            ["Demo:SnapshotDate"] = "2026-10-30",
+        };
 
         var emails = new[]
         {
@@ -44,13 +73,23 @@ public sealed class HrmsWebApplicationFactory : WebApplicationFactory<Program>
         };
         foreach (var e in emails)
         {
-            Environment.SetEnvironmentVariable($"Seed__UserPasswords__{e}", "TestPassword!123");
+            settings[$"Seed:UserPasswords:{e}"] = "TestPassword!123";
         }
+        return settings;
     }
 
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.UseEnvironment("Development");
+        var settings = GetSettings();
+        builder.ConfigureAppConfiguration((_, configuration) => configuration.AddInMemoryCollection(settings));
+        builder.ConfigureServices(services =>
+        {
+            services.RemoveAll<HrmsDbContext>();
+            services.RemoveAll<DbContextOptions<HrmsDbContext>>();
+            services.RemoveAll<IDbContextOptionsConfiguration<HrmsDbContext>>();
+            services.AddDbContext<HrmsDbContext>(options => options.UseSqlServer(TestConnection));
+        });
     }
 
     public HttpClient CreateAuthenticatedClient(string email, string password)
@@ -65,22 +104,33 @@ public sealed class HrmsWebApplicationFactory : WebApplicationFactory<Program>
 
     public void DropDatabase()
     {
-        try
-        {
-            using var scope = Services.CreateScope();
-            var db = scope.ServiceProvider.GetRequiredService<HrmsDbContext>();
-            db.Database.EnsureDeleted();
-        }
-        catch
-        {
-        }
+        // Never resolve an application-configured context for destructive cleanup.
+        var options = new DbContextOptionsBuilder<HrmsDbContext>()
+            .UseSqlServer(TestConnection, sql => sql.CommandTimeout(120)).Options;
+        using var db = new HrmsDbContext(options);
+        if (db.Database.GetDbConnection().Database != DatabaseName || !DatabaseName.StartsWith("HorizonHRMS_Tests_"))
+            throw new InvalidOperationException("Refusing to delete a non-test database.");
+        db.Database.EnsureDeleted();
     }
 
     protected override void Dispose(bool disposing)
     {
-        if (disposing)
+        if (disposing && !disposed)
         {
-            DropDatabase();
+            try
+            {
+                // Stop the host before removing its database; pooled test connections
+                // must not keep it busy during DROP DATABASE.
+                base.Dispose(disposing);
+                SqlConnection.ClearAllPools();
+                DropDatabase();
+            }
+            finally
+            {
+                foreach (var (key, value) in previousEnvironment) Environment.SetEnvironmentVariable(key, value);
+                disposed = true;
+            }
+            return;
         }
         base.Dispose(disposing);
     }

@@ -6,7 +6,16 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const DEMO_SNAPSHOT_DATE = new Date(2026, 9, 30) // 30 Oct 2026
+export function getWorkspaceDate(): string {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).formatToParts(new Date())
+  const value = (type: string) => parts.find((part) => part.type === type)!.value
+  return `${value('year')}-${value('month')}-${value('day')}`
+}
+
+// Kept as an alias for existing calendar components; this is the live workspace date.
+export const DEMO_SNAPSHOT_DATE = parseISO(getWorkspaceDate())
 
 export function formatCurrency(amount: number, compact = false): string {
   if (compact) {
@@ -89,7 +98,7 @@ export function mulberry32(seed: number) {
 }
 
 export function isoDate(date: Date): string {
-  return date.toISOString().slice(0, 10)
+  return format(date, 'yyyy-MM-dd')
 }
 
 export function getMonthMatrix(year: number, month: number): Date[] {

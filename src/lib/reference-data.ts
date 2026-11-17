@@ -42,6 +42,7 @@ async function fill<T>(target: T[], load: () => Promise<T[]>, label: string): Pr
     const values = await load()
     replaceArray(target, values)
   } catch (error) {
+    replaceArray(target, [])
     if (import.meta.env.DEV) {
       console.warn(`[reference-data] Could not hydrate ${label}.`, error)
     }
