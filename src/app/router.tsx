@@ -19,6 +19,7 @@ import { PerformancePage } from '@/features/performance/performance-page'
 import { ExpensesPage } from '@/features/expenses/expenses-page'
 import { ReportsPage } from '@/features/reports/reports-page'
 import { ProjectsPage } from '@/features/projects/projects-page'
+import { NotificationsPage } from '@/features/notifications/notifications-page'
 import { SettingsPage } from '@/features/settings/settings-page'
 import { UsersPage } from '@/features/admin/users-page'
 import { AuditLogsPage } from '@/features/admin/audit-logs-page'
@@ -71,6 +72,7 @@ const router = createHashRouter([
       { path: 'expenses', element: guarded('expenses', <ExpensesPage />) },
       { path: 'reports', element: guarded('reports', <ReportsPage />) },
       { path: 'projects', element: guarded('projects', <ProjectsPage />) },
+      { path: 'notifications', element: guarded('notifications', <NotificationsPage />) },
       { path: 'settings', element: guarded('settings', <SettingsPage />) },
       { path: 'users', element: guarded('users', <UsersPage />) },
       { path: 'audit-logs', element: guarded('audit', <AuditLogsPage />) },

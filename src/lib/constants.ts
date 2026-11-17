@@ -1,5 +1,6 @@
 import {
   BarChart3,
+  Bell,
   Briefcase,
   Building2,
   CalendarCheck2,
@@ -76,6 +77,7 @@ export type ModuleKey =
   | 'expenses'
   | 'reports'
   | 'projects'
+  | 'notifications'
   | 'settings'
   | 'users'
   | 'audit'
@@ -102,6 +104,7 @@ export const MODULE_ACCESS: Record<ModuleKey, Role[]> = {
   expenses: ALL_ROLES,
   reports: ['super-admin', 'hr-admin', 'hr-executive', 'manager', 'payroll-admin'],
   projects: ALL_ROLES,
+  notifications: ALL_ROLES,
   settings: ['super-admin', 'hr-admin', 'payroll-admin'],
   users: ['super-admin', 'hr-admin'],
   audit: ['super-admin', 'hr-admin'],
@@ -200,6 +203,7 @@ export const NAV_SECTIONS: NavSection[] = [
     items: [
       { label: 'Reports', href: '/reports', icon: BarChart3, module: 'reports' },
       { label: 'Projects', href: '/projects', icon: FolderKanban, module: 'projects' },
+      { label: 'Notifications', href: '/notifications', icon: Bell, module: 'notifications' },
     ],
   },
   {
@@ -234,6 +238,7 @@ export const SEGMENT_LABELS: Record<string, string> = {
   expenses: 'Expenses',
   reports: 'Reports',
   projects: 'Projects',
+  notifications: 'Notifications',
   settings: 'Settings',
   users: 'User Management',
   'audit-logs': 'Audit Logs',
