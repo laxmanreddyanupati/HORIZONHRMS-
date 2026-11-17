@@ -559,6 +559,19 @@ public class ExpenseClaim
     public DateOnly? ReimbursedOn { get; set; }
 }
 
+public class Notification
+{
+    public string Id { get; set; } = string.Empty;
+    public string UserId { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
+    public string Message { get; set; } = string.Empty;
+    public string Module { get; set; } = string.Empty;
+    public string? Target { get; set; }
+    public bool IsRead { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime? ReadAt { get; set; }
+}
+
 public class CompanySetting
 {
     public int Id { get; set; } = 1;

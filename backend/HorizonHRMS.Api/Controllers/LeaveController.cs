@@ -270,6 +270,19 @@ public sealed class LeaveController(HrmsDbContext db, AuditService audit, DemoCl
         }
 
         audit.Record(User, HttpContext, $"{request.Status} leave request", "Leave", $"{leaveRequest.Id} for {leaveRequest.EmployeeId}");
+
+        var employeeUser = await db.Users.FirstOrDefaultAsync(u => u.EmployeeId == leaveRequest.EmployeeId, cancellationToken);
+        if (employeeUser is not null)
+        {
+            await NotificationsController.CreateAsync(
+                db,
+                employeeUser.Id,
+                $"Leave request {request.Status.ToLowerInvariant()}",
+                $"Your {leaveRequest.LeaveTypeId} request from {leaveRequest.FromDate:yyyy-MM-dd} to {leaveRequest.ToDate:yyyy-MM-dd} was {request.Status.ToLowerInvariant()}.",
+                "Leave",
+                leaveRequest.Id);
+        }
+
         await db.SaveChangesAsync(cancellationToken);
         return Ok(leaveRequest.ToDto());
     }

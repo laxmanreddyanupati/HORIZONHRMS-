@@ -1329,3 +1329,20 @@ public sealed class ProjectStatusRequest
     [Required, MaxLength(40)]
     public string Status { get; set; } = string.Empty;
 }
+
+public sealed class NotificationDto
+{
+    public string Id { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
+    public string Message { get; set; } = string.Empty;
+    public string Module { get; set; } = string.Empty;
+    public string? Target { get; set; }
+    public bool IsRead { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime? ReadAt { get; set; }
+}
+
+public sealed class UnreadCountDto
+{
+    public int Count { get; set; }
+}

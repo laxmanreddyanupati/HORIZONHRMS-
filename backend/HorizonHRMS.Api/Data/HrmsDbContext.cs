@@ -46,6 +46,7 @@ public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(
     public DbSet<AttendanceSetting> AttendanceSettings => Set<AttendanceSetting>();
     public DbSet<PayrollSetting> PayrollSettings => Set<PayrollSetting>();
     public DbSet<NotificationPreference> NotificationPreferences => Set<NotificationPreference>();
+    public DbSet<Notification> Notifications => Set<Notification>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -531,6 +532,19 @@ public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(
             entity.HasKey(preference => preference.Id);
             entity.Property(preference => preference.Id).HasMaxLength(32);
             entity.Property(preference => preference.Label).HasMaxLength(160);
+        });
+
+        modelBuilder.Entity<Notification>(entity =>
+        {
+            entity.HasKey(notification => notification.Id);
+            entity.Property(notification => notification.Id).HasMaxLength(64);
+            entity.Property(notification => notification.UserId).HasMaxLength(32);
+            entity.Property(notification => notification.Title).HasMaxLength(160);
+            entity.Property(notification => notification.Message).HasMaxLength(1000);
+            entity.Property(notification => notification.Module).HasMaxLength(64);
+            entity.Property(notification => notification.Target).HasMaxLength(240);
+            entity.HasIndex(notification => notification.UserId);
+            entity.HasIndex(notification => new { notification.UserId, notification.IsRead });
         });
 
         modelBuilder.Entity<Project>(entity =>
