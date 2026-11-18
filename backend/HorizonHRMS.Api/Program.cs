@@ -205,6 +205,8 @@ app.UseCors("Frontend");
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.MapControllers();
 app.MapGet("/health", () => Results.Ok(new
 {

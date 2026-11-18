@@ -40,7 +40,7 @@ export class ApiError extends Error {
 
 function buildUrl(path: string, query?: Record<string, QueryValue>): string {
   const normalized = path.startsWith('/') ? path : `/${path}`
-  const url = new URL(`${API_BASE_URL}${normalized}`)
+  const url = new URL(`${API_BASE_URL}${normalized}`, window.location.origin)
   if (query) {
     for (const [key, value] of Object.entries(query)) {
       if (value === undefined || value === null || value === '') continue
