@@ -16,6 +16,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@/components/ui/switch'
 import { Textarea } from '@/components/ui/textarea'
 import { employees } from '@/data/employees'
+import { ApiError } from '@/lib/api-client'
 import {
   createBranch,
   createDepartment,
@@ -312,23 +313,31 @@ export function DesignationDialog({ open, onOpenChange, designation, defaultDepa
       onSaved?.(saved)
       onOpenChange(false)
     },
-    onError: (error: Error) =>
-      toast.error('Could not save the designation', { description: error.message }),
+    onError: (error: Error) => {
+      const fields = error instanceof ApiError ? error.errors : undefined
+      if (fields) {
+        setErrors({
+          title: fields.title?.[0],
+          departmentId: fields.departmentId?.[0],
+          grade: fields.grade?.[0],
+        })
+      }
+      toast.error('Could not save the designation', { description: error.message })
+    },
   })
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const nextErrors: DesignationErrors = {}
-    if (!form.title.trim()) nextErrors.title = 'Designation title is required.'
+    if (form.title.trim().length < 2) nextErrors.title = 'Enter at least two characters.'
     if (!form.departmentId) nextErrors.departmentId = 'Select a department.'
-    if (!form.grade.trim()) nextErrors.grade = 'Grade is required.'
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length > 0) return
     mutation.mutate({
       title: form.title.trim(),
       departmentId: form.departmentId,
       level: form.level,
-      grade: form.grade.trim(),
+      grade: form.grade.trim() || form.level,
     })
   }
 
@@ -345,6 +354,7 @@ export function DesignationDialog({ open, onOpenChange, designation, defaultDepa
           <FormField label="Title" htmlFor="designation-title" error={errors.title} required>
             <Input
               id="designation-title"
+              maxLength={160}
               value={form.title}
               onChange={(event) => {
                 setForm((current) => ({ ...current, title: event.target.value }))
@@ -394,9 +404,10 @@ export function DesignationDialog({ open, onOpenChange, designation, defaultDepa
               </Select>
             </FormField>
           </div>
-          <FormField label="Grade" htmlFor="designation-grade" error={errors.grade} required hint="e.g. IC3, M2">
+          <FormField label="Grade" htmlFor="designation-grade" error={errors.grade} hint="Defaults to the selected level">
             <Input
               id="designation-grade"
+              maxLength={16}
               value={form.grade}
               onChange={(event) => {
                 setForm((current) => ({ ...current, grade: event.target.value }))

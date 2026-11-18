@@ -445,15 +445,20 @@ export function EmployeeFormPage() {
             <FormSelect
               name="designationId"
               control={form.control}
-              placeholder={departmentId ? 'Select designation' : 'Choose a department first'}
+              placeholder="Select designation"
               disabled={!departmentDesignations.length}
               options={departmentDesignations
                 .map((designation) => ({ value: designation.id, label: designation.title }))}
-              emptyAction={departmentId && designationsQuery.isSuccess ? {
-                label: 'Create a designation',
-                onClick: () => setSetupDialog('designation'),
+              emptyAction={departmentsQuery.isSuccess && designationsQuery.isSuccess ? {
+                label: departments.length ? 'Create a designation' : 'Create a department first',
+                onClick: () => setSetupDialog(departments.length ? 'designation' : 'department'),
               } : undefined}
             />
+            {departmentDesignations.length > 0 && (
+              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('designation')}>
+                Add another designation
+              </Button>
+            )}
           </FormField>
           <FormField label="Branch" required error={form.formState.errors.branchId?.message}>
             <FormSelect
@@ -635,7 +640,7 @@ export function EmployeeFormPage() {
       open={setupDialog === 'designation'}
       onOpenChange={closeSetup}
       designation={null}
-      defaultDepartmentId={departmentId}
+      defaultDepartmentId={departmentId || (departments.length === 1 ? departments[0].id : undefined)}
       onSaved={(designation) => {
         form.setValue('departmentId', designation.departmentId, { shouldDirty: true, shouldValidate: true })
         form.setValue('designationId', designation.id, { shouldDirty: true, shouldValidate: true })

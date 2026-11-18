@@ -437,10 +437,11 @@ public sealed class OrganizationController(HrmsDbContext db, AuditService audit)
         }
 
         if (await db.Designations.AnyAsync(
-                designation => designation.Title.ToLower() == request.Title.Trim().ToLower() && designation.Id != currentId,
+                designation => designation.DepartmentId == request.DepartmentId &&
+                    designation.Title.ToLower() == request.Title.Trim().ToLower() && designation.Id != currentId,
                 cancellationToken))
         {
-            errors["title"] = ["A designation with this title already exists."];
+            errors["title"] = ["A designation with this title already exists in this department."];
         }
 
         if (errors.Count > 0)
