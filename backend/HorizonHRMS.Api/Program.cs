@@ -208,12 +208,10 @@ app.UseAuthorization();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapControllers();
-var starterEmployeesReady = false;
 app.MapGet("/health", () => Results.Ok(new
 {
     status = "ok",
     service = "HorizonHRMS.Api",
-    starterEmployeesReady,
     utc = DateTime.UtcNow,
 })).AllowAnonymous();
 
@@ -233,11 +231,6 @@ using (var scope = app.Services.CreateScope())
     if (bootstrap.Enabled && seedOptions.Enabled)
         throw new InvalidOperationException("Disable demo seeding before enabling the bootstrap administrator.");
     await BootstrapAdmin.EnsureAsync(db, bootstrap);
-    if (!seedOptions.Enabled && db.Database.IsNpgsql())
-    {
-        await StarterEmployees.AddAsync(db);
-        starterEmployeesReady = true;
-    }
 
     try
     {
