@@ -4,7 +4,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { Controller, useForm, type Control, type Path } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { AlertTriangle, ArrowLeft, Loader2, Save, ShieldAlert } from 'lucide-react'
+import { AlertTriangle, ArrowLeft, Loader2, Plus, Save, ShieldAlert } from 'lucide-react'
 import { toast } from 'sonner'
 import { ErrorState } from '@/components/common/error-state'
 import { FormField } from '@/components/common/form-field'
@@ -95,6 +95,7 @@ function FormSelect({
   allowNone,
   disabled,
   onChange,
+  emptyAction,
 }: {
   name: Path<FormValues>
   control: Control<FormValues>
@@ -103,7 +104,17 @@ function FormSelect({
   allowNone?: boolean
   disabled?: boolean
   onChange?: (value: string) => void
+  emptyAction?: { label: string; onClick: () => void }
 }) {
+  if (!options.length && emptyAction) {
+    return (
+      <Button type="button" variant="outline" className="w-full justify-start" onClick={emptyAction.onClick}>
+        <Plus />
+        {emptyAction.label}
+      </Button>
+    )
+  }
+
   return (
     <Controller
       control={control}
@@ -419,32 +430,30 @@ export function EmployeeFormPage() {
               placeholder={departmentsQuery.isPending ? 'Loading departments…' : 'Select department'}
               disabled={!departments.length}
               options={departments.map((department) => ({ value: department.id, label: department.name }))}
+              emptyAction={departmentsQuery.isSuccess ? {
+                label: 'Create a department',
+                onClick: () => setSetupDialog('department'),
+              } : undefined}
               onChange={(value) => form.setValue(
                 'designationId',
                 designations.find((designation) => designation.departmentId === value)?.id ?? '',
                 { shouldDirty: true, shouldValidate: true },
               )}
             />
-            {departmentsQuery.isSuccess && !departments.length && (
-              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('department')}>
-                Create a department
-              </Button>
-            )}
           </FormField>
           <FormField label="Designation" required error={form.formState.errors.designationId?.message}>
             <FormSelect
               name="designationId"
               control={form.control}
-              placeholder={departmentId ? 'Select designation' : 'Select a department first'}
+              placeholder={departmentId ? 'Select designation' : 'Choose a department first'}
               disabled={!departmentDesignations.length}
               options={departmentDesignations
                 .map((designation) => ({ value: designation.id, label: designation.title }))}
+              emptyAction={departmentId && designationsQuery.isSuccess ? {
+                label: 'Create a designation',
+                onClick: () => setSetupDialog('designation'),
+              } : undefined}
             />
-            {departmentId && designationsQuery.isSuccess && !departmentDesignations.length && (
-              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('designation')}>
-                Create a designation
-              </Button>
-            )}
           </FormField>
           <FormField label="Branch" required error={form.formState.errors.branchId?.message}>
             <FormSelect
@@ -453,12 +462,11 @@ export function EmployeeFormPage() {
               placeholder={branchesQuery.isPending ? 'Loading branches…' : 'Select branch'}
               disabled={!branches.length}
               options={branches.map((branch) => ({ value: branch.id, label: `${branch.name}, ${branch.city}` }))}
+              emptyAction={branchesQuery.isSuccess ? {
+                label: 'Create a branch',
+                onClick: () => setSetupDialog('branch'),
+              } : undefined}
             />
-            {branchesQuery.isSuccess && !branches.length && (
-              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('branch')}>
-                Create a branch
-              </Button>
-            )}
           </FormField>
           <FormField label="Reporting manager" error={form.formState.errors.managerId?.message}>
             <FormSelect
@@ -614,14 +622,31 @@ export function EmployeeFormPage() {
         </Button>
       </div>
     </form>
-    <DepartmentDialog open={setupDialog === 'department'} onOpenChange={closeSetup} department={null} />
+    <DepartmentDialog
+      open={setupDialog === 'department'}
+      onOpenChange={closeSetup}
+      department={null}
+      onSaved={(department) => {
+        form.setValue('departmentId', department.id, { shouldDirty: true, shouldValidate: true })
+        form.setValue('designationId', '', { shouldDirty: true })
+      }}
+    />
     <DesignationDialog
       open={setupDialog === 'designation'}
       onOpenChange={closeSetup}
       designation={null}
       defaultDepartmentId={departmentId}
+      onSaved={(designation) => {
+        form.setValue('departmentId', designation.departmentId, { shouldDirty: true, shouldValidate: true })
+        form.setValue('designationId', designation.id, { shouldDirty: true, shouldValidate: true })
+      }}
     />
-    <BranchDialog open={setupDialog === 'branch'} onOpenChange={closeSetup} branch={null} />
+    <BranchDialog
+      open={setupDialog === 'branch'}
+      onOpenChange={closeSetup}
+      branch={null}
+      onSaved={(branch) => form.setValue('branchId', branch.id, { shouldDirty: true, shouldValidate: true })}
+    />
     </div>
   )
 }

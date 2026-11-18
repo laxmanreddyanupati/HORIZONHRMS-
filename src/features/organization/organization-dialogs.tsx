@@ -26,7 +26,7 @@ import {
   updateDesignation,
   type DepartmentWithStats,
 } from '@/services'
-import type { Branch, Designation } from '@/types'
+import type { Branch, Department, Designation } from '@/types'
 
 export type DesignationWithCount = Designation & { employeeCount: number }
 export type BranchWithCount = Branch & { employeeCount: number }
@@ -73,6 +73,7 @@ function DialogActions({
 }
 
 interface DepartmentDialogProps {
+  onSaved?: (department: Department) => void
   open: boolean
   onOpenChange: (open: boolean) => void
   department: DepartmentWithStats | null
@@ -98,7 +99,7 @@ const emptyDepartmentForm: DepartmentFormState = {
   email: '',
 }
 
-export function DepartmentDialog({ open, onOpenChange, department }: DepartmentDialogProps) {
+export function DepartmentDialog({ open, onOpenChange, department, onSaved }: DepartmentDialogProps) {
   const queryClient = useQueryClient()
   const [form, setForm] = useState<DepartmentFormState>(emptyDepartmentForm)
   const [errors, setErrors] = useState<DepartmentErrors>({})
@@ -128,6 +129,7 @@ export function DepartmentDialog({ open, onOpenChange, department }: DepartmentD
         description: `${saved.name} (${saved.code}) is ready in the organization.`,
       })
       invalidateOrganizationData(queryClient)
+      onSaved?.(saved)
       onOpenChange(false)
     },
     onError: (error: Error) =>
@@ -248,6 +250,7 @@ export function DepartmentDialog({ open, onOpenChange, department }: DepartmentD
 }
 
 interface DesignationDialogProps {
+  onSaved?: (designation: Designation) => void
   defaultDepartmentId?: string
   open: boolean
   onOpenChange: (open: boolean) => void
@@ -263,7 +266,7 @@ interface DesignationFormState {
 
 type DesignationErrors = Partial<Record<'title' | 'departmentId' | 'grade', string>>
 
-export function DesignationDialog({ open, onOpenChange, designation, defaultDepartmentId }: DesignationDialogProps) {
+export function DesignationDialog({ open, onOpenChange, designation, defaultDepartmentId, onSaved }: DesignationDialogProps) {
   const queryClient = useQueryClient()
   const departmentsQuery = useQuery({
     queryKey: ['organization-departments'],
@@ -306,6 +309,7 @@ export function DesignationDialog({ open, onOpenChange, designation, defaultDepa
         description: `${saved.title} is now part of the job architecture.`,
       })
       invalidateOrganizationData(queryClient)
+      onSaved?.(saved)
       onOpenChange(false)
     },
     onError: (error: Error) =>
@@ -413,6 +417,7 @@ export function DesignationDialog({ open, onOpenChange, designation, defaultDepa
 }
 
 interface BranchDialogProps {
+  onSaved?: (branch: Branch) => void
   open: boolean
   onOpenChange: (open: boolean) => void
   branch: BranchWithCount | null
@@ -430,7 +435,7 @@ interface BranchFormState {
 
 type BranchErrors = Partial<Record<'name' | 'city' | 'state', string>>
 
-export function BranchDialog({ open, onOpenChange, branch }: BranchDialogProps) {
+export function BranchDialog({ open, onOpenChange, branch, onSaved }: BranchDialogProps) {
   const queryClient = useQueryClient()
   const [form, setForm] = useState<BranchFormState>({
     name: '',
@@ -477,6 +482,7 @@ export function BranchDialog({ open, onOpenChange, branch }: BranchDialogProps) 
         description: `${saved.name} is available in the organization.`,
       })
       invalidateOrganizationData(queryClient)
+      onSaved?.(saved)
       onOpenChange(false)
     },
     onError: (error: Error) =>
