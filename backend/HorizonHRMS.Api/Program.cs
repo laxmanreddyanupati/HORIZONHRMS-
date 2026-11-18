@@ -233,7 +233,7 @@ using (var scope = app.Services.CreateScope())
     if (bootstrap.Enabled && seedOptions.Enabled)
         throw new InvalidOperationException("Disable demo seeding before enabling the bootstrap administrator.");
     await BootstrapAdmin.EnsureAsync(db, bootstrap);
-    if (app.Environment.IsProduction() && bootstrap.Enabled && db.Database.IsNpgsql())
+    if (!seedOptions.Enabled && db.Database.IsNpgsql())
     {
         await StarterEmployees.AddAsync(db);
         starterEmployeesReady = true;
