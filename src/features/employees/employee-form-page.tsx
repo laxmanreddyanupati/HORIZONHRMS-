@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { Controller, useForm, type Control, type Path } from 'react-hook-form'
@@ -15,10 +15,16 @@ import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useRole } from '@/contexts/role-context'
-import { employees } from '@/data/employees'
-import { branches, departments } from '@/data/organization'
-import { designations } from '@/data/designations'
-import { createEmployee, fetchEmployee, updateEmployee } from '@/services'
+import { BranchDialog, DepartmentDialog, DesignationDialog } from '@/features/organization/organization-dialogs'
+import { loadAllEmployees } from '@/lib/reference-data'
+import {
+  createEmployee,
+  fetchBranchStats,
+  fetchDepartmentStats,
+  fetchDesignationStats,
+  fetchEmployee,
+  updateEmployee,
+} from '@/services'
 import { EMPLOYEE_EDIT_ROLES } from '@/lib/constants'
 import type { EmployeeFormInput } from '@/types'
 import { getWorkspaceDate } from '@/lib/utils'
@@ -87,12 +93,16 @@ function FormSelect({
   options,
   placeholder,
   allowNone,
+  disabled,
+  onChange,
 }: {
   name: Path<FormValues>
   control: Control<FormValues>
   options: Array<{ value: string; label: string }>
   placeholder: string
   allowNone?: boolean
+  disabled?: boolean
+  onChange?: (value: string) => void
 }) {
   return (
     <Controller
@@ -101,7 +111,11 @@ function FormSelect({
       render={({ field }) => (
         <Select
           value={(field.value as string | null) ?? (allowNone ? 'none' : '')}
-          onValueChange={(value) => field.onChange(value === 'none' ? null : value)}
+          disabled={disabled}
+          onValueChange={(value) => {
+            field.onChange(value === 'none' ? null : value)
+            onChange?.(value)
+          }}
         >
           <SelectTrigger aria-label={placeholder}>
             <SelectValue placeholder={placeholder} />
@@ -127,6 +141,7 @@ export function EmployeeFormPage() {
   const queryClient = useQueryClient()
   const { role } = useRole()
   const canEdit = EMPLOYEE_EDIT_ROLES.includes(role)
+  const [setupDialog, setSetupDialog] = useState<'department' | 'designation' | 'branch' | null>(null)
 
   const employeeQuery = useQuery({
     queryKey: ['employee', employeeId],
@@ -139,17 +154,26 @@ export function EmployeeFormPage() {
     defaultValues: emptyValues,
   })
 
-  useEffect(() => {
-    const departmentId = form.watch('departmentId')
-    const currentDesignation = form.getValues('designationId')
-    const stillValid = designations.some(
-      (designation) => designation.id === currentDesignation && designation.departmentId === departmentId,
-    )
-    if (!stillValid) {
-      const next = designations.find((designation) => designation.departmentId === departmentId)?.id ?? ''
-      form.setValue('designationId', next, { shouldValidate: true })
-    }
-  }, [form.watch('departmentId')])
+  const departmentsQuery = useQuery({
+    queryKey: ['organization-departments'],
+    queryFn: fetchDepartmentStats,
+    enabled: canEdit,
+  })
+  const designationsQuery = useQuery({
+    queryKey: ['organization-designations'],
+    queryFn: fetchDesignationStats,
+    enabled: canEdit,
+  })
+  const branchesQuery = useQuery({
+    queryKey: ['organization-branches'],
+    queryFn: fetchBranchStats,
+    enabled: canEdit,
+  })
+  const managersQuery = useQuery({
+    queryKey: ['employees', 'manager-options'],
+    queryFn: loadAllEmployees,
+    enabled: canEdit,
+  })
 
   useEffect(() => {
     const employee = employeeQuery.data
@@ -251,14 +275,30 @@ export function EmployeeFormPage() {
     )
   }
 
-  const managerOptions = employees
-    .filter((employee) => employee.id !== employeeId && employee.status !== 'Inactive')
+  const departmentId = form.watch('departmentId')
+  const currentManagerId = form.watch('managerId')
+  const departments = departmentsQuery.data ?? []
+  const designations = designationsQuery.data ?? []
+  const branches = branchesQuery.data ?? []
+  const departmentDesignations = designations.filter((designation) => designation.departmentId === departmentId)
+  const managerOptions = (managersQuery.data ?? [])
+    .filter((employee) => employee.id !== employeeId && (employee.status !== 'Inactive' || employee.id === currentManagerId))
     .map((employee) => ({
       value: employee.id,
       label: `${employee.firstName} ${employee.lastName} · ${employee.id}`,
     }))
 
+  const organizationQueries = [departmentsQuery, designationsQuery, branchesQuery]
+  const organizationError = organizationQueries.some((query) => query.isError)
+  const organizationLoading = organizationQueries.some((query) => query.isPending)
+  const canSave = !mutation.isPending && !organizationLoading && !organizationError
+    && departments.length > 0 && designations.length > 0 && branches.length > 0
+  const closeSetup = (open: boolean) => {
+    if (!open) setSetupDialog(null)
+  }
+
   return (
+    <div>
     <form onSubmit={onSubmit} className="space-y-5">
       <PageHeader
         eyebrow={isEdit ? 'Employee record' : 'Onboarding'}
@@ -276,7 +316,7 @@ export function EmployeeFormPage() {
                 Cancel
               </Link>
             </Button>
-            <Button type="submit" disabled={mutation.isPending}>
+            <Button type="submit" disabled={!canSave}>
               {mutation.isPending ? <Loader2 className="animate-spin" /> : <Save />}
               {isEdit ? 'Save changes' : 'Create employee'}
             </Button>
@@ -364,31 +404,61 @@ export function EmployeeFormPage() {
           <CardTitle>Employment details</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {organizationError && (
+            <div className="md:col-span-2 xl:col-span-3">
+              <ErrorState
+                title="Employment options could not be loaded"
+                onRetry={() => organizationQueries.forEach((query) => void query.refetch())}
+              />
+            </div>
+          )}
           <FormField label="Department" required error={form.formState.errors.departmentId?.message}>
             <FormSelect
               name="departmentId"
               control={form.control}
-              placeholder="Select department"
+              placeholder={departmentsQuery.isPending ? 'Loading departments…' : 'Select department'}
+              disabled={!departments.length}
               options={departments.map((department) => ({ value: department.id, label: department.name }))}
+              onChange={(value) => form.setValue(
+                'designationId',
+                designations.find((designation) => designation.departmentId === value)?.id ?? '',
+                { shouldDirty: true, shouldValidate: true },
+              )}
             />
+            {departmentsQuery.isSuccess && !departments.length && (
+              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('department')}>
+                Create a department
+              </Button>
+            )}
           </FormField>
           <FormField label="Designation" required error={form.formState.errors.designationId?.message}>
             <FormSelect
               name="designationId"
               control={form.control}
-              placeholder="Select designation"
-              options={designations
-                .filter((designation) => designation.departmentId === form.watch('departmentId'))
+              placeholder={departmentId ? 'Select designation' : 'Select a department first'}
+              disabled={!departmentDesignations.length}
+              options={departmentDesignations
                 .map((designation) => ({ value: designation.id, label: designation.title }))}
             />
+            {departmentId && designationsQuery.isSuccess && !departmentDesignations.length && (
+              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('designation')}>
+                Create a designation
+              </Button>
+            )}
           </FormField>
           <FormField label="Branch" required error={form.formState.errors.branchId?.message}>
             <FormSelect
               name="branchId"
               control={form.control}
-              placeholder="Select branch"
+              placeholder={branchesQuery.isPending ? 'Loading branches…' : 'Select branch'}
+              disabled={!branches.length}
               options={branches.map((branch) => ({ value: branch.id, label: `${branch.name}, ${branch.city}` }))}
             />
+            {branchesQuery.isSuccess && !branches.length && (
+              <Button type="button" variant="link" className="h-auto p-0" onClick={() => setSetupDialog('branch')}>
+                Create a branch
+              </Button>
+            )}
           </FormField>
           <FormField label="Reporting manager" error={form.formState.errors.managerId?.message}>
             <FormSelect
@@ -396,8 +466,17 @@ export function EmployeeFormPage() {
               control={form.control}
               placeholder="Select manager"
               options={managerOptions}
+              disabled={managersQuery.isPending || managersQuery.isError}
               allowNone
             />
+            {managersQuery.isSuccess && !managerOptions.length && (
+              <p className="text-xs text-muted-foreground">Managers can be assigned once an eligible employee exists.</p>
+            )}
+            {managersQuery.isError && (
+              <Button type="button" variant="link" className="h-auto p-0" onClick={() => void managersQuery.refetch()}>
+                Retry loading managers
+              </Button>
+            )}
           </FormField>
           <FormField label="Employment type" required error={form.formState.errors.employmentType?.message}>
             <FormSelect
@@ -529,11 +608,20 @@ export function EmployeeFormPage() {
         <Button type="button" variant="outline" asChild>
           <Link to={employeeId ? `/employees/${employeeId}` : '/employees'}>Cancel</Link>
         </Button>
-        <Button type="submit" disabled={mutation.isPending}>
+        <Button type="submit" disabled={!canSave}>
           {mutation.isPending ? <Loader2 className="animate-spin" /> : <Save />}
           {isEdit ? 'Save changes' : 'Create employee'}
         </Button>
       </div>
     </form>
+    <DepartmentDialog open={setupDialog === 'department'} onOpenChange={closeSetup} department={null} />
+    <DesignationDialog
+      open={setupDialog === 'designation'}
+      onOpenChange={closeSetup}
+      designation={null}
+      defaultDepartmentId={departmentId}
+    />
+    <BranchDialog open={setupDialog === 'branch'} onOpenChange={closeSetup} branch={null} />
+    </div>
   )
 }

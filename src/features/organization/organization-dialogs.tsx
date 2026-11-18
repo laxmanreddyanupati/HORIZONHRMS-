@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react'
-import { useMutation, useQueryClient, type QueryClient } from '@tanstack/react-query'
+import { useMutation, useQuery, useQueryClient, type QueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { FormField } from '@/components/common/form-field'
 import { Button } from '@/components/ui/button'
@@ -16,11 +16,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@/components/ui/switch'
 import { Textarea } from '@/components/ui/textarea'
 import { employees } from '@/data/employees'
-import { departments } from '@/data/organization'
 import {
   createBranch,
   createDepartment,
   createDesignation,
+  fetchDepartmentStats,
   updateBranch,
   updateDepartment,
   updateDesignation,
@@ -248,6 +248,7 @@ export function DepartmentDialog({ open, onOpenChange, department }: DepartmentD
 }
 
 interface DesignationDialogProps {
+  defaultDepartmentId?: string
   open: boolean
   onOpenChange: (open: boolean) => void
   designation: DesignationWithCount | null
@@ -262,8 +263,13 @@ interface DesignationFormState {
 
 type DesignationErrors = Partial<Record<'title' | 'departmentId' | 'grade', string>>
 
-export function DesignationDialog({ open, onOpenChange, designation }: DesignationDialogProps) {
+export function DesignationDialog({ open, onOpenChange, designation, defaultDepartmentId }: DesignationDialogProps) {
   const queryClient = useQueryClient()
+  const departmentsQuery = useQuery({
+    queryKey: ['organization-departments'],
+    queryFn: fetchDepartmentStats,
+    enabled: open,
+  })
   const [form, setForm] = useState<DesignationFormState>({
     title: '',
     departmentId: '',
@@ -285,12 +291,12 @@ export function DesignationDialog({ open, onOpenChange, designation }: Designati
           }
         : {
             title: '',
-            departmentId: departments[0]?.id ?? '',
+            departmentId: defaultDepartmentId ?? '',
             level: 'L3',
             grade: '',
           },
     )
-  }, [open, designation])
+  }, [open, designation, defaultDepartmentId])
 
   const mutation = useMutation({
     mutationFn: (input: Omit<Designation, 'id'>) =>
@@ -356,7 +362,7 @@ export function DesignationDialog({ open, onOpenChange, designation }: Designati
                   <SelectValue placeholder="Select department" />
                 </SelectTrigger>
                 <SelectContent>
-                  {departments.map((department) => (
+                  {departmentsQuery.data?.map((department) => (
                     <SelectItem key={department.id} value={department.id}>
                       {department.name}
                     </SelectItem>

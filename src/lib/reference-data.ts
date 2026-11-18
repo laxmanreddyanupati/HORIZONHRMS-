@@ -49,7 +49,7 @@ async function fill<T>(target: T[], load: () => Promise<T[]>, label: string): Pr
   }
 }
 
-async function loadAllEmployees(): Promise<Employee[]> {
+export async function loadAllEmployees(): Promise<Employee[]> {
   const pageSize = 200
   const first = await apiRequest<{
     data: Employee[]

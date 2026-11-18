@@ -918,6 +918,7 @@ export function OrganizationPage() {
         open={designationDialog.open}
         onOpenChange={(open) => setDesignationDialog((current) => ({ ...current, open }))}
         designation={designationDialog.designation}
+        defaultDepartmentId={departmentRows[0]?.id}
       />
       <BranchDialog
         open={branchDialog.open}
