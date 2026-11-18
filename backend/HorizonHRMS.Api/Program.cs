@@ -139,6 +139,7 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy(Policies.SuperAdmin, policy => policy.RequireRole(Roles.SuperAdmin));
     options.AddPolicy(Policies.PeopleManagers, policy => policy.RequireRole(Roles.SuperAdmin, Roles.HrAdmin, Roles.HrExecutive, Roles.Manager));
     options.AddPolicy(Policies.PayrollStaff, policy => policy.RequireRole(Roles.SuperAdmin, Roles.HrAdmin, Roles.PayrollAdmin));
+    options.AddPolicy(Policies.PayrollManage, policy => policy.RequireRole(Roles.SuperAdmin, Roles.PayrollAdmin));
     options.AddPolicy(Policies.Operations, policy => policy.RequireRole(Roles.SuperAdmin, Roles.HrAdmin, Roles.HrExecutive, Roles.Manager, Roles.PayrollAdmin));
     options.AddPolicy(Policies.RecruitmentEdit, policy => policy.RequireRole(Roles.SuperAdmin, Roles.HrAdmin, Roles.HrExecutive));
     options.AddPolicy(Policies.Settings, policy => policy.RequireRole(Roles.SuperAdmin, Roles.HrAdmin, Roles.PayrollAdmin));
@@ -257,6 +258,7 @@ public static class Policies
     public const string SuperAdmin = "SuperAdmin";
     public const string PeopleManagers = "PeopleManagers";
     public const string PayrollStaff = "PayrollStaff";
+    public const string PayrollManage = "PayrollManage";
     public const string Operations = "Operations";
     public const string RecruitmentEdit = "RecruitmentEdit";
     public const string Settings = "Settings";

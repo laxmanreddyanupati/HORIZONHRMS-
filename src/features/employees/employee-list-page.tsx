@@ -2,6 +2,7 @@ import { useDeferredValue, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useMutation, useQuery, useQueryClient, keepPreviousData } from '@tanstack/react-query'
 import {
+  Banknote,
   Eye,
   FilterX,
   MoreHorizontal,
@@ -72,7 +73,7 @@ function CountChip({
 export function EmployeeListPage() {
   const navigate = useNavigate()
   const queryClient = useQueryClient()
-  const { role, persona, canAccess } = useRole()
+  const { role, persona, canAccess, canManagePayroll } = useRole()
   const canEdit = EMPLOYEE_EDIT_ROLES.includes(role)
   const isManager = role === 'manager'
 
@@ -189,7 +190,15 @@ export function EmployeeListPage() {
       header: '',
       align: 'right',
       cell: (employee) => (
-        <div onClick={(event) => event.stopPropagation()}>
+        <div className="flex items-center justify-end gap-1" onClick={(event) => event.stopPropagation()}>
+          {canEdit && (
+            <Button asChild variant="outline" size="sm">
+              <Link to={`/employees/${employee.id}/edit`} aria-label={`Edit ${employee.firstName} ${employee.lastName}`}>
+                <Pencil />
+                Edit
+              </Link>
+            </Button>
+          )}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon-sm" aria-label={`Actions for ${employee.firstName} ${employee.lastName}`}>
@@ -201,10 +210,12 @@ export function EmployeeListPage() {
                 <Eye />
                 View profile
               </DropdownMenuItem>
-              {canEdit ? (
-                <DropdownMenuItem onClick={() => navigate(`/employees/${employee.id}/edit`)}>
-                  <Pencil />
-                  Edit details
+              {canManagePayroll ? (
+                <DropdownMenuItem asChild>
+                  <Link to={`/payroll?tab=structures&employeeId=${encodeURIComponent(employee.id)}`}>
+                    <Banknote />
+                    Set up payroll
+                  </Link>
                 </DropdownMenuItem>
               ) : null}
               {canEdit ? (

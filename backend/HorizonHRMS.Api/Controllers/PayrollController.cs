@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text;
 using HorizonHRMS.Api.Contracts;
 using HorizonHRMS.Api.Data;
@@ -23,6 +24,120 @@ public sealed class PayrollController(HrmsDbContext db, AuditService audit, Demo
             .ThenByDescending(run => run.Month)
             .ToListAsync(cancellationToken);
         return Ok(runs.Select(run => run.ToDto()).ToList());
+    }
+
+    [HttpPost("runs")]
+    [Authorize(Policy = Policies.PayrollManage)]
+    public async Task<ActionResult<PayrollRunDto>> CreateRun(CreatePayrollRunRequest request, CancellationToken cancellationToken)
+    {
+        var start = new DateOnly(request.Year, request.Month, 1);
+        var end = start.AddMonths(1).AddDays(-1);
+        if (await RunExistsAsync())
+            throw ApiException.Conflict("A payroll run already exists for this month.", "payroll_period_exists");
+
+        var eligible = await (
+            from employee in db.Employees.AsNoTracking()
+            join structure in db.SalaryStructures.AsNoTracking() on employee.Id equals structure.EmployeeId
+            where employee.Status != EmployeeStatuses.Inactive && employee.DateOfJoining <= end &&
+                structure.EffectiveFrom <= end
+            select new { employee.Id, employee.DateOfJoining, Structure = structure }
+        ).ToListAsync(cancellationToken);
+
+        if (eligible.Count == 0)
+            throw ApiException.BadRequest("Add a salary structure effective by this month for at least one eligible employee.");
+
+        var run = new PayrollRun
+        {
+            Id = FormattableString.Invariant($"PR-{start:yyyy-MM}"),
+            Year = start.Year,
+            Month = start.Month,
+            PeriodLabel = start.ToString("MMMM yyyy", CultureInfo.InvariantCulture),
+        };
+        var workingDays = CountWeekdays(start, end);
+        var slips = new List<Payslip>();
+        foreach (var employee in eligible)
+        {
+            var paidFrom = new[] { start, employee.DateOfJoining, employee.Structure.EffectiveFrom }.Max();
+            var paidDays = CountWeekdays(paidFrom, end);
+            if (paidDays == 0) continue;
+
+            var fraction = (decimal)paidDays / workingDays;
+            var earnings = Prorate(employee.Structure.Earnings, fraction);
+            var deductions = Prorate(employee.Structure.Deductions, fraction);
+            var gross = earnings.Sum(component => component.Amount);
+            var totalDeductions = deductions.Sum(component => component.Amount);
+            slips.Add(new Payslip
+            {
+                Id = $"{run.Id}-{employee.Id}",
+                PayrollRunId = run.Id,
+                EmployeeId = employee.Id,
+                Year = run.Year,
+                Month = run.Month,
+                Earnings = earnings,
+                Deductions = deductions,
+                Gross = gross,
+                TotalDeductions = totalDeductions,
+                Net = gross - totalDeductions,
+                WorkingDays = workingDays,
+                PaidDays = paidDays,
+            });
+        }
+        if (slips.Count == 0)
+            throw ApiException.BadRequest("No eligible employees have payable weekdays in this month.");
+
+        run.EmployeeCount = slips.Count;
+        run.GrossTotal = slips.Sum(slip => slip.Gross);
+        run.DeductionsTotal = slips.Sum(slip => slip.TotalDeductions);
+        run.NetTotal = slips.Sum(slip => slip.Net);
+        db.PayrollRuns.Add(run);
+        db.Payslips.AddRange(slips);
+        audit.Record(User, HttpContext, "Created draft payroll run", "Payroll", run.Id);
+        try
+        {
+            await db.SaveChangesAsync(cancellationToken);
+        }
+        catch (DbUpdateException)
+        {
+            if (await RunExistsAsync())
+                throw ApiException.Conflict("A payroll run already exists for this month.", "payroll_period_exists");
+            throw;
+        }
+        return CreatedAtAction(nameof(Run), new { runId = run.Id }, run.ToDto());
+
+        Task<bool> RunExistsAsync() => db.PayrollRuns.AnyAsync(
+            item => item.Year == request.Year && item.Month == request.Month, cancellationToken);
+    }
+
+    private static int CountWeekdays(DateOnly start, DateOnly end)
+    {
+        var count = 0;
+        for (var date = start; date <= end; date = date.AddDays(1))
+        {
+            if (date.DayOfWeek is not (DayOfWeek.Saturday or DayOfWeek.Sunday)) count++;
+        }
+        return count;
+    }
+
+    private static List<SalaryComponent> Prorate(List<SalaryComponent> components, decimal fraction)
+    {
+        var monthlyTotal = 0m;
+        var roundedTotal = 0m;
+        var result = new List<SalaryComponent>(components.Count);
+        foreach (var component in components)
+        {
+            monthlyTotal += component.Amount;
+            var nextTotal = decimal.Round(monthlyTotal * fraction, 2, MidpointRounding.AwayFromZero);
+            result.Add(new SalaryComponent
+            {
+                Id = component.Id,
+                Name = component.Name,
+                Type = component.Type,
+                Statutory = component.Statutory,
+                Amount = nextTotal - roundedTotal,
+            });
+            roundedTotal = nextTotal;
+        }
+        return result;
     }
 
     [HttpGet("runs/{runId}")]
@@ -105,6 +220,60 @@ public sealed class PayrollController(HrmsDbContext db, AuditService audit, Demo
             ?? throw ApiException.NotFound("Salary structure not found.");
         return Ok(structure.ToDto());
     }
+
+    [HttpPut("salary-structures/{employeeId}")]
+    [Authorize(Policy = Policies.PayrollManage)]
+    public async Task<ActionResult<SalaryStructureDto>> SaveSalaryStructure(
+        string employeeId, SaveSalaryStructureRequest request, CancellationToken cancellationToken)
+    {
+        if (!await db.Employees.AnyAsync(employee => employee.Id == employeeId, cancellationToken))
+            throw ApiException.NotFound("Employee not found.");
+
+        if (request.EffectiveFrom == default || request.AnnualCtc <= 0 || request.AnnualCtc > 120_000_000m ||
+            request.Earnings.Concat(request.Deductions).Any(component => component is null ||
+                string.IsNullOrWhiteSpace(component.Name) || component.Name.Length > 100 ||
+                component.Amount < 0 || component.Amount > 10_000_000m ||
+                decimal.Round(component.Amount, 2) != component.Amount))
+            throw ApiException.BadRequest("Enter an effective date, annual CTC, and valid monthly component names and amounts.");
+
+        var gross = request.Earnings.Sum(component => component.Amount);
+        if (gross <= 0 || request.Deductions.Sum(component => component.Amount) > gross)
+            throw ApiException.BadRequest("Monthly gross must be positive and deductions cannot exceed gross.");
+
+        var structure = await db.SalaryStructures.FindAsync([employeeId], cancellationToken);
+        var isNew = structure is null;
+        if (structure is null)
+        {
+            structure = new SalaryStructure { EmployeeId = employeeId };
+            db.SalaryStructures.Add(structure);
+        }
+        structure.EffectiveFrom = request.EffectiveFrom;
+        structure.AnnualCtc = decimal.Round(request.AnnualCtc, 2);
+        structure.Earnings = ToComponents(request.Earnings, "earning");
+        structure.Deductions = ToComponents(request.Deductions, "deduction");
+        audit.Record(User, HttpContext, "Saved salary structure", "Payroll", employeeId);
+        try
+        {
+            await db.SaveChangesAsync(cancellationToken);
+        }
+        catch (DbUpdateException) when (isNew)
+        {
+            if (await db.SalaryStructures.AnyAsync(item => item.EmployeeId == employeeId, cancellationToken))
+                throw ApiException.Conflict("A salary structure was just added for this employee. Reload and edit it.");
+            throw;
+        }
+        return Ok(structure.ToDto());
+    }
+
+    private static List<SalaryComponent> ToComponents(List<SalaryComponentDto> values, string type) =>
+        values.Select((component, index) => new SalaryComponent
+        {
+            Id = $"{type}-{index + 1}",
+            Name = component.Name.Trim(),
+            Type = type,
+            Amount = component.Amount,
+            Statutory = component.Statutory,
+        }).ToList();
 
     [HttpPost("runs/{runId}/process")]
     [Authorize(Policy = Policies.PayrollStaff)]

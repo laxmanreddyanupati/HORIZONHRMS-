@@ -51,6 +51,17 @@ export async function fetchPayrollRuns(): Promise<PayrollRun[]> {
   return runs
 }
 
+export async function createPayrollRun(year: number, month: number): Promise<PayrollRun> {
+  return upsertRun(await apiRequest<PayrollRun>('/payroll/runs', { method: 'POST', body: { year, month } }))
+}
+
+export async function saveSalaryStructure(structure: SalaryStructure): Promise<SalaryStructure> {
+  return upsertStructure(await apiRequest<SalaryStructure>(
+    `/payroll/salary-structures/${encodeURIComponent(structure.employeeId)}`,
+    { method: 'PUT', body: structure },
+  ))
+}
+
 export async function fetchPayrollRun(runId: string): Promise<PayrollRun> {
   const user = getCurrentUser()
 

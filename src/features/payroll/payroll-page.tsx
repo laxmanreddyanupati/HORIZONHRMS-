@@ -8,7 +8,9 @@ import {
   Clock,
   Download,
   Eye,
+  Pencil,
   PlayCircle,
+  Plus,
   ReceiptText,
   Search,
   Settings,
@@ -52,6 +54,7 @@ import {
 import { formatCurrency, formatDate } from '@/lib/utils'
 import type { PayrollRun, Payslip, SalaryStructure } from '@/types'
 import { PayrollRunDialog, SalaryStructureDialog } from './payroll-dialogs'
+import { CreatePayrollRunDialog, EditSalaryStructureDialog } from './payroll-setup-dialogs'
 
 interface PendingPayrollAction {
   type: 'process' | 'pay'
@@ -89,6 +92,10 @@ export function PayrollPage() {
   const [activeTab, setActiveTab] = useState(initialTab)
   const [selectedRunId, setSelectedRunId] = useState<string | null>(null)
   const [selectedStructure, setSelectedStructure] = useState<SalaryStructure | null>(null)
+  const [editingSalary, setEditingSalary] = useState<string | null>(() =>
+    canManagePayroll ? searchParams.get('employeeId') : null,
+  )
+  const [creatingRun, setCreatingRun] = useState(false)
   const [confirmAction, setConfirmAction] = useState<PendingPayrollAction | null>(null)
   const [structureSearch, setStructureSearch] = useState('')
   const deferredStructureSearch = useDeferredValue(structureSearch)
@@ -244,7 +251,13 @@ export function PayrollPage() {
       header: '',
       align: 'right',
       cell: (structure) => (
-        <div onClick={(event) => event.stopPropagation()}>
+        <div className="flex justify-end gap-1" onClick={(event) => event.stopPropagation()}>
+          {canManagePayroll && (
+            <Button variant="ghost" size="sm" onClick={() => setEditingSalary(structure.employeeId)}>
+              <Pencil />
+              Edit
+            </Button>
+          )}
           <Button variant="ghost" size="sm" onClick={() => setSelectedStructure(structure)}>
             <Eye />
             View structure
@@ -436,6 +449,20 @@ export function PayrollPage() {
               <Download />
               Latest payslip
             </Button>
+          ) : canManagePayroll ? (
+            <>
+              <Button variant="outline" disabled={!structuresQuery.isSuccess} onClick={() => {
+                setActiveTab('structures')
+                setEditingSalary('')
+              }}>
+                <Plus />
+                Add salary structure
+              </Button>
+              <Button onClick={() => setCreatingRun(true)}>
+                <Plus />
+                Create payroll run
+              </Button>
+            </>
           ) : !isEmployee && currentRun ? (
             <Button variant="outline" onClick={() => setSelectedRunId(currentRun.id)}>
               <Eye />
@@ -974,6 +1001,31 @@ export function PayrollPage() {
         </TabsContent>
       </Tabs>
 
+      {canManagePayroll && creatingRun && (
+        <CreatePayrollRunDialog onClose={() => setCreatingRun(false)} onSaved={(run) => {
+          setCreatingRun(false)
+          setActiveTab('runs')
+          setSelectedRunId(run.id)
+          void queryClient.invalidateQueries({ queryKey: ['payroll-runs'] })
+          void queryClient.invalidateQueries({ queryKey: ['payroll-dashboard'] })
+          void queryClient.invalidateQueries({ queryKey: ['payslips'] })
+          void queryClient.invalidateQueries({ queryKey: ['dashboard'] })
+          toast.success('Draft payroll run created')
+        }} />
+      )}
+      {canManagePayroll && editingSalary !== null && structuresQuery.isSuccess && (
+        <EditSalaryStructureDialog
+          initialEmployeeId={editingSalary}
+          structures={structuresQuery.data}
+          onClose={() => setEditingSalary(null)}
+          onSaved={(structure) => {
+            setEditingSalary(null)
+            void queryClient.invalidateQueries({ queryKey: ['salary-structures'] })
+            void queryClient.invalidateQueries({ queryKey: ['salary-structure', structure.employeeId] })
+            toast.success('Salary structure saved')
+          }}
+        />
+      )}
       <PayrollRunDialog
         open={Boolean(selectedRunId)}
         runId={selectedRunId}

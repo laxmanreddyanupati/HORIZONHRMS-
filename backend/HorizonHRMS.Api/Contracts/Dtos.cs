@@ -543,6 +543,27 @@ public sealed class PayrollRunDto
     public DateOnly? ProcessedOn { get; set; }
 }
 
+public sealed class CreatePayrollRunRequest
+{
+    [Range(1, 12)]
+    public int Month { get; set; }
+
+    [Range(1900, 9998)]
+    public int Year { get; set; }
+}
+
+public sealed class SaveSalaryStructureRequest
+{
+    public DateOnly EffectiveFrom { get; set; }
+    public decimal AnnualCtc { get; set; }
+
+    [MinLength(1), MaxLength(30)]
+    public List<SalaryComponentDto> Earnings { get; set; } = [];
+
+    [MaxLength(30)]
+    public List<SalaryComponentDto> Deductions { get; set; } = [];
+}
+
 public sealed class PayslipDto
 {
     public string Id { get; set; } = string.Empty;
