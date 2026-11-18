@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HorizonHRMS.Api.Data;
 
-public class HrmsDbContext(DbContextOptions<HrmsDbContext> options) : DbContext(options)
+public class HrmsDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<AppUser> Users => Set<AppUser>();
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
